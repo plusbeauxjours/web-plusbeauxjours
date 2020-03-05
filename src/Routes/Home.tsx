@@ -11,7 +11,7 @@ const HomeHome: React.FunctionComponent<any> = () => (
     <Helmet>
       <title>Plusbeauxjours</title>
     </Helmet>
-    <Text>plusbeauxjours</Text>
+    <Text>우리 각시 사랑해</Text>
   </Container>
 );
 
