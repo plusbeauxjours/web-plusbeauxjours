@@ -1,8 +1,10 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 
-const Container = styled.div``;
+const Container = styled.div`
+  background-color: ${props => props.theme.bgColor};
+`;
 
 const Text = styled.text``;
 
@@ -11,7 +13,7 @@ const FukinWeatherApp: React.FunctionComponent<any> = () => (
     <Helmet>
       <title>Fukin Weather-app | Plusbeauxjours</title>
     </Helmet>
-    <Text>우리 각시 사랑해</Text>
+    <Text>Fukin Weather-app</Text>
   </Container>
 );
 

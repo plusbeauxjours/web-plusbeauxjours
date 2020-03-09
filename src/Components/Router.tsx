@@ -11,7 +11,8 @@ import FukinWeatherApp from "../Routes/App/FukinWeatherApp";
 import KawaiTodoApp from "../Routes/App/KawaiTodoApp";
 import Architecture from "../Routes/Architecture";
 import Header from "./Header";
-import styled from "styled-components";
+import Portfolio from "../Routes/Portfolio";
+import styled from "../Styles/typed-components";
 
 const Wrapper = styled.div`
   padding-top: 45px;
@@ -24,7 +25,7 @@ export default () => (
     <Wrapper>
       <Header />
       <Route path="/" exact component={Home} />
-      <Route path="/portfolio" exact component={Home} />
+      <Route path="/portfolio" exact component={Portfolio} />
       {/* web */}
       <Route path="/portfolio/web/pinner-web" component={PinnerWeb} />
       <Route path="/portfolio/web/puber-web" component={PuberWeb} />

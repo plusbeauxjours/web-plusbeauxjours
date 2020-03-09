@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import styled from "styled-components";
+import styled from "../Styles/typed-components";
 
 import { RouteComponentProps, withRouter } from "react-router";
 import { keyframes } from "styled-components";
@@ -22,18 +22,10 @@ const SWrapper = styled.div`
   margin: 0 auto;
   max-width: 935px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  padding: 8px;
   height: 100%;
   justify-content: space-between;
-`;
-
-const Icon = styled.span`
-  svg {
-    fill: ${props => props.theme.color};
-  }
-  &:not(:first-child) {
-    margin-left: 10px;
-  }
 `;
 
 const ModalAnimation = keyframes`
@@ -64,7 +56,7 @@ const ModalOverlay = styled.div`
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(230, 230, 230, 0.95);
+  background-color: ${props => props.theme.modalOverlayColor};
 `;
 
 const Modal = styled.div`
@@ -105,7 +97,9 @@ const Header: React.FunctionComponent<IProps> = () => {
         </ModalContainer>
       )}
       <SWrapper>
-        <CText onClick={() => setModalOpen(true)}>PLUSBEAUXJOURS</CText>
+        <Link to={"/"}>
+          <CText>PLUSBEAUXJOURS</CText>
+        </Link>
         <TextContainer>
           <Link to={"/portfolio"}>
             <Text>Portfolio</Text>

@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "../../Styles/typed-components";
+import styled from "../Styles/typed-components";
 import Helmet from "react-helmet";
 
 const Container = styled.div`
@@ -8,13 +8,13 @@ const Container = styled.div`
 
 const Text = styled.text``;
 
-const KawaiTodoApp: React.FunctionComponent<any> = () => (
+const Portfolio: React.FunctionComponent<any> = () => (
   <Container>
     <Helmet>
-      <title>Kawai Todo-app | Plusbeauxjours</title>
+      <title>Portfolio | Plusbeauxjours</title>
     </Helmet>
-    <Text>Kawai Todo-app</Text>
+    <Text>Portfolio</Text>
   </Container>
 );
 
-export default KawaiTodoApp;
+export default Portfolio;

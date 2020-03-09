@@ -1,12 +1,12 @@
 import React from "react";
 import Router from "./Components/Router";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./Styles/theme";
+import GlobalStyle from "./Styles/global-styles";
 
-function App() {
-  return (
-    <>
-      <Router />
-    </>
-  );
-}
-
-export default App;
+export default () => (
+  <ThemeProvider theme={theme}>
+    <GlobalStyle />
+    <Router />
+  </ThemeProvider>
+);
