@@ -10,10 +10,19 @@ import PinnerApp from "../Routes/App/PinnerApp";
 import FukinWeatherApp from "../Routes/App/FukinWeatherApp";
 import KawaiTodoApp from "../Routes/App/KawaiTodoApp";
 import Architecture from "../Routes/Architecture";
+import Header from "./Header";
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+  padding-top: 45px;
+  min-height: 80vh;
+  min-height: 50vh;
+`;
 
 export default () => (
   <Router>
-    <>
+    <Wrapper>
+      <Header />
       <Route path="/" exact component={Home} />
       <Route path="/portfolio" exact component={Home} />
       {/* web */}
@@ -31,6 +40,6 @@ export default () => (
       <Route path="/portfolio/app/kawai-todo-app" component={KawaiTodoApp} />
       {/* architectural works */}
       <Route path="/architecture" component={Architecture} />
-    </>
+    </Wrapper>
   </Router>
 );
