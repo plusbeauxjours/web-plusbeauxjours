@@ -92,12 +92,12 @@ const BackEndToolsList = [
   "Graphene",
   "Graphql",
   "NodeJS",
+  "Typescript",
   "Express",
   "TypeORM",
   "Github",
   "ContextAPI",
-  "Terminal",
-  "Typescript"
+  "Terminal"
 ];
 
 const ArchitectureToolsList = [
@@ -170,7 +170,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
           </FirstBox>
           <SecondBox>
             <CText>Languages I speak:</CText>
-            <Text>Korean, English, Number,&nbsp;&nbsp;&nbsp; Image, Plan</Text>
+            <Text>Korean, English, Number, Image, Plan</Text>
           </SecondBox>
           <ThirdBox>
             <CText>Design Tools:</CText>
