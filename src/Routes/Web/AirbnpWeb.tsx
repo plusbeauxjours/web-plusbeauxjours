@@ -6,13 +6,13 @@ const Container = styled.div``;
 
 const Text = styled.text``;
 
-const HomeHome: React.FunctionComponent<any> = () => (
+const AirbnpWeb: React.FunctionComponent<any> = () => (
   <Container>
     <Helmet>
-      <title>Home | Plusbeauxjours</title>
+      <title>Airbnp-web | Plusbeauxjours</title>
     </Helmet>
     <Text>우리 각시 사랑해</Text>
   </Container>
 );
 
-export default HomeHome;
+export default AirbnpWeb;
