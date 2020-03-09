@@ -7,12 +7,34 @@ const Container = styled.div`
   height: 800px;
 `;
 
-const Text = styled.text``;
+const Bold = styled.div`
+  font-size: 40px;
+  font-weight: 600;
+`;
+
+const TextBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+`;
+
+const Text = styled.p``;
 
 const MainBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
-      <Text>MainBox</Text>
+      <TextBox>
+        <Bold>Architecture Designer,</Bold>
+        <Bold style={{ marginBottom: "30px" }}>
+          Front-end Developer & Back-end Developer
+        </Bold>
+        <Text>I design and build a building before.</Text>
+        <Text>
+          And now I design and build an application, and I love what I do.
+        </Text>
+      </TextBox>
     </Wrapper>
   </Container>
 );

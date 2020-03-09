@@ -4,7 +4,8 @@ import styled from "../Styles/typed-components";
 const Container = styled.div`
   width: 100%;
   margin: 0 auto;
-  max-width: 935px;
+  width: 100%;
+  max-width: 1200px;
 `;
 
 interface IProps {

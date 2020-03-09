@@ -17,10 +17,10 @@ const Container = styled.header`
   border-bottom: 1px solid ${props => props.theme.greyColor};
 `;
 
-const SWrapper = styled.div`
+const Wrapper = styled.div`
   width: 100%;
   margin: 0 auto;
-  max-width: 935px;
+  max-width: 1200px;
   display: flex;
   align-items: baseline;
   padding: 8px;
@@ -96,7 +96,7 @@ const Header: React.FunctionComponent<IProps> = () => {
           <Modal>Contact Mail</Modal>
         </ModalContainer>
       )}
-      <SWrapper>
+      <Wrapper>
         <Link to={"/"}>
           <CText>PLUSBEAUXJOURS</CText>
         </Link>
@@ -109,7 +109,7 @@ const Header: React.FunctionComponent<IProps> = () => {
           </Link>
           <Text onClick={() => setModalOpen(true)}>Contact</Text>
         </TextContainer>
-      </SWrapper>
+      </Wrapper>
     </Container>
   );
 };

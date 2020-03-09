@@ -6,7 +6,7 @@ const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
 `;
 
-const Text = styled.text``;
+const Text = styled.p``;
 
 const Architecture: React.FunctionComponent<any> = () => (
   <Container>

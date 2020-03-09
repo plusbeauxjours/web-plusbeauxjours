@@ -17,14 +17,14 @@ const ProfileContainer = styled.div`
   align-items: center;
 `;
 
-const Text = styled.text``;
+const Text = styled.p``;
 
 const HomeHome: React.FunctionComponent<any> = () => (
   <Container>
     <Helmet>
       <title>Home | Plusbeauxjours</title>
     </Helmet>
-    <MainBox>MainBox</MainBox>
+    <MainBox />
     <ProfileContainer>
       <ProfileBox>ProfileBox</ProfileBox>
       <SkillBox>SkillBox</SkillBox>

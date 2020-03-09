@@ -7,7 +7,7 @@ const Container = styled.div`
   height: 800px;
 `;
 
-const Text = styled.text``;
+const Text = styled.p``;
 
 const ArchitecturalWorksBox: React.FunctionComponent<any> = () => (
   <Container>
