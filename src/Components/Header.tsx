@@ -62,7 +62,8 @@ const ModalOverlay = styled.div`
 const Modal = styled.div`
   z-index: 10;
   position: absolute;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin-top: 80px;
   animation: ${ModalAnimation} 0.1s linear;
   display: flex;
@@ -70,25 +71,27 @@ const Modal = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const SText = styled.p`
+const SText = styled.div`
   margin-bottom: 50px;
   text-align: center;
   font-weight: lighter;
   font-size: 20px;
+  padding: 0 10px;
 `;
-const Text = styled.p`
+const Text = styled.div`
   cursor: pointer;
   font-size: 15px;
 `;
 
-const CText = styled.p`
+const CText = styled.div`
   font-size: 30px;
 `;
 
-const Bold = styled.p`
+const Bold = styled.div`
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 30px;
+  text-align: center;
 `;
 
 const TextContainer = styled.div`

@@ -19,7 +19,7 @@ const TextBox = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-width: 500px;
+  width: 100%;
   position: relative;
   height: 500px;
   justify-content: center;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "../Styles/typed-components";
 import ProgressiveImage from "react-progressive-image";
 import Wrapper from "./Wrapper";
@@ -7,8 +7,6 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
-  height: 800px;
-  width: 100%;
 `;
 
 const Bold = styled.div`
@@ -17,13 +15,13 @@ const Bold = styled.div`
   margin-bottom: 30px;
 `;
 
-const TextBox = styled.div`
+const Box = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-width: 500px;
   position: relative;
+  margin-bottom: 150px;
 `;
 
 const Text = styled.p`
@@ -41,13 +39,14 @@ const Img = styled.img`
     animation: ${ImageAnimation} 2s linear;
   }
   filter: ${props => (props.loading ? "blur(6px)" : "")};
+  width: 100%;
+  max-width: 800px;
 `;
 
 const ImgContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 800px;
   height: 250px;
   overflow: hidden;
   margin-top: 30px;
@@ -71,7 +70,7 @@ interface IProps {
 const ArchitecturalWorksBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
-      <TextBox>
+      <Box>
         <Bold>My Architectural Works</Bold>
         <Text>
           I'm a bit of a digital product junky. Over the years, I've used
@@ -90,7 +89,7 @@ const ArchitecturalWorksBox: React.FunctionComponent<any> = () => (
                 {(src, loading) => (
                   <Img
                     loading={loading}
-                    style={{ width: "1000px" }}
+                    style={{ maxWidth: "800px", width: "100%" }}
                     src={src}
                     alt="an image"
                   />
@@ -99,7 +98,7 @@ const ArchitecturalWorksBox: React.FunctionComponent<any> = () => (
             </ImgContainer>
           </Link>
         ))}
-      </TextBox>
+      </Box>
     </Wrapper>
   </Container>
 );

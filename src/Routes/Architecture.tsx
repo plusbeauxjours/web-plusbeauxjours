@@ -72,7 +72,8 @@ const ImageContainer = styled.div`
 `;
 
 const Img = styled.img<IProps>`
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
@@ -148,7 +149,7 @@ const Architecture: React.FunctionComponent<any> = () => {
                 {(src, loading) => (
                   <Img
                     loading={loading}
-                    style={{ width: "1200px" }}
+                    style={{ maxWidth: "1200px", width: "100%" }}
                     src={src}
                     alt="an image"
                   />
