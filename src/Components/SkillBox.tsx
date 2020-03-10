@@ -3,7 +3,7 @@ import styled from "../Styles/typed-components";
 import Wrapper from "./Wrapper";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${props => props.theme.whiteColor};
   border: 1px solid ${props => props.theme.borderColor};
   width: 80%;
   max-width: 1200px;
@@ -106,7 +106,6 @@ const ArchitectureToolsList = [
   "Rhino",
   "React",
   "3dsMax",
-  "Graphql",
   "SketchUp",
   "Pen & Paper"
 ];
@@ -126,13 +125,13 @@ const SkillBox: React.FunctionComponent<any> = () => (
           </FirstBox>
           <SecondBox>
             <CText>Languages I speak:</CText>
-            <Text>HTML, CSS, Javascript </Text>
+            <Text>HTML, CSS, Javascript, Image </Text>
           </SecondBox>
           <ThirdBox>
             <CText>Dev Tools:</CText>
             <ColumnContainer>
-              {FrontEndToolsList.map(tool => (
-                <List>{tool}</List>
+              {FrontEndToolsList.map((tool, index) => (
+                <List key={index}>{tool}</List>
               ))}
             </ColumnContainer>
           </ThirdBox>
@@ -153,8 +152,8 @@ const SkillBox: React.FunctionComponent<any> = () => (
           <ThirdBox>
             <CText>Dev Tools:</CText>
             <ColumnContainer>
-              {BackEndToolsList.map(tool => (
-                <List>{tool}</List>
+              {BackEndToolsList.map((tool, index) => (
+                <List key={index}>{tool}</List>
               ))}
             </ColumnContainer>
           </ThirdBox>
@@ -175,8 +174,8 @@ const SkillBox: React.FunctionComponent<any> = () => (
           <ThirdBox>
             <CText>Design Tools:</CText>
             <ColumnContainer>
-              {ArchitectureToolsList.map(tool => (
-                <List>{tool}</List>
+              {ArchitectureToolsList.map((tool, index) => (
+                <List key={index}>{tool}</List>
               ))}
             </ColumnContainer>
           </ThirdBox>

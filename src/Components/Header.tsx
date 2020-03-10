@@ -5,13 +5,13 @@ import styled from "../Styles/typed-components";
 
 import { RouteComponentProps, withRouter } from "react-router";
 import { keyframes } from "styled-components";
+import Contact from "./Contact";
 
 const Container = styled.header`
   background-color: ${props => props.theme.bgColor};
   height: 45px;
   width: 100%;
   border-top: none;
-  position: fixed;
   top: 0;
   z-index: 10;
   border-bottom: 1px solid ${props => props.theme.greyColor};
@@ -60,23 +60,35 @@ const ModalOverlay = styled.div`
 `;
 
 const Modal = styled.div`
-  top: 30%;
-  width: 400px;
-  @media screen and (max-width: 965px) {
-    width: 90%;
-  }
   z-index: 10;
   position: absolute;
+  width: 800px;
   margin-top: 80px;
   animation: ${ModalAnimation} 0.1s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
-
-const Text = styled.div`
+const SText = styled.p`
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 20px;
+`;
+const Text = styled.p`
+  cursor: pointer;
   font-size: 15px;
 `;
 
-const CText = styled.div`
+const CText = styled.p`
   font-size: 30px;
+`;
+
+const Bold = styled.p`
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
 `;
 
 const TextContainer = styled.div`
@@ -93,7 +105,18 @@ const Header: React.FunctionComponent<IProps> = () => {
       {modalOpen && (
         <ModalContainer>
           <ModalOverlay onClick={() => setModalOpen(false)} />
-          <Modal>Contact Mail</Modal>
+          <Modal>
+            <Bold>Hi, I’m Minjae Lee. Nice to meet you.</Bold>
+            <SText>
+              Since beginning my journey as a freelance designer nearly 8 years
+              ago, I've done remote work for agencies, consulted for startups,
+              and collaborated with talented people to create digital products
+              for both business and consumer use. I'm quietly confident,
+              naturally curious, and perpetually working on improving my chops
+              one design problem at a time.
+            </SText>
+            <Contact />
+          </Modal>
         </ModalContainer>
       )}
       <Wrapper>

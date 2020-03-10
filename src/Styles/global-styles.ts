@@ -10,12 +10,13 @@ const GlobalStyle = createGlobalStyle`
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Qwigley';
         background-color: ${props => props.theme.bgColor};
         color: ${props => props.theme.color};
-        font-size: 16px;
-        font-weight: 0
-        
+        font-size: 20px;
+        font-weight: lighter;
+        letter-spacing: 1px;
     }
     p{
         line-height: 22px;
+        font-weight: lighter;
     }
     a{ 
         color:inherit;
