@@ -141,7 +141,6 @@ const Architecture: React.FunctionComponent<any> = () => {
               }}
             >
               <ProgressiveImage
-                delay={3000}
                 key={index}
                 src={ArchitectureImages.main}
                 placeholder={ArchitectureImages.thumbnail}
