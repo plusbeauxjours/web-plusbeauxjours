@@ -11,10 +11,6 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const Img = styled.img`
-  width: 1200px;
-`;
-
 const ModalContainer = styled.div`
   z-index: 8;
   display: flex;
@@ -75,6 +71,11 @@ const ImageContainer = styled.div`
   }
 `;
 
+const Img = styled.img<IProps>`
+  width: 1200px;
+  filter: ${props => (props.loading ? "blur(6px)" : "")};
+`;
+
 const ArchitectureImages = [
   {
     main: "https://imgur.com/ErfydkQ.jpg",
@@ -110,6 +111,10 @@ const ArchitectureImages = [
   }
 ];
 
+interface IProps {
+  loading: any;
+}
+
 const Architecture: React.FunctionComponent<any> = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [key, setKey] = useState<number>(0);
@@ -136,12 +141,18 @@ const Architecture: React.FunctionComponent<any> = () => {
               }}
             >
               <ProgressiveImage
+                delay={3000}
                 key={index}
                 src={ArchitectureImages.main}
                 placeholder={ArchitectureImages.thumbnail}
               >
-                {src => (
-                  <Img style={{ width: "1200px" }} src={src} alt="an image" />
+                {(src, loading) => (
+                  <Img
+                    loading={loading}
+                    style={{ width: "1200px" }}
+                    src={src}
+                    alt="an image"
+                  />
                 )}
               </ProgressiveImage>
             </ImageContainer>
