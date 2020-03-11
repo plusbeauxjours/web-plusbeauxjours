@@ -16,18 +16,21 @@ const Field = styled.div`
 
 const Input = styled.input`
   background-color: ${props => props.theme.modalOverlayColor};
-  position: relative;
   border: 1px solid ${props => props.theme.thumbShadowColor};
+  position: relative;
   border-radius: 10px;
   height: 50px;
-  width: 100%;
-  max-width: 390px;
+  min-width: 380px;
+  max-width: 100%;
   z-index: 5;
   font-size: 20px;
   font-weight: lighter;
   padding-left: 20px;
   &:focus {
     outline-style: none;
+  }
+  @media screen and (max-width: 820px) {
+    width: 820px;
   }
 `;
 
@@ -53,7 +56,11 @@ const InputRow = styled.div`
   width: 100%;
   max-width: 800px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
 `;
 
 const NameInputWrapper = styled(InputWrapper)`

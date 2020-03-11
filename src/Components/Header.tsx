@@ -92,6 +92,7 @@ const Bold = styled.div`
   font-weight: 600;
   margin-bottom: 30px;
   text-align: center;
+  padding: 0 10px;
 `;
 
 const TextContainer = styled.div`
