@@ -21,22 +21,21 @@ const TextBox = styled.div`
   align-items: center;
   text-align: center;
   position: relative;
-  margin: 30px 0;
+  margin: 80px 0;
 `;
 
 const Text = styled.p`
   width: 80%;
 `;
 
-const Img = styled.img`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+const Line = styled.div`
+  border-bottom: 1px solid ${props => props.theme.borderColor};
 `;
 
 const TestimonialBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
+      <Line />
       <TextBox>
         <Bold>Testimonial</Bold>
         <Text>People I've met with have said some nice things...</Text>

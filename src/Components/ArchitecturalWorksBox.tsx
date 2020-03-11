@@ -22,7 +22,6 @@ const Box = styled.div`
   align-items: center;
   text-align: center;
   position: relative;
-  margin-bottom: 150px;
 `;
 
 const Text = styled.p`
@@ -53,6 +52,13 @@ const ImgContainer = styled.div`
   margin-top: 30px;
 `;
 
+const TextBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+`;
+
 const ArchitectureImages = [
   {
     main: "https://imgur.com/XVuDk5d.jpg",
@@ -72,13 +78,15 @@ const ArchitecturalWorksBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
       <Box>
-        <Bold>My Architectural Works</Bold>
-        <Text>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </Text>
+        <TextBox>
+          <Bold>My Architectural Works</Bold>
+          <Text>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </Text>
+        </TextBox>
         {ArchitectureImages.map((ArchitectureImages, index) => (
           <Link to={"/architecture"} key={index}>
             <ImgContainer>

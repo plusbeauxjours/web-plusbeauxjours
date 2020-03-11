@@ -6,7 +6,8 @@ import ProfileBox from "../Components/ProfileBox";
 import ArchitecturalWorksBox from "../Components/ArchitecturalWorksBox";
 import PortfolioBox from "../Components/PortfolioBox";
 import TestimonialBox from "../Components/TestimonialBox";
-
+import PortfolioThumbnail from "../Components/PortfolioThumbnail";
+import Footer from "../Components/Footer";
 import MainBox from "../Components/MainBox";
 
 const Container = styled.div`
@@ -19,6 +20,13 @@ const ColumnContainer = styled.div`
   align-items: center;
 `;
 
+const PortfolioContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 300px;
+`;
+
 const Text = styled.p``;
 
 const HomeHome: React.FunctionComponent<any> = () => (
@@ -28,12 +36,16 @@ const HomeHome: React.FunctionComponent<any> = () => (
     </Helmet>
     <MainBox />
     <ColumnContainer>
-      <ProfileBox/>
-      <SkillBox/>
+      <ProfileBox />
+      <SkillBox />
     </ColumnContainer>
-    <PortfolioBox />
+    <PortfolioContainer>
+      <PortfolioBox />
+      <PortfolioThumbnail />
+    </PortfolioContainer>
     <ArchitecturalWorksBox />
-    <TestimonialBox/>
+    <TestimonialBox />
+    <Footer />
   </Container>
 );
 

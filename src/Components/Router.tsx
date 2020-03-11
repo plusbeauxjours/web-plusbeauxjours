@@ -13,7 +13,6 @@ import Architecture from "../Routes/Architecture";
 import Header from "./Header";
 import Portfolio from "../Routes/Portfolio";
 import styled from "../Styles/typed-components";
-import Footer from "../Components/Footer";
 
 const Wrapper = styled.div`
   padding-top: 45px;
@@ -42,7 +41,6 @@ export default () => (
       <Route path="/portfolio/app/kawai-todo-app" component={KawaiTodoApp} />
       {/* architectural works */}
       <Route path="/architecture" component={Architecture} />
-      <Footer />
     </Wrapper>
   </Router>
 );

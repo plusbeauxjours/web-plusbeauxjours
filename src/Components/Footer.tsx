@@ -58,6 +58,10 @@ const ContactBoldTextBox = styled.div`
 
 const Text = styled.div``;
 
+const FooterText = styled.div`
+  font-weight: 200;
+`;
+
 const ContactContainer = styled.div`
   background-color: ${props => props.theme.darkBlueColor};
   width: 90%;
@@ -186,7 +190,7 @@ const Footer: React.FunctionComponent<any> = () => {
             </ContactBoldTextBox>
           </ContactContainer>
           <Box>
-            <Text>Making & Learning and Traveling</Text>
+            <FooterText>"Making hard, Learning hard, Living hard"</FooterText>
             <SText>Handcrafted by plusbeauxjours © twentytwenty</SText>
           </Box>
         </ColumnContainer>
