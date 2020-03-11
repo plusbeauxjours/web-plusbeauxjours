@@ -87,7 +87,6 @@ const Btn = styled.button`
   justify-content: center;
   align-items: center;
   border: none;
-
 `;
 
 const ModalAnimation = keyframes`
@@ -143,12 +142,12 @@ const ModalText = styled.div`
 `;
 
 const Icon = styled.div`
-margin-top: 3px;
-margin-right: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
   svg {
     fill: ${props => props.theme.whiteColor};
   }
-`
+`;
 
 const Footer: React.FunctionComponent<any> = () => {
   const [modelOpen, setModalOpen] = useState<boolean>(false);
@@ -177,7 +176,12 @@ const Footer: React.FunctionComponent<any> = () => {
               <ContactBold>THANKS!</ContactBold>
               <Text>Want to chat about something?</Text>
               <BtnContainer onClick={() => setModalOpen(true)}>
-                <Btn><Icon><ContactMailIcon/></Icon>CONTACT ME</Btn>
+                <Btn>
+                  <Icon>
+                    <ContactMailIcon />
+                  </Icon>
+                  CONTACT ME
+                </Btn>
               </BtnContainer>
             </ContactBoldTextBox>
           </ContactContainer>

@@ -5,6 +5,7 @@ import SkillBox from "../Components/SkillBox";
 import ProfileBox from "../Components/ProfileBox";
 import ArchitecturalWorksBox from "../Components/ArchitecturalWorksBox";
 import PortfolioBox from "../Components/PortfolioBox";
+import TestimonialBox from "../Components/TestimonialBox";
 
 import MainBox from "../Components/MainBox";
 
@@ -32,6 +33,7 @@ const HomeHome: React.FunctionComponent<any> = () => (
     </ColumnContainer>
     <PortfolioBox />
     <ArchitecturalWorksBox />
+    <TestimonialBox/>
   </Container>
 );
 

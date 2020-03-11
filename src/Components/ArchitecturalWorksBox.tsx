@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
-  margin-bottom: 500px;
+  margin-bottom: 300px;
 `;
 
 const Bold = styled.div`
