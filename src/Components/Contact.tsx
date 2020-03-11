@@ -15,8 +15,8 @@ const Field = styled.div`
 `;
 
 const Input = styled.input`
-  background-color: ${props => props.theme.modalOverlayColor};
-  border: 1px solid ${props => props.theme.thumbShadowColor};
+  background-color: ${props => props.theme.modalBgColor};
+  border: 1px solid ${props => props.theme.blackColor};
   position: relative;
   border-radius: 10px;
   height: 50px;
@@ -45,8 +45,8 @@ const InputWrapper = styled.div<IProps>`
     z-index: 100;
     letter-spacing: 1px;
     left: 20px;
-    color: ${props => props.theme.thumbShadowColor};
-    font-size: ${({ focused }) => (focused ? "11px" : "18px")};
+    color: ${props => props.theme.blackColor};
+    font-size: ${({ focused }) => (focused ? "11px" : "20px")};
     transform: ${({ focused }) =>
       focused ? "translateY(-40px) translateX(-20px);" : "translateY(-40%);"};
   }
@@ -93,8 +93,8 @@ const Textarea = styled.textarea`
   resize: none;
   overflow-y: hidden;
   font-weight: lighter;
-  background: ${props => props.theme.modalOverlayColor};
-  border: 1px solid ${props => props.theme.thumbShadowColor};
+  background: ${props => props.theme.modalBgColor};
+  border: 1px solid ${props => props.theme.blackColor};
 `;
 
 const BtnContainer = styled.div`
@@ -105,7 +105,7 @@ const BtnContainer = styled.div`
 const Btn = styled.button`
   width: 300px;
   height: 45px;
-  margin-top: 20px;
+  margin-top: 30px;
   background-color: ${props => props.theme.blueColor};
   color: ${props => props.theme.whiteColor};
   border-radius: 15px;
@@ -114,6 +114,7 @@ const Btn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 `;
 
 interface IProps {
@@ -168,7 +169,7 @@ const Contact: React.FunctionComponent<any> = () => {
           />
         </TextInputWrapper>
         <BtnContainer>
-          <Btn>Submit</Btn>
+          <Btn>SUBMIT</Btn>
         </BtnContainer>
       </Form>
     </Container>

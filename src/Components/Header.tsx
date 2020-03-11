@@ -71,6 +71,7 @@ const Modal = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 const SText = styled.div`
   margin-bottom: 50px;
   text-align: center;
@@ -78,6 +79,7 @@ const SText = styled.div`
   font-size: 20px;
   padding: 0 10px;
 `;
+
 const Text = styled.div`
   cursor: pointer;
   font-size: 15px;

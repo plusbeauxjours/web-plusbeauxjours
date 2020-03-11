@@ -18,6 +18,7 @@ const TextBox = styled.div`
   align-items: center;
   margin-top: 50px;
   text-align: center;
+  padding-top: 50px;
 `;
 
 const Text = styled.p``;

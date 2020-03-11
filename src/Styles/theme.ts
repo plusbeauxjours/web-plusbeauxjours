@@ -1,19 +1,14 @@
 const theme = {
-  headerColor: "#EFEFEF",
   bgColor: "#ffffff",
+  darkBlueColor: "#1c476e",
   color: "#191919",
   greyColor: "#999",
-  blackColor: "#262626",
   blueColor: "#3897f0",
   whiteColor: "#FFFFFF",
-  boxBorder: "1px solid #999",
-  darkBlueColor: "#003569",
-  modalOverlayColor: "rgba(230, 230, 230, 0.85)",
-  modalBgColor: "rgba(255, 255, 255, 0.6)",
+  modalOverlayColor: "rgba(230, 230, 230, 0.93)",
+  modalBgColor: "rgba(230, 230, 230, 0.4)",
   borderColor: "rgba(207, 207, 207, 0.7)",
-  thumbShadowColor: "rgba(0, 0, 0, 0.5)",
-  hoverColor: "#b7b7b7",
-  shadowColor: "rgba(207, 207, 207, 0.6)"
+  blackColor: "rgba(0, 0, 0, 0.5)"
 };
 
 export { theme };

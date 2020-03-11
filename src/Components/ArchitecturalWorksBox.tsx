@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
+  margin-bottom: 500px;
 `;
 
 const Bold = styled.div`
@@ -73,10 +74,10 @@ const ArchitecturalWorksBox: React.FunctionComponent<any> = () => (
       <Box>
         <Bold>My Architectural Works</Bold>
         <Text>
-          I'm a bit of a digital product junky. Over the years, I've used
-          hundreds of web and mobile apps in different industries and verticals.
-          Eventually, I decided that it would be a fun challenge to try
-          designing and building my own.
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
         </Text>
         {ArchitectureImages.map((ArchitectureImages, index) => (
           <Link to={"/architecture"} key={index}>
