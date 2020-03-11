@@ -6,6 +6,7 @@ const Container = styled.div`
   background-color: ${props => props.theme.blueColor};
   height: 800px;
   width: 100%;
+  color: ${props => props.theme.whiteColor};
 `;
 
 const Bold = styled.div`

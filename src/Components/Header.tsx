@@ -110,14 +110,13 @@ const Header: React.FunctionComponent<IProps> = () => {
         <ModalContainer>
           <ModalOverlay onClick={() => setModalOpen(false)} />
           <Modal>
-            <Bold>Hi, I’m Minjae Lee. Nice to meet you.</Bold>
+            <Bold>
+              Thanks for taking the time to reach out. How can I help you today?
+            </Bold>
             <SText>
-              Since beginning my journey as a freelance designer nearly 8 years
-              ago, I've done remote work for agencies, consulted for startups,
-              and collaborated with talented people to create digital products
-              for both business and consumer use. I'm quietly confident,
-              naturally curious, and perpetually working on improving my chops
-              one design problem at a time.
+              Interested in working together? We should queue up a chat. I’ll
+              buy the coffee. I’m always open to discussing project or
+              partnership opportunities.
             </SText>
             <Contact />
           </Modal>

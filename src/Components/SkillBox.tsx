@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "../Styles/typed-components";
 import Wrapper from "./Wrapper";
+import { FrontEndIcon, BackEndIcon, ArchitectureIcon } from "../Icons";
 
 const Container = styled.div`
   background-color: ${props => props.theme.whiteColor};
@@ -14,11 +15,17 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  @media screen and (max-width: 1200px) {
+    height: 100%;
+  }
 `;
 
 const BoxContainer = styled.span`
   display: flex;
   flex-wrap: nowrap;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 const DevidedContainer = styled.div`
@@ -33,10 +40,23 @@ const DevidedContainer = styled.div`
   &:not(:last-child) {
     border-right: 1px solid ${props => props.theme.borderColor};
   }
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    &:not(:last-child) {
+      border-right: none;
+      border-bottom: 1px solid ${props => props.theme.borderColor};
+    }
+  }
 `;
 
 const Icon = styled.div`
-  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  svg {
+    fill: ${props => props.theme.blueColor};
+  }
 `;
 const Bold = styled.p`
   font-size: 20px;
@@ -56,6 +76,9 @@ const Text = styled.p`
 
 const ColumnContainer = styled.div`
   height: 500px;
+  @media screen and (max-width: 1200px) {
+    height: 100%;
+  }
 `;
 const List = styled.p`
   margin: 0 0 10px 0;
@@ -116,7 +139,9 @@ const SkillBox: React.FunctionComponent<any> = () => (
       <BoxContainer>
         <DevidedContainer>
           <FirstBox>
-            <Icon></Icon>
+            <Icon>
+              <FrontEndIcon />
+            </Icon>
             <Bold>Front-end Developer</Bold>
             <Text>
               I like to code things from scratch, and enjoy bringing ideas to
@@ -138,7 +163,9 @@ const SkillBox: React.FunctionComponent<any> = () => (
         </DevidedContainer>
         <DevidedContainer>
           <FirstBox>
-            <Icon></Icon>
+            <Icon>
+              <BackEndIcon />
+            </Icon>
             <Bold>Back-end Developer</Bold>
             <Text>
               I like to code things from scratch, and enjoy bringing ideas to
@@ -160,7 +187,9 @@ const SkillBox: React.FunctionComponent<any> = () => (
         </DevidedContainer>
         <DevidedContainer>
           <FirstBox>
-            <Icon></Icon>
+            <Icon>
+              <ArchitectureIcon />
+            </Icon>
             <Bold>Architecture Designer</Bold>
             <Text>
               I like to code things from scratch, and enjoy bringing ideas to
