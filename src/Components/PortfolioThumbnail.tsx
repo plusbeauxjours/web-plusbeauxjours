@@ -39,9 +39,9 @@ const Square = styled.div`
   padding-bottom: 100%;
 `;
 const ImageAnimation = keyframes`
-  from { transform:none;}
-   50%   {  transform:scale(1.1); } 
-   to     {transform:none; }
+  from { transform:none; }
+   50%   { transform:scale(1.1); } 
+   to     { transform:none; }
   `;
 const Img = styled.img`
   &:hover {
@@ -87,15 +87,15 @@ const Btn = styled.button`
   width: 300px;
   height: 45px;
   margin-top: 30px;
-  background-color: ${props => props.theme.blueColor};
-  color: ${props => props.theme.whiteColor};
+  background-color: ${props => props.theme.bgColor};
+  border: 2px solid ${props => props.theme.borderColor};
   border-radius: 15px;
   font-size: 20px;
+  font-weight: 100;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
 `;
 
 const SkillBox: React.FunctionComponent<any> = () => (

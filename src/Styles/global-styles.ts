@@ -13,9 +13,9 @@ const GlobalStyle = createGlobalStyle`
         font-size: 20px;
         font-weight: lighter;
         letter-spacing: 1px;
+        line-height: 24px;
     }
     p{
-        line-height: 22px;
         font-weight: lighter;
     }
     a{ 
