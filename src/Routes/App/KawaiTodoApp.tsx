@@ -2,6 +2,7 @@ import React from "react";
 import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
+import ProgressiveImage from "react-progressive-image";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
@@ -22,6 +23,7 @@ const ColorContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 200px;
 `;
 
 const ColorBox = styled.div<IProps>`
@@ -39,6 +41,36 @@ const ColorBox = styled.div<IProps>`
   }
 `;
 
+const SketchContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+`;
+
+const ImageContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
+
+const Img = styled.img<IProps>`
+  width: 100%;
+  filter: ${props => (props.loading ? "blur(6px)" : "")};
+`;
+
+const ScreenshotContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+`;
+
+const Screenshot = styled.img<IProps>`
+  width: 100%;
+  max-width: 400px;
+  filter: ${props => (props.loading ? "blur(6px)" : "")};
+`;
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
@@ -58,7 +90,8 @@ const Text = styled.div`
 `;
 
 interface IProps {
-  color: string;
+  loading?: boolean;
+  color?: string;
 }
 
 const KawaiTodoColors = ["#F23657", "#FFFFFF"];
@@ -82,9 +115,36 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => (
             design problem at a time.
           </Text>
         </TextBox>
-        <TextBox>
-          <Text>FRONTEND SKETCH | BACKEND SKETCH</Text>
-        </TextBox>
+        <SketchContainer>
+          <ProgressiveImage
+            src={"https://imgur.com/8ZE2kiH.jpg"}
+            placeholder={"https://imgur.com/AWMJDgz.jpg"}
+          >
+            {(src, loading) => (
+              <ImageContainer>
+                <Img
+                  style={{ maxWidth: "200px", marginRight: "30px" }}
+                  loading={loading}
+                  src={src}
+                />
+              </ImageContainer>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={"https://imgur.com/yErTt0I.jpg"}
+            placeholder={"https://imgur.com/KsThdJ5.jpg"}
+          >
+            {(src, loading) => (
+              <ImageContainer>
+                <Img
+                  style={{ maxWidth: "400px" }}
+                  loading={loading}
+                  src={src}
+                />
+              </ImageContainer>
+            )}
+          </ProgressiveImage>
+        </SketchContainer>
         <TextBox>
           <Text>
             ABOUT BACKEND
@@ -96,9 +156,6 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => (
             design problem at a time.
           </Text>
         </TextBox>
-        <TextBox>
-          <Text>BACKEND DIAGRAM</Text>
-        </TextBox>
         <ColorContainer>
           {KawaiTodoColors.map((color, index) => (
             <ColorBox color={color} key={index}>
@@ -108,12 +165,51 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => (
             </ColorBox>
           ))}
         </ColorContainer>
-        <TextBox>
-          <Text>VIDEO | SCREENSHOT 1 | SCREENSHOT 2 | SCREENSHOT 3</Text>
-        </TextBox>
+        <ScreenshotContainer>
+          <ProgressiveImage
+            src={"https://imgur.com/Blzz3uR.jpg"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+          >
+            {(src, loading) => (
+              <ImageContainer>
+                <Screenshot loading={loading} src={src} />
+              </ImageContainer>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={"https://imgur.com/Blzz3uR.jpg"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+          >
+            {(src, loading) => (
+              <ImageContainer>
+                <Screenshot loading={loading} src={src} />
+              </ImageContainer>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={"https://imgur.com/QD1XQPy.jpg"}
+            placeholder={"https://imgur.com/iFkI2wR.jpg"}
+          >
+            {(src, loading) => (
+              <ImageContainer>
+                <Screenshot loading={loading} src={src} />
+              </ImageContainer>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={"https://imgur.com/scPZA9d.jpg"}
+            placeholder={"https://imgur.com/TRheCeq.jpg"}
+          >
+            {(src, loading) => (
+              <ImageContainer>
+                <Screenshot loading={loading} src={src} />
+              </ImageContainer>
+            )}
+          </ProgressiveImage>
+        </ScreenshotContainer>
         <TextBox>
           <Text>
-            ABOUT BACKEND
+            LONG TERM GAINS
             <br /> Since beginning my journey as a freelance designer nearly 8
             years ago, I've done remote work for agencies, consulted for
             startups, and collaborated with talented people to create digital
