@@ -5,8 +5,8 @@ const theme = {
   greyColor: "#999",
   blueColor: "#3897f0",
   whiteColor: "#FFFFFF",
-  modalOverlayColor: "rgba(230, 230, 230, 0.93)",
-  modalBgColor: "rgba(230, 230, 230, 0.4)",
+  modalOverlayColor: "rgba(250, 250, 250, 0.93)",
+  modalBgColor: "rgba(250, 250, 250, 0.4)",
   borderColor: "rgba(207, 207, 207, 0.7)",
   blackColor: "rgba(0, 0, 0, 0.5)"
 };

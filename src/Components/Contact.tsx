@@ -45,7 +45,6 @@ const InputWrapper = styled.div<IProps>`
     z-index: 100;
     letter-spacing: 1px;
     left: 20px;
-    color: ${props => props.theme.blackColor};
     font-size: ${({ focused }) => (focused ? "11px" : "20px")};
     transform: ${({ focused }) =>
       focused ? "translateY(-40px) translateX(-20px);" : "translateY(-40%);"};

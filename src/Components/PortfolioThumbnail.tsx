@@ -22,7 +22,7 @@ const GridContainer = styled.div`
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, minmax(100px, auto));
+  grid-template-rows: repeat(2, minmax(100px, auto));
   @media screen and (max-width: 1100px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -73,6 +73,29 @@ const Text = styled.div`
 `;
 const TextBox = styled.div`
   position: absolute;
+`;
+
+const BtnContainer = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+`;
+
+const Btn = styled.button`
+  width: 300px;
+  height: 45px;
+  margin-top: 30px;
+  background-color: ${props => props.theme.blueColor};
+  color: ${props => props.theme.whiteColor};
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
 `;
 
 const SkillBox: React.FunctionComponent<any> = () => (
@@ -223,8 +246,12 @@ const SkillBox: React.FunctionComponent<any> = () => (
             </InnerBox>
           </Square>
         </Link>
-        <Link to={"/app/fukin-weather-app"}></Link>
       </GridContainer>
+      <Link to={"/portfolio"}>
+        <BtnContainer>
+          <Btn>SEE MORE</Btn>
+        </BtnContainer>
+      </Link>
     </Wrapper>
   </Container>
 );
