@@ -13,6 +13,7 @@ const Bold = styled.div`
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 30px;
+  line-height: 40px;
 `;
 
 const TextBox = styled.div`

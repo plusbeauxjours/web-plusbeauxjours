@@ -85,12 +85,13 @@ const List = styled.p`
 `;
 
 const FirstBox = styled.div`
-  height: 280px;
+  height: 300px;
 `;
 const SecondBox = styled.div`
   height: 120px;
 `;
 const ThirdBox = styled.div`
+  line-height: 20px;
   height: 400px;
 `;
 
@@ -100,9 +101,9 @@ const FrontEndToolsList = [
   "Typescript",
   "React",
   "React-Native",
+  "Styled-Components",
   "Tailwind",
   "Apollo",
-  "Redux",
   "Sketch",
   "Github",
   "Terminal",

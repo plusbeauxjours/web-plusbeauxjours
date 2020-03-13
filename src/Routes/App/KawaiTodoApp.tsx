@@ -1,20 +1,76 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
+import { Link } from "react-router-dom";
+import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
+import { keyframes } from "styled-components";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
 `;
 
-const MiddleContainer = styled.div``;
-
 const PortfolioMainContainer = styled.div`
   background-color: ${props => props.theme.bgColor};
   display: flex;
+  justify-content: space-around;
   height: 400px;
   border-bottom: 1px solid ${props => props.theme.borderColor};
+  @media screen and (max-width: 830px) {
+    flex-direction: column;
+    align-items: center;
+    height: 830px;
+  }
+`;
+
+const MainTitilBox = styled.div`
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 830px) {
+    margin-bottom: 30px;
+  }
+`;
+
+const MainTitle = styled.div`
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 40px;
+`;
+
+const MainTitleText = styled.div`
+  margin-top: 5px;
+  font-size: 15px;
+`;
+
+const MainImageBox = styled.div`
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 830px) {
+    margin-bottom: 30px;
+  }
+`;
+
+const MainTitleTextContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  border-top: 1px solid ${props => props.theme.borderColor};
+`;
+
+const LinkContainer = styled.div`
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  margin-top: 30px;
 `;
 
 const ColorContainer = styled.div`
@@ -45,7 +101,6 @@ const SketchContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 10px;
 `;
 
 const ImageContainer = styled.div`
@@ -89,6 +144,58 @@ const Text = styled.div`
   text-align: center;
 `;
 
+const IconContainer = styled.div``;
+
+const ModalAnimation = keyframes`
+	  from{
+	    opacity:0;
+	    transform:scale(1.1);
+	  }
+	  to{
+	    opacity:1;
+	    transform:none;
+	  }
+  `;
+
+const ModalContainer = styled.div`
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+`;
+
+const ModalOverlay = styled.div`
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: ${props => props.theme.modalOverlayColor};
+`;
+
+const Modal = styled.div`
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 80px;
+  animation: ${ModalAnimation} 0.1s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const QR = styled.div`
+  width: 300px;
+  height: 300px;
+  background-color: red;
+`;
+
 interface IProps {
   loading?: boolean;
   color?: string;
@@ -96,14 +203,52 @@ interface IProps {
 
 const KawaiTodoColors = ["#F23657", "#FFFFFF"];
 
-const KawaiTodoApp: React.FunctionComponent<any> = () => (
-  <Container>
-    <Helmet>
-      <title>Kawai Todo-app | Plusbeauxjours</title>
-    </Helmet>
-    <Wrapper>
-      <MiddleContainer>
-        <PortfolioMainContainer />
+const KawaiTodoApp: React.FunctionComponent<any> = () => {
+  const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
+  const [appleModalOpen, setAppleModalOpen] = useState<boolean>(false);
+  return (
+    <Container>
+      <Helmet>
+        <title>Kawai Todo-app | Plusbeauxjours</title>
+      </Helmet>
+      {androidModalOpen && (
+        <ModalContainer>
+          <ModalOverlay onClick={() => setAndroidModalOpen(false)} />
+          <Modal>
+            <QR />
+          </Modal>
+        </ModalContainer>
+      )}
+      {appleModalOpen && (
+        <ModalContainer>
+          <ModalOverlay onClick={() => setAppleModalOpen(false)} />
+          <Modal>
+            <QR />
+          </Modal>
+        </ModalContainer>
+      )}
+      <Wrapper>
+        <PortfolioMainContainer>
+          <MainTitilBox>
+            <MainTitle>Kawai To do - App</MainTitle>
+            <MainTitleTextContainer>
+              <MainTitleText>8th Mar 2018 - 14th Mar 2018</MainTitleText>
+              <MainTitleText>1 WEEK</MainTitleText>
+            </MainTitleTextContainer>
+            <LinkContainer>
+              <IconContainer onClick={() => setAndroidModalOpen(true)}>
+                <AndroidIcon />
+              </IconContainer>
+              <IconContainer onClick={() => setAppleModalOpen(true)}>
+                <AppleIcon />
+              </IconContainer>
+              <a href={"https://github.com/plusbeauxjours/kawai-todo"}>
+                <GithubIcon />
+              </a>
+            </LinkContainer>
+          </MainTitilBox>
+          <MainImageBox></MainImageBox>
+        </PortfolioMainContainer>
         <TextBox>
           <Text>
             INTRO
@@ -218,9 +363,9 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => (
             design problem at a time.
           </Text>
         </TextBox>
-      </MiddleContainer>
-    </Wrapper>
-  </Container>
-);
+      </Wrapper>
+    </Container>
+  );
+};
 
 export default KawaiTodoApp;

@@ -10,6 +10,8 @@ const Container = styled.div`
 const Bold = styled.div`
   font-size: 40px;
   font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 30px;
 `;
 
 const TextBox = styled.div`
@@ -27,8 +29,9 @@ const MainBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
       <TextBox>
-        <Bold>Architecture Designer,</Bold>
-        <Bold style={{ marginBottom: "30px" }}>
+        <Bold>
+          Architecture Designer,
+          <br />
           Front-end Developer & Back-end Developer
         </Bold>
         <Text>I design and build a building before.</Text>
