@@ -3,7 +3,8 @@ import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
-import { WebIcon, AppleIcon, GithubIcon } from "../../Icons";
+import { Link } from "react-router-dom";
+import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
 
 const Container = styled.div`
@@ -57,7 +58,7 @@ const MainTitleTextContainer = styled.div`
 
 const LinkContainer = styled.div`
   display: flex;
-  width: 100px;
+  width: 150px;
   justify-content: space-between;
   margin-top: 30px;
 `;
@@ -194,13 +195,13 @@ interface IProps {
 
 const KawaiTodoColors = ["#F23657", "#FFFFFF"];
 
-const MovieWeb: React.FunctionComponent<any> = () => {
+const MovieApp: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
   const [appleModalOpen, setAppleModalOpen] = useState<boolean>(false);
   return (
     <Container>
       <Helmet>
-        <title>Movie-web | Plusbeauxjours</title>
+        <title>Movie-app | Plusbeauxjours</title>
       </Helmet>
       {androidModalOpen && (
         <ModalContainer>
@@ -221,16 +222,19 @@ const MovieWeb: React.FunctionComponent<any> = () => {
       <Wrapper>
         <PortfolioMainContainer>
           <MainTitilBox>
-            <MainTitle>Movie - Web</MainTitle>
+            <MainTitle>Movie - App</MainTitle>
             <MainTitleTextContainer>
               <MainTitleText>8th Mar 2018 - 14th Mar 2018</MainTitleText>
               <MainTitleText>1 WEEK</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
-            <a href={"https://musing-roentgen-9a0963.netlify.com"}>
-                <WebIcon />
-              </a>
-              <a href={"https://github.com/plusbeauxjours/petflix"}>
+              <IconContainer onClick={() => setAndroidModalOpen(true)}>
+                <AndroidIcon />
+              </IconContainer>
+              <IconContainer onClick={() => setAppleModalOpen(true)}>
+                <AppleIcon />
+              </IconContainer>
+              <a href={"https://github.com/plusbeauxjours/kawai-todo"}>
                 <GithubIcon />
               </a>
             </LinkContainer>
@@ -355,4 +359,4 @@ const MovieWeb: React.FunctionComponent<any> = () => {
   );
 };
 
-export default MovieWeb;
+export default MovieApp;

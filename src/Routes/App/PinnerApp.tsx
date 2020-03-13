@@ -126,6 +126,9 @@ const ColorText = styled.div<IProps>`
       return "#318CEE";
     }
   }};
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 `;
 
 const TextBox = styled.div`

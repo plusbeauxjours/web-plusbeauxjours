@@ -9,6 +9,7 @@ import NoteWeb from "../Routes/Web/NoteWeb";
 import PinnerApp from "../Routes/App/PinnerApp";
 import FukinWeatherApp from "../Routes/App/FukinWeatherApp";
 import KawaiTodoApp from "../Routes/App/KawaiTodoApp";
+import MovieApp from "../Routes/App/MovieApp";
 import Architecture from "../Routes/Architecture";
 import Header from "./Header";
 import Portfolio from "../Routes/Portfolio";
@@ -39,6 +40,7 @@ export default () => (
         component={FukinWeatherApp}
       />
       <Route path="/portfolio/app/kawai-todo-app" component={KawaiTodoApp} />
+      <Route path="/portfolio/app/movie-app" component={MovieApp} />
       {/* architectural works */}
       <Route path="/architecture" component={Architecture} />
     </Wrapper>

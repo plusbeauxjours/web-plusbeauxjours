@@ -223,7 +223,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
             </InnerBox>
           </Square>
         </Link>
-        <Link to={"/app/fukin-weather-app"}>
+        <Link to={"/portfolio/app/fukin-weather-app"}>
           <Square>
             <InnerBox>
               <ProgressiveImage
