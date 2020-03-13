@@ -48,16 +48,6 @@ const MainTitleText = styled.div`
   font-size: 15px;
 `;
 
-const MainImageBox = styled.div`
-  width: 400px;
-  height: 400px;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 830px) {
-    margin-bottom: 30px;
-  }
-`;
-
 const MainTitleTextContainer = styled.div`
   display: flex;
   width: 100%;
@@ -144,7 +134,9 @@ const Text = styled.div`
   text-align: center;
 `;
 
-const IconContainer = styled.div``;
+const IconContainer = styled.div`
+  cursor: pointer;
+`;
 
 const ModalAnimation = keyframes`
 	  from{
@@ -247,7 +239,6 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
               </a>
             </LinkContainer>
           </MainTitilBox>
-          <MainImageBox></MainImageBox>
         </PortfolioMainContainer>
         <TextBox>
           <Text>
