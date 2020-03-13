@@ -101,6 +101,7 @@ const ImageContainer = styled.div`
 
 const Img = styled.img<IProps>`
   width: 100%;
+  height: 100%;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
