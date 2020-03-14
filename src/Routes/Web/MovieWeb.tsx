@@ -227,10 +227,10 @@ const MovieWeb: React.FunctionComponent<any> = () => {
               <MainTitleText>1 WEEK</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
-            <a href={"https://musing-roentgen-9a0963.netlify.com"}>
+            <a  target="_blank" href={"https://musing-roentgen-9a0963.netlify.com"}>
                 <WebIcon />
               </a>
-              <a href={"https://github.com/plusbeauxjours/petflix"}>
+              <a  target="_blank" href={"https://github.com/plusbeauxjours/petflix"}>
                 <GithubIcon />
               </a>
             </LinkContainer>

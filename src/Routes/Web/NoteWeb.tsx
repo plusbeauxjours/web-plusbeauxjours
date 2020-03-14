@@ -234,7 +234,7 @@ const NoteWeb: React.FunctionComponent<any> = () => {
               <IconContainer onClick={() => setAppleModalOpen(true)}>
                 <AppleIcon />
               </IconContainer>
-              <a href={"https://github.com/plusbeauxjours/kawai-todo"}>
+              <a  target="_blank" href={"https://github.com/plusbeauxjours/kawai-todo"}>
                 <GithubIcon />
               </a>
             </LinkContainer>

@@ -95,6 +95,7 @@ const Bold = styled.div`
   margin-bottom: 30px;
   text-align: center;
   padding: 0 10px;
+  line-height: 40px;
 `;
 
 const TextContainer = styled.div`

@@ -234,7 +234,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
               <IconContainer onClick={() => setAppleModalOpen(true)}>
                 <AppleIcon />
               </IconContainer>
-              <a href={"https://github.com/plusbeauxjours/fucking-weather"}>
+              <a  target="_blank" href={"https://github.com/plusbeauxjours/fucking-weather"}>
                 <GithubIcon />
               </a>
             </LinkContainer>

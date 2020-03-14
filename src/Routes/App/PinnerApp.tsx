@@ -98,6 +98,21 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
+const GifBox = styled(ImageContainer)`
+max-width: 270px;
+width:100%;
+height: 100%;
+margin-top: 16px;
+margin-right: 15px;
+`
+const ScreenshotBox = styled(ImageContainer)`
+max-width: 300px;
+width:100%;
+height: 100%;
+padding: 10px;
+
+`
+
 const Img = styled.img<IProps>`
   width: 100%;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
@@ -107,12 +122,19 @@ const ScreenshotContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 10px;
+  
 `;
 
 const Screenshot = styled.img<IProps>`
   width: 100%;
   max-width: 400px;
+  filter: ${props => (props.loading ? "blur(6px)" : "")};
+`;
+const DiagramContainer = styled.div`
+`
+const Diagram = styled.img<IProps>`
+  width: 100%;
+  max-width: 800px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 const ColorText = styled.div<IProps>`
@@ -242,7 +264,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
               <IconContainer onClick={() => setAppleModalOpen(true)}>
                 <AppleIcon />
               </IconContainer>
-              <a href={"https://github.com/plusbeauxjours/pinner-app"}>
+              <a  target="_blank" href={"https://github.com/plusbeauxjours/pinner-app"}>
                 <GithubIcon />
               </a>
             </LinkContainer>
@@ -259,47 +281,39 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             design problem at a time.
           </Text>
         </TextBox>
-        <SketchContainer>
-          <ProgressiveImage
-            src={"https://imgur.com/8ZE2kiH.jpg"}
-            placeholder={"https://imgur.com/AWMJDgz.jpg"}
+        <TextBox>
+        <ProgressiveImage
+            src={"https://i.imgur.com/PMSvtWX.jpg"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
-                <Img
-                  style={{ maxWidth: "200px", marginRight: "30px" }}
-                  loading={loading}
-                  src={src}
-                />
-              </ImageContainer>
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
             )}
           </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://imgur.com/yErTt0I.jpg"}
-            placeholder={"https://imgur.com/KsThdJ5.jpg"}
-          >
-            {(src, loading) => (
-              <ImageContainer>
-                <Img
-                  style={{ maxWidth: "400px" }}
-                  loading={loading}
-                  src={src}
-                />
-              </ImageContainer>
-            )}
-          </ProgressiveImage>
-        </SketchContainer>
+          </TextBox>
         <TextBox>
           <Text>
             STACK
-            <br /> Since beginning my journey as a freelance designer nearly 8
-            years ago, I've done remote work for agencies, consulted for design
-            problem at a time.
+            <br /> Rapport is a close and harmonious relationship 
+            in which the people or groups concerned are “in sync” 
+            with each other, understand each other's feelings or ideas, 
+            and communicate smoothly.
           </Text>
         </TextBox>
         <TextBox>
-          <Text>DIAGRAM</Text>
-        </TextBox>
+        <ProgressiveImage
+            src={"https://i.imgur.com/ujyikM7.jpg"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
+          </TextBox>
         <TextBox>
           <Text>
             ABOUT ALTS
@@ -336,13 +350,13 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://imgur.com/v8xNLwh.jpg"}
+            src={"https://i.imgur.com/jewV2VR.gif"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <GifBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </GifBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
@@ -350,9 +364,9 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
@@ -360,9 +374,9 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/iFkI2wR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
@@ -370,9 +384,9 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/TRheCeq.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
         </ScreenshotContainer>
