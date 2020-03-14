@@ -136,13 +136,13 @@ const Architecture: React.FunctionComponent<any> = () => {
         <Wrapper>
           {ArchitectureImages.map((ArchitectureImages, index) => (
             <ImageContainer
+              key={index}
               onClick={() => {
                 setModalOpen(true);
                 setKey(index);
               }}
             >
               <ProgressiveImage
-                key={index}
                 src={ArchitectureImages.main}
                 placeholder={ArchitectureImages.thumbnail}
               >

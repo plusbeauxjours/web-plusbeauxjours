@@ -74,59 +74,22 @@ const LinkText = styled.div`
   height: 8px;
 `;
 
-const ColorContainer = styled.div`
-  height: 200px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-
-const ColorBox = styled.div<IProps>`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  background-color: ${props => props.color};
-  border: ${props =>
-    props.color === "#FFFFFF" ? "1px solid #F23657" : "none"};
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-`;
-
 const ImageContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
 `;
 
-const GifBox = styled(ImageContainer)`
-  max-width: 270px;
-  width: 100%;
-  height: 100%;
-  margin-top: 16px;
-  margin-right: 15px;
-`;
-
-const ScreenshotBox = styled(ImageContainer)`
-  max-width: 300px;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-`;
-
 const ScreenshotContainer = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 `;
 
 const Screenshot = styled.img<IProps>`
   width: 100%;
-  max-width: 400px;
+  max-width: 800px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
@@ -136,22 +99,6 @@ const Diagram = styled.img<IProps>`
   width: 100%;
   max-width: 800px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
-`;
-
-const ColorText = styled.div<IProps>`
-  position: absolute;
-  text-align: center;
-  font-weight: 400;
-  color: ${props => {
-    if (props.color === "#318CEE") {
-      return "#EDEDED";
-    } else {
-      return "#318CEE";
-    }
-  }};
-  @media screen and (max-width: 800px) {
-    display: none;
-  }
 `;
 
 const TextBox = styled.div`
@@ -220,9 +167,7 @@ interface IProps {
   color?: string;
 }
 
-const PuberAppColors = ["#EDEDED", "#E2E2E2", "#318CEE", "#1E1E1E", "#161616"];
-
-const PuberApp: React.FunctionComponent<any> = () => {
+const AirbnpWeb: React.FunctionComponent<any> = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   return (
     <Container>
@@ -320,24 +265,18 @@ const PuberApp: React.FunctionComponent<any> = () => {
             problem at a time.
           </Text>
         </TextBox>
-        <TextBox>
-          <Text>ALTS</Text>
-        </TextBox>
-        <TextBox>
-          <Text>
-            ABOUT COLORS
-            <br /> Since beginning my journey as a freelance designer nearly 8
-            years ago, I've done remote work for agencies, consulted for design
-            problem at a time.
-          </Text>
-        </TextBox>
-        <ColorContainer>
-          {PuberAppColors.map((color, index) => (
-            <ColorBox color={color} key={index}>
-              <ColorText color={color}>{color}</ColorText>
-            </ColorBox>
-          ))}
-        </ColorContainer>
+        <ScreenshotContainer>
+          <ProgressiveImage
+            src={"https://i.imgur.com/iNStgwN.jpg"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+          >
+            {(src, loading) => (
+              <ImageContainer>
+                <Screenshot loading={loading} src={src} />
+              </ImageContainer>
+            )}
+          </ProgressiveImage>
+        </ScreenshotContainer>
         <TextBox>
           <Text>
             ABOUT DESIGN
@@ -348,47 +287,26 @@ const PuberApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/jewV2VR.gif"}
+            src={"https://i.imgur.com/xBjFzfB.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <GifBox>
+              <ImageContainer>
                 <Screenshot loading={loading} src={src} />
-              </GifBox>
+              </ImageContainer>
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/v8xNLwh.jpg"}
+            src={"https://i.imgur.com/ou89UvI.gif"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ScreenshotBox>
+              <ImageContainer style={{ marginTop: "60px" }}>
                 <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://imgur.com/nl5y45H.jpg"}
-            placeholder={"https://imgur.com/iFkI2wR.jpg"}
-          >
-            {(src, loading) => (
-              <ScreenshotBox>
-                <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://imgur.com/MmPzT1R.jpg"}
-            placeholder={"https://imgur.com/TRheCeq.jpg"}
-          >
-            {(src, loading) => (
-              <ScreenshotBox>
-                <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
+              </ImageContainer>
             )}
           </ProgressiveImage>
         </ScreenshotContainer>
-
         <TextBox>
           <Text>
             LONG TERM GAINS
@@ -405,4 +323,4 @@ const PuberApp: React.FunctionComponent<any> = () => {
   );
 };
 
-export default PuberApp;
+export default AirbnpWeb;

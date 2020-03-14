@@ -219,9 +219,9 @@ interface IProps {
   color?: string;
 }
 
-const PuberAppColors = ["#EDEDED", "#E2E2E2", "#318CEE", "#1E1E1E", "#161616"];
+const PuberWebColors = ["#EDEDED", "#E2E2E2", "#318CEE", "#1E1E1E", "#161616"];
 
-const PuberApp: React.FunctionComponent<any> = () => {
+const PuberWeb: React.FunctionComponent<any> = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   return (
     <Container>
@@ -338,7 +338,7 @@ const PuberApp: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <ColorContainer>
-          {PuberAppColors.map((color, index) => (
+          {PuberWebColors.map((color, index) => (
             <ColorBox color={color} key={index}>
               <ColorText color={color}>{color}</ColorText>
             </ColorBox>
@@ -411,4 +411,4 @@ const PuberApp: React.FunctionComponent<any> = () => {
   );
 };
 
-export default PuberApp;
+export default PuberWeb;

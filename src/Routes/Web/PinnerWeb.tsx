@@ -123,11 +123,6 @@ const ScreenshotBox = styled(ImageContainer)`
   padding: 10px;
 `;
 
-const Img = styled.img<IProps>`
-  width: 100%;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
-`;
-
 const ScreenshotContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -230,9 +225,9 @@ interface IProps {
   color?: string;
 }
 
-const PinnerAppColors = ["#EDEDED", "#E2E2E2", "#318CEE", "#1E1E1E", "#161616"];
+const PinnerWebColors = ["#EDEDED", "#E2E2E2", "#318CEE", "#1E1E1E", "#161616"];
 
-const PinnerApp: React.FunctionComponent<any> = () => {
+const PinnerWeb: React.FunctionComponent<any> = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   return (
     <Container>
@@ -346,7 +341,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <ColorContainer>
-          {PinnerAppColors.map((color, index) => (
+          {PinnerWebColors.map((color, index) => (
             <ColorBox color={color} key={index}>
               <ColorText color={color}>{color}</ColorText>
             </ColorBox>
@@ -419,4 +414,4 @@ const PinnerApp: React.FunctionComponent<any> = () => {
   );
 };
 
-export default PinnerApp;
+export default PinnerWeb;
