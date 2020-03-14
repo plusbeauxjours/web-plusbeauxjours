@@ -3,7 +3,6 @@ import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
-import { Link } from "react-router-dom";
 import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
 
@@ -58,7 +57,7 @@ const MainTitleTextContainer = styled.div`
 
 const LinkContainer = styled.div`
   display: flex;
-  width: 150px;
+  width: 200px;
   justify-content: space-between;
   margin-top: 30px;
 `;
@@ -116,6 +115,7 @@ const Screenshot = styled.img<IProps>`
   max-width: 400px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
+
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
@@ -234,7 +234,10 @@ const MovieApp: React.FunctionComponent<any> = () => {
               <IconContainer onClick={() => setAppleModalOpen(true)}>
                 <AppleIcon />
               </IconContainer>
-              <a  target="_blank" href={"https://github.com/plusbeauxjours/kawai-todo"}>
+              <a
+                target="_blank"
+                href={"https://github.com/plusbeauxjours/kawai-todo"}
+              >
                 <GithubIcon />
               </a>
             </LinkContainer>

@@ -3,7 +3,6 @@ import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
-import { Link } from "react-router-dom";
 import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
 
@@ -58,9 +57,21 @@ const MainTitleTextContainer = styled.div`
 
 const LinkContainer = styled.div`
   display: flex;
-  width: 150px;
+  width: 250px;
   justify-content: space-between;
   margin-top: 30px;
+`;
+
+const LinkBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const LinkText = styled.div`
+  font-size: 6px;
+  text-align: center;
+  height: 8px;
 `;
 
 const ColorContainer = styled.div`
@@ -86,12 +97,6 @@ const ColorBox = styled.div<IProps>`
   }
 `;
 
-const SketchContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-`;
-
 const ImageContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -99,30 +104,24 @@ const ImageContainer = styled.div`
 `;
 
 const GifBox = styled(ImageContainer)`
-max-width: 270px;
-width:100%;
-height: 100%;
-margin-top: 16px;
-margin-right: 15px;
-`
-const ScreenshotBox = styled(ImageContainer)`
-max-width: 300px;
-width:100%;
-height: 100%;
-padding: 10px;
-
-`
-
-const Img = styled.img<IProps>`
+  max-width: 270px;
   width: 100%;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  height: 100%;
+  margin-top: 16px;
+  margin-right: 15px;
+`;
+
+const ScreenshotBox = styled(ImageContainer)`
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
 `;
 
 const ScreenshotContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  
 `;
 
 const Screenshot = styled.img<IProps>`
@@ -130,8 +129,9 @@ const Screenshot = styled.img<IProps>`
   max-width: 400px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
-const DiagramContainer = styled.div`
-`
+
+const DiagramContainer = styled.div``;
+
 const Diagram = styled.img<IProps>`
   width: 100%;
   max-width: 800px;
@@ -259,13 +259,35 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             </MainTitleTextContainer>
             <LinkContainer>
               <IconContainer onClick={() => setAndroidModalOpen(true)}>
-                <AndroidIcon />
+                <LinkBox>
+                  <AndroidIcon />
+                  <LinkText>ANDROID</LinkText>
+                </LinkBox>
               </IconContainer>
               <IconContainer onClick={() => setAppleModalOpen(true)}>
-                <AppleIcon />
+                <LinkBox>
+                  <AppleIcon />
+                  <LinkText>IOS</LinkText>
+                </LinkBox>
               </IconContainer>
-              <a  target="_blank" href={"https://github.com/plusbeauxjours/pinner-app"}>
-                <GithubIcon />
+              <a
+                target="_blank"
+                href={"https://github.com/plusbeauxjours/pinner-app"}
+              >
+                <LinkBox>
+                  <GithubIcon />
+                  <LinkText>CLIENT</LinkText>
+                </LinkBox>
+              </a>
+
+              <a
+                target="_blank"
+                href={"https://github.com/plusbeauxjours/pinner-backend"}
+              >
+                <LinkBox>
+                  <GithubIcon />
+                  <LinkText>SERVER</LinkText>
+                </LinkBox>
               </a>
             </LinkContainer>
           </MainTitilBox>
@@ -282,7 +304,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <TextBox>
-        <ProgressiveImage
+          <ProgressiveImage
             src={"https://i.imgur.com/PMSvtWX.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
@@ -292,18 +314,17 @@ const PinnerApp: React.FunctionComponent<any> = () => {
               </DiagramContainer>
             )}
           </ProgressiveImage>
-          </TextBox>
+        </TextBox>
         <TextBox>
           <Text>
             STACK
-            <br /> Rapport is a close and harmonious relationship 
-            in which the people or groups concerned are “in sync” 
-            with each other, understand each other's feelings or ideas, 
-            and communicate smoothly.
+            <br /> Rapport is a close and harmonious relationship in which the
+            people or groups concerned are “in sync” with each other, understand
+            each other's feelings or ideas, and communicate smoothly.
           </Text>
         </TextBox>
         <TextBox>
-        <ProgressiveImage
+          <ProgressiveImage
             src={"https://i.imgur.com/ujyikM7.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
@@ -313,7 +334,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
               </DiagramContainer>
             )}
           </ProgressiveImage>
-          </TextBox>
+        </TextBox>
         <TextBox>
           <Text>
             ABOUT ALTS

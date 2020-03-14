@@ -3,8 +3,7 @@ import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
-import { Link } from "react-router-dom";
-import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
+import { WebIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
 
 const Container = styled.div`
@@ -63,6 +62,18 @@ const LinkContainer = styled.div`
   margin-top: 30px;
 `;
 
+const LinkBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const LinkText = styled.div`
+  font-size: 6px;
+  text-align: center;
+  height: 8px;
+`;
+
 const ColorContainer = styled.div`
   height: 200px;
   width: 100%;
@@ -116,6 +127,7 @@ const Screenshot = styled.img<IProps>`
   max-width: 400px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
+
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
@@ -132,10 +144,6 @@ const TextBox = styled.div`
 const Text = styled.div`
   width: 80%;
   text-align: center;
-`;
-
-const IconContainer = styled.div`
-  cursor: pointer;
 `;
 
 const ModalAnimation = keyframes`
@@ -195,13 +203,13 @@ interface IProps {
 
 const KawaiTodoColors = ["#F23657", "#FFFFFF"];
 
-const NoteWeb: React.FunctionComponent<any> = () => {
+const MovieWeb: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
   const [appleModalOpen, setAppleModalOpen] = useState<boolean>(false);
   return (
     <Container>
       <Helmet>
-        <title>Note-web | Plusbeauxjours</title>
+        <title>Movie-web | Plusbeauxjours</title>
       </Helmet>
       {androidModalOpen && (
         <ModalContainer>
@@ -222,20 +230,29 @@ const NoteWeb: React.FunctionComponent<any> = () => {
       <Wrapper>
         <PortfolioMainContainer>
           <MainTitilBox>
-            <MainTitle>Note - Web</MainTitle>
+            <MainTitle>Movie - Web</MainTitle>
             <MainTitleTextContainer>
               <MainTitleText>8th Mar 2018 - 14th Mar 2018</MainTitleText>
               <MainTitleText>1 WEEK</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
-              <IconContainer onClick={() => setAndroidModalOpen(true)}>
-                <AndroidIcon />
-              </IconContainer>
-              <IconContainer onClick={() => setAppleModalOpen(true)}>
-                <AppleIcon />
-              </IconContainer>
-              <a  target="_blank" href={"https://github.com/plusbeauxjours/kawai-todo"}>
-                <GithubIcon />
+              <a
+                target="_blank"
+                href={"https://musing-roentgen-9a0963.netlify.com"}
+              >
+                <LinkBox>
+                  <WebIcon />
+                  <LinkText>WEBSITE</LinkText>
+                </LinkBox>
+              </a>
+              <a
+                target="_blank"
+                href={"https://github.com/plusbeauxjours/petflix"}
+              >
+                <LinkBox>
+                  <GithubIcon />
+                  <LinkText>GITHUB</LinkText>
+                </LinkBox>
               </a>
             </LinkContainer>
           </MainTitilBox>
@@ -359,4 +376,4 @@ const NoteWeb: React.FunctionComponent<any> = () => {
   );
 };
 
-export default NoteWeb;
+export default MovieWeb;

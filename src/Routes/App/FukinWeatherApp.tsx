@@ -3,7 +3,6 @@ import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
-import { Link } from "react-router-dom";
 import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
 
@@ -58,9 +57,21 @@ const MainTitleTextContainer = styled.div`
 
 const LinkContainer = styled.div`
   display: flex;
-  width: 150px;
+  width: 200px;
   justify-content: space-between;
   margin-top: 30px;
+`;
+
+const LinkBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const LinkText = styled.div`
+  font-size: 6px;
+  text-align: center;
+  height: 8px;
 `;
 
 const ColorContainer = styled.div`
@@ -224,18 +235,31 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
           <MainTitilBox>
             <MainTitle>Fukin Weather - App</MainTitle>
             <MainTitleTextContainer>
-              <MainTitleText>8th Mar 2018 - 14th Mar 2018</MainTitleText>
+              <MainTitleText>30th Nov 2018 - 5th Dec 2018</MainTitleText>
               <MainTitleText>1 WEEK</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
               <IconContainer onClick={() => setAndroidModalOpen(true)}>
-                <AndroidIcon />
+                <LinkBox>
+                  <AndroidIcon />
+                  <LinkText>ANDROID</LinkText>
+                </LinkBox>
               </IconContainer>
               <IconContainer onClick={() => setAppleModalOpen(true)}>
-                <AppleIcon />
+                <LinkBox>
+                  <AppleIcon />
+                  <LinkText>IOS</LinkText>
+                </LinkBox>
               </IconContainer>
-              <a  target="_blank" href={"https://github.com/plusbeauxjours/fucking-weather"}>
-                <GithubIcon />
+
+              <a
+                target="_blank"
+                href={"https://github.com/plusbeauxjours/fucking-weather"}
+              >
+                <LinkBox>
+                  <GithubIcon />
+                  <LinkText>GITHUB</LinkText>
+                </LinkBox>
               </a>
             </LinkContainer>
           </MainTitilBox>

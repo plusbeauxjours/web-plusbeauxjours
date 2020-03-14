@@ -3,7 +3,7 @@ import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
-import { WebIcon, AppleIcon, GithubIcon } from "../../Icons";
+import { WebIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
 
 const Container = styled.div`
@@ -57,9 +57,21 @@ const MainTitleTextContainer = styled.div`
 
 const LinkContainer = styled.div`
   display: flex;
-  width: 100px;
+  width: 150px;
   justify-content: space-between;
   margin-top: 30px;
+`;
+
+const LinkBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const LinkText = styled.div`
+  font-size: 6px;
+  text-align: center;
+  height: 8px;
 `;
 
 const ColorContainer = styled.div`
@@ -131,10 +143,6 @@ const TextBox = styled.div`
 const Text = styled.div`
   width: 80%;
   text-align: center;
-`;
-
-const IconContainer = styled.div`
-  cursor: pointer;
 `;
 
 const ModalAnimation = keyframes`
@@ -223,15 +231,27 @@ const MovieWeb: React.FunctionComponent<any> = () => {
           <MainTitilBox>
             <MainTitle>Movie - Web</MainTitle>
             <MainTitleTextContainer>
-              <MainTitleText>8th Mar 2018 - 14th Mar 2018</MainTitleText>
-              <MainTitleText>1 WEEK</MainTitleText>
+              <MainTitleText>28th Aug - 8th Sep 2018 2019</MainTitleText>
+              <MainTitleText>2 WEEKS</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
-            <a  target="_blank" href={"https://musing-roentgen-9a0963.netlify.com"}>
-                <WebIcon />
+              <a
+                target="_blank"
+                href={"https://musing-roentgen-9a0963.netlify.com"}
+              >
+                <LinkBox>
+                  <WebIcon />
+                  <LinkText>WEBSITE</LinkText>
+                </LinkBox>
               </a>
-              <a  target="_blank" href={"https://github.com/plusbeauxjours/petflix"}>
-                <GithubIcon />
+              <a
+                target="_blank"
+                href={"https://github.com/plusbeauxjours/petflix"}
+              >
+                <LinkBox>
+                  <GithubIcon />
+                  <LinkText>GITHUB</LinkText>
+                </LinkBox>
               </a>
             </LinkContainer>
           </MainTitilBox>
