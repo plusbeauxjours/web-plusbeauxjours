@@ -11,6 +11,7 @@ import FukinWeatherApp from "../Routes/App/FukinWeatherApp";
 import KawaiTodoApp from "../Routes/App/KawaiTodoApp";
 import MovieApp from "../Routes/App/MovieApp";
 import Architecture from "../Routes/Architecture";
+import PrivacyPolicy from "../Routes/PrivacyPolicy";
 import Header from "./Header";
 import Portfolio from "../Routes/Portfolio";
 import styled from "../Styles/typed-components";
@@ -26,6 +27,7 @@ export default () => (
     <Wrapper>
       <Header />
       <Route path="/" exact component={Home} />
+      <Route path="/privacy-policy" exact component={PrivacyPolicy} />
       <Route path="/portfolio" exact component={Portfolio} />
       {/* web */}
       <Route path="/portfolio/web/pinner-web" component={PinnerWeb} />

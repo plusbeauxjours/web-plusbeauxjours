@@ -110,6 +110,20 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
+const GifBox = styled(ImageContainer)`
+  max-width: 263px;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  margin-right: 15px;
+`;
+
+const ScreenshotBox = styled(ImageContainer)`
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+`;
 const Img = styled.img<IProps>`
   width: 100%;
   height: 100%;
@@ -327,43 +341,43 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
         </ColorContainer>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://imgur.com/Blzz3uR.jpg"}
+            src={"https://i.imgur.com/ZkVSOUn.gif"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <GifBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </GifBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/Blzz3uR.jpg"}
+            src={"https://i.imgur.com/PZJYBKB.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/QD1XQPy.jpg"}
+            src={"https://i.imgur.com/CUkttAz.jpg"}
             placeholder={"https://imgur.com/iFkI2wR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/scPZA9d.jpg"}
+            src={"https://i.imgur.com/u0bguZn.jpg"}
             placeholder={"https://imgur.com/TRheCeq.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
         </ScreenshotContainer>

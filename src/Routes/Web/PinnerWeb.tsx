@@ -97,25 +97,12 @@ const ColorBox = styled.div<IProps>`
   }
 `;
 
-const SketchContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-`;
-
 const ImageContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
 `;
 
-const GifBox = styled(ImageContainer)`
-  max-width: 270px;
-  width: 100%;
-  height: 100%;
-  margin-top: 16px;
-  margin-right: 15px;
-`;
 const ScreenshotBox = styled(ImageContainer)`
   max-width: 300px;
   width: 100%;
@@ -125,13 +112,14 @@ const ScreenshotBox = styled(ImageContainer)`
 
 const ScreenshotContainer = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 `;
 
 const Screenshot = styled.img<IProps>`
   width: 100%;
-  max-width: 400px;
+  max-width: 800px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
@@ -357,43 +345,23 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/jewV2VR.gif"}
+            src={"https://i.imgur.com/Hyh3hwq.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <GifBox>
+              <ImageContainer>
                 <Screenshot loading={loading} src={src} />
-              </GifBox>
+              </ImageContainer>
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/v8xNLwh.jpg"}
+            src={"https://i.imgur.com/KpVr1id.gif"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ScreenshotBox>
+              <ImageContainer style={{ marginTop: "20px" }}>
                 <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://imgur.com/nl5y45H.jpg"}
-            placeholder={"https://imgur.com/iFkI2wR.jpg"}
-          >
-            {(src, loading) => (
-              <ScreenshotBox>
-                <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://imgur.com/MmPzT1R.jpg"}
-            placeholder={"https://imgur.com/TRheCeq.jpg"}
-          >
-            {(src, loading) => (
-              <ScreenshotBox>
-                <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
+              </ImageContainer>
             )}
           </ProgressiveImage>
         </ScreenshotContainer>
