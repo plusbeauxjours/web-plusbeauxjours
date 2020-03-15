@@ -89,8 +89,7 @@ const ColorBox = styled.div<IProps>`
   width: 200px;
   height: 200px;
   background-color: ${props => props.color};
-  border: ${props =>
-    props.color === "#FFFFFF" ? "1px solid #F23657" : "none"};
+  border: ${props => props.color === "#F3F3F3" && "1px solid #c2c2c2"};
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -102,30 +101,16 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
-const GifBox = styled(ImageContainer)`
-  max-width: 270px;
-  width: 100%;
-  height: 100%;
-  margin-top: 16px;
-  margin-right: 15px;
-`;
-
-const ScreenshotBox = styled(ImageContainer)`
-  max-width: 300px;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-`;
-
 const ScreenshotContainer = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 `;
 
 const Screenshot = styled.img<IProps>`
   width: 100%;
-  max-width: 400px;
+  max-width: 800px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
@@ -142,10 +127,10 @@ const ColorText = styled.div<IProps>`
   text-align: center;
   font-weight: 400;
   color: ${props => {
-    if (props.color === "#318CEE") {
-      return "#EDEDED";
+    if (props.color === "#000000") {
+      return "#F3F3F3";
     } else {
-      return "#318CEE";
+      return "#000000";
     }
   }};
   @media screen and (max-width: 800px) {
@@ -219,7 +204,7 @@ interface IProps {
   color?: string;
 }
 
-const PuberWebColors = ["#EDEDED", "#E2E2E2", "#318CEE", "#1E1E1E", "#161616"];
+const PuberWebColors = ["#C2C2C2", "#F3F3F3", "#000000"];
 
 const PuberWeb: React.FunctionComponent<any> = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -327,7 +312,16 @@ const PuberWeb: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <TextBox>
-          <Text>ALTS</Text>
+          <ProgressiveImage
+            src={"https://i.imgur.com/SD1mUmn.jpg"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
         </TextBox>
         <TextBox>
           <Text>
@@ -354,47 +348,26 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/jewV2VR.gif"}
+            src={"https://i.imgur.com/MWnEEGD.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <GifBox>
+              <ImageContainer>
                 <Screenshot loading={loading} src={src} />
-              </GifBox>
+              </ImageContainer>
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/v8xNLwh.jpg"}
+            src={"https://i.imgur.com/SwwhOOn.gif"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ScreenshotBox>
+              <ImageContainer style={{ marginTop: "60px" }}>
                 <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://imgur.com/nl5y45H.jpg"}
-            placeholder={"https://imgur.com/iFkI2wR.jpg"}
-          >
-            {(src, loading) => (
-              <ScreenshotBox>
-                <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://imgur.com/MmPzT1R.jpg"}
-            placeholder={"https://imgur.com/TRheCeq.jpg"}
-          >
-            {(src, loading) => (
-              <ScreenshotBox>
-                <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
+              </ImageContainer>
             )}
           </ProgressiveImage>
         </ScreenshotContainer>
-
         <TextBox>
           <Text>
             LONG TERM GAINS
