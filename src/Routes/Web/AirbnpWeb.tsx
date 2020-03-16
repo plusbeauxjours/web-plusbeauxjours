@@ -93,7 +93,11 @@ const Screenshot = styled.img<IProps>`
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
-const DiagramContainer = styled.div``;
+const DiagramContainer = styled.div`
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+`;
 
 const Diagram = styled.img<IProps>`
   width: 100%;
@@ -229,7 +233,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/PMSvtWX.jpg"}
+            src={"https://i.imgur.com/pzu9mA1.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
@@ -245,26 +249,6 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
             <br /> Rapport is a close and harmonious relationship in which the
             people or groups concerned are “in sync” with each other, understand
             each other's feelings or ideas, and communicate smoothly.
-          </Text>
-        </TextBox>
-        <TextBox>
-          <ProgressiveImage
-            src={"https://i.imgur.com/ujyikM7.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
-        </TextBox>
-        <TextBox>
-          <Text>
-            ABOUT ALTS
-            <br /> Since beginning my journey as a freelance designer nearly 8
-            years ago, I've done remote work for agencies, consulted for design
-            problem at a time.
           </Text>
         </TextBox>
         <ScreenshotContainer>

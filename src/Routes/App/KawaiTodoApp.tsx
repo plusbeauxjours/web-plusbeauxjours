@@ -278,7 +278,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <SketchContainer>
           <ProgressiveImage
-            src={"https://imgur.com/8ZE2kiH.jpg"}
+            src={"https://i.imgur.com/j7LVzdl.jpg"}
             placeholder={"https://imgur.com/AWMJDgz.jpg"}
           >
             {(src, loading) => (
@@ -292,7 +292,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/38txEnK.jpg"}
+            src={"https://i.imgur.com/4jhC3Mh.jpg"}
             placeholder={"https://imgur.com/KsThdJ5.jpg"}
           >
             {(src, loading) => (
