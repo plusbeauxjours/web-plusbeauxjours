@@ -16,11 +16,6 @@ const PortfolioMainContainer = styled.div`
   justify-content: space-around;
   height: 400px;
   border-bottom: 1px solid ${props => props.theme.borderColor};
-  @media screen and (max-width: 830px) {
-    flex-direction: column;
-    align-items: center;
-    height: 830px;
-  }
 `;
 
 const MainTitilBox = styled.div`
@@ -30,9 +25,6 @@ const MainTitilBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 830px) {
-    margin-bottom: 30px;
-  }
 `;
 
 const MainTitle = styled.div`
@@ -110,20 +102,15 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
-const GifBox = styled(ImageContainer)`
-  max-width: 263px;
-  width: 100%;
-  height: 100%;
-  margin-top: 20px;
-  margin-right: 15px;
-`;
-
 const ScreenshotBox = styled(ImageContainer)`
   max-width: 300px;
   width: 100%;
   height: 100%;
-  padding: 10px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 `;
+
 const Img = styled.img<IProps>`
   width: 100%;
   height: 100%;
@@ -134,12 +121,11 @@ const ScreenshotContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 10px;
 `;
 
 const Screenshot = styled.img<IProps>`
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 const ColorText = styled.div<IProps>`
@@ -342,17 +328,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
         </ColorContainer>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/ZkVSOUn.gif"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
-          >
-            {(src, loading) => (
-              <GifBox>
-                <Screenshot loading={loading} src={src} />
-              </GifBox>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://i.imgur.com/PZJYBKB.jpg"}
+            src={"https://i.imgur.com/qH10jI5.gif"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
@@ -362,7 +338,17 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/CUkttAz.jpg"}
+            src={"https://i.imgur.com/5ZTjXaJ.jpg"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+          >
+            {(src, loading) => (
+              <ScreenshotBox>
+                <Screenshot loading={loading} src={src} />
+              </ScreenshotBox>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={"https://i.imgur.com/BqtKYvP.jpg"}
             placeholder={"https://imgur.com/iFkI2wR.jpg"}
           >
             {(src, loading) => (
@@ -372,7 +358,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/u0bguZn.jpg"}
+            src={"https://i.imgur.com/xfvFJQu.jpg"}
             placeholder={"https://imgur.com/TRheCeq.jpg"}
           >
             {(src, loading) => (

@@ -129,7 +129,7 @@ const Portfolio: React.FunctionComponent<any> = () => (
                 </ProgressiveImage>
                 <TextBox>
                   <Bold>Airbnp-Web</Bold>
-                  <Text>air-bnb clone with Django, Tailwind</Text>
+                  <Text>Air-bnb clone with Django, Tailwind</Text>
                 </TextBox>
               </InnerBox>
             </Square>
@@ -153,7 +153,7 @@ const Portfolio: React.FunctionComponent<any> = () => (
                 <TextBox>
                   <Bold>Puber-Web</Bold>
                   <Text>
-                    nuber clone with Node.js, React, Graphql, Typescript{" "}
+                    Uber clone with Node.js, React, Graphql, Typescript{" "}
                   </Text>
                 </TextBox>
               </InnerBox>
@@ -177,18 +177,16 @@ const Portfolio: React.FunctionComponent<any> = () => (
                 </ProgressiveImage>
                 <TextBox>
                   <Bold>Note-Web</Bold>
-                  <Text>note application with React, Graphql, Typescript</Text>
+                  <Text>Note application with React, Graphql, Typescript</Text>
                 </TextBox>
               </InnerBox>
             </Square>
           </Link>
           <Link to={"/portfolio/web/movie-web"}>
             <Square>
-              <InnerBox
-                style={{ backgroundColor: "#17161c", borderRadius: "20px" }}
-              >
+              <InnerBox>
                 <ProgressiveImage
-                  src={"https://imgur.com/wLFesDF.jpg"}
+                  src={"https://i.imgur.com/kI67Xtw.jpg"}
                   placeholder={"https://imgur.com/faN3wWl.jpg"}
                 >
                   {(src, loading) => (
@@ -201,10 +199,8 @@ const Portfolio: React.FunctionComponent<any> = () => (
                   )}
                 </ProgressiveImage>
                 <TextBox>
-                  <Bold style={{ color: "#ffffff" }}>Movie-Web</Bold>
-                  <Text style={{ color: "#ffffff" }}>
-                    movie application with React, Graphql, Typescript
-                  </Text>
+                  <Bold>Movie-Web</Bold>
+                  <Text>Movie application with React, Graphql, Typescript</Text>
                 </TextBox>
               </InnerBox>
             </Square>
@@ -278,6 +274,29 @@ const Portfolio: React.FunctionComponent<any> = () => (
                 <TextBox>
                   <Bold>Fukin Weather-App</Bold>
                   <Text>Weather app with React-Native</Text>
+                </TextBox>
+              </InnerBox>
+            </Square>
+          </Link>
+          <Link to={"/portfolio/app/fukin-weather-app"}>
+            <Square>
+              <InnerBox>
+                <ProgressiveImage
+                  src={"https://imgur.com/6sPSn1q.jpg"}
+                  placeholder={"https://imgur.com/Cup2zqI.jpg"}
+                >
+                  {(src, loading) => (
+                    <Img
+                      loading={loading}
+                      style={{ maxWidth: "800px", width: "100%" }}
+                      src={src}
+                      alt="an image"
+                    />
+                  )}
+                </ProgressiveImage>
+                <TextBox>
+                  <Bold>Movie-App</Bold>
+                  <Text>Movie app with React-Native</Text>
                 </TextBox>
               </InnerBox>
             </Square>

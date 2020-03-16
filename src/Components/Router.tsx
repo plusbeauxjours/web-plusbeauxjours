@@ -26,25 +26,72 @@ export default () => (
   <Router>
     <Wrapper>
       <Header />
-      <Route path="/" exact component={Home} />
-      <Route path="/privacy-policy" exact component={PrivacyPolicy} />
-      <Route path="/portfolio" exact component={Portfolio} />
-      {/* web */}
-      <Route path="/portfolio/web/pinner-web" component={PinnerWeb} />
-      <Route path="/portfolio/web/puber-web" component={PuberWeb} />
-      <Route path="/portfolio/web/airbnp-web" component={AirbnpWeb} />
-      <Route path="/portfolio/web/movie-web" component={MovieWeb} />
-      <Route path="/portfolio/web/note-web" component={NoteWeb} />
-      {/* app */}
-      <Route path="/portfolio/app/pinner-app" component={PinnerApp} />
+      <Route onUpdate={window.scrollTo(0, 0)} path="/" exact component={Home} />
       <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/privacy-policy"
+        exact
+        component={PrivacyPolicy}
+      />
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/portfolio"
+        exact
+        component={Portfolio}
+      />
+      {/* web */}
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/portfolio/web/pinner-web"
+        component={PinnerWeb}
+      />
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/portfolio/web/puber-web"
+        component={PuberWeb}
+      />
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/portfolio/web/airbnp-web"
+        component={AirbnpWeb}
+      />
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/portfolio/web/movie-web"
+        component={MovieWeb}
+      />
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/portfolio/web/note-web"
+        component={NoteWeb}
+      />
+      {/* app */}
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/portfolio/app/pinner-app"
+        component={PinnerApp}
+      />
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
         path="/portfolio/app/fukin-weather-app"
         component={FukinWeatherApp}
       />
-      <Route path="/portfolio/app/kawai-todo-app" component={KawaiTodoApp} />
-      <Route path="/portfolio/app/movie-app" component={MovieApp} />
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/portfolio/app/kawai-todo-app"
+        component={KawaiTodoApp}
+      />
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/portfolio/app/movie-app"
+        component={MovieApp}
+      />
       {/* architectural works */}
-      <Route path="/architecture" component={Architecture} />
+      <Route
+        onUpdate={window.scrollTo(0, 0)}
+        path="/architecture"
+        component={Architecture}
+      />
     </Wrapper>
   </Router>
 );

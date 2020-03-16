@@ -16,11 +16,6 @@ const PortfolioMainContainer = styled.div`
   justify-content: space-around;
   height: 400px;
   border-bottom: 1px solid ${props => props.theme.borderColor};
-  @media screen and (max-width: 830px) {
-    flex-direction: column;
-    align-items: center;
-    height: 830px;
-  }
 `;
 
 const MainTitilBox = styled.div`
@@ -30,9 +25,6 @@ const MainTitilBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 830px) {
-    margin-bottom: 30px;
-  }
 `;
 
 const MainTitle = styled.div`
@@ -84,7 +76,15 @@ const ImageContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-right: 30px;
+`;
+
+const ScreenshotBox = styled(ImageContainer)`
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 `;
 
 const Img = styled.img<IProps>`
@@ -96,12 +96,11 @@ const ScreenshotContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 10px;
 `;
 
 const Screenshot = styled.img<IProps>`
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
@@ -291,9 +290,9 @@ const FukinWeather: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
@@ -301,9 +300,9 @@ const FukinWeather: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
@@ -311,9 +310,9 @@ const FukinWeather: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
@@ -321,9 +320,9 @@ const FukinWeather: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/iFkI2wR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
@@ -331,9 +330,9 @@ const FukinWeather: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/TRheCeq.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer style={{ marginRight: "0" }}>
+              <ScreenshotBox style={{ marginRight: "0" }}>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
         </ScreenshotContainer>

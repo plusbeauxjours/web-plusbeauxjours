@@ -16,11 +16,6 @@ const PortfolioMainContainer = styled.div`
   justify-content: space-around;
   height: 400px;
   border-bottom: 1px solid ${props => props.theme.borderColor};
-  @media screen and (max-width: 830px) {
-    flex-direction: column;
-    align-items: center;
-    height: 830px;
-  }
 `;
 
 const MainTitilBox = styled.div`
@@ -30,9 +25,6 @@ const MainTitilBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 830px) {
-    margin-bottom: 30px;
-  }
 `;
 
 const MainTitle = styled.div`
@@ -103,19 +95,13 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
-const GifBox = styled(ImageContainer)`
-  max-width: 270px;
-  width: 100%;
-  height: 100%;
-  margin-top: 16px;
-  margin-right: 15px;
-`;
-
 const ScreenshotBox = styled(ImageContainer)`
   max-width: 300px;
   width: 100%;
   height: 100%;
-  padding: 10px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 `;
 
 const ScreenshotContainer = styled.div`
@@ -126,7 +112,8 @@ const ScreenshotContainer = styled.div`
 
 const Screenshot = styled.img<IProps>`
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
+
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
@@ -373,17 +360,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/jewV2VR.gif"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
-          >
-            {(src, loading) => (
-              <GifBox>
-                <Screenshot loading={loading} src={src} />
-              </GifBox>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://imgur.com/v8xNLwh.jpg"}
+            src={"https://i.imgur.com/WV3Pxkv.gif"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
@@ -393,7 +370,17 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/nl5y45H.jpg"}
+            src={"https://i.imgur.com/eicc8fR.png"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+          >
+            {(src, loading) => (
+              <ScreenshotBox>
+                <Screenshot loading={loading} src={src} />
+              </ScreenshotBox>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={"https://i.imgur.com/oWz4IVj.png"}
             placeholder={"https://imgur.com/iFkI2wR.jpg"}
           >
             {(src, loading) => (
@@ -403,7 +390,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/MmPzT1R.jpg"}
+            src={"https://i.imgur.com/wZbSeDk.png"}
             placeholder={"https://imgur.com/TRheCeq.jpg"}
           >
             {(src, loading) => (

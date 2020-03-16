@@ -98,6 +98,15 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
+const ScreenshotBox = styled(ImageContainer)`
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+`;
+
 const Img = styled.img<IProps>`
   width: 100%;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
@@ -311,9 +320,9 @@ const MovieApp: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
@@ -321,9 +330,9 @@ const MovieApp: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
@@ -331,9 +340,9 @@ const MovieApp: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/iFkI2wR.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
           <ProgressiveImage
@@ -341,9 +350,9 @@ const MovieApp: React.FunctionComponent<any> = () => {
             placeholder={"https://imgur.com/TRheCeq.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ScreenshotBox>
                 <Screenshot loading={loading} src={src} />
-              </ImageContainer>
+              </ScreenshotBox>
             )}
           </ProgressiveImage>
         </ScreenshotContainer>
