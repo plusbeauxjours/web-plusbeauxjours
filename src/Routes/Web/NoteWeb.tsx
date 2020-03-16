@@ -238,6 +238,7 @@ const MovieWeb: React.FunctionComponent<any> = () => {
             <LinkContainer>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://musing-roentgen-9a0963.netlify.com"}
               >
                 <LinkBox>
@@ -247,6 +248,7 @@ const MovieWeb: React.FunctionComponent<any> = () => {
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/petflix"}
               >
                 <LinkBox>

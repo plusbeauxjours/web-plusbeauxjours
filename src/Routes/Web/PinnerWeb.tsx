@@ -239,7 +239,11 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
               <MainTitleText>4 MONTHS</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
-              <a target="_blank" href={"https://pinner.fun"}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={"https://pinner.fun"}
+              >
                 <LinkBox>
                   <WebIcon />
                   <LinkText>WEBSITE</LinkText>
@@ -247,6 +251,7 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/pinner-app"}
               >
                 <LinkBox>
@@ -256,6 +261,7 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/pinner-backend"}
               >
                 <LinkBox>

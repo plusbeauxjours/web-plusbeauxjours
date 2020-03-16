@@ -193,6 +193,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
             <LinkContainer>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={
                   "http://airbnp.eba-8dydnzzj.ap-northeast-2.elasticbeanstalk.com/"
                 }
@@ -204,6 +205,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/airbnp"}
               >
                 <LinkBox>

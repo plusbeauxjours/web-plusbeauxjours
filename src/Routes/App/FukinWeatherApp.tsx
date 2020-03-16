@@ -74,30 +74,6 @@ const LinkText = styled.div`
   height: 8px;
 `;
 
-const ColorContainer = styled.div`
-  height: 200px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 200px;
-`;
-
-const ColorBox = styled.div<IProps>`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-  background-color: ${props => props.color};
-  border: ${props =>
-    props.color === "#FFFFFF" ? "1px solid #F23657" : "none"};
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-`;
-
 const SketchContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -108,6 +84,7 @@ const ImageContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-right: 30px;
 `;
 
 const Img = styled.img<IProps>`
@@ -126,12 +103,6 @@ const Screenshot = styled.img<IProps>`
   width: 100%;
   max-width: 400px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
-`;
-const ColorText = styled.div<IProps>`
-  position: absolute;
-  text-align: center;
-  font-weight: 400;
-  color: ${props => (props.color === "#FFFFFF" ? "#F23657" : "#FFFFFF")};
 `;
 
 const TextBox = styled.div`
@@ -204,9 +175,7 @@ interface IProps {
   color?: string;
 }
 
-const KawaiTodoColors = ["#F23657", "#FFFFFF"];
-
-const KawaiTodoApp: React.FunctionComponent<any> = () => {
+const FukinWeather: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
   const [appleModalOpen, setAppleModalOpen] = useState<boolean>(false);
   return (
@@ -251,9 +220,9 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
                   <LinkText>IOS</LinkText>
                 </LinkBox>
               </IconContainer>
-
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/fucking-weather"}
               >
                 <LinkBox>
@@ -283,7 +252,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             {(src, loading) => (
               <ImageContainer>
                 <Img
-                  style={{ maxWidth: "200px", marginRight: "30px" }}
+                  style={{ maxWidth: "200px" }}
                   loading={loading}
                   src={src}
                 />
@@ -291,13 +260,13 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/yErTt0I.jpg"}
+            src={"https://i.imgur.com/38txEnK.jpg"}
             placeholder={"https://imgur.com/KsThdJ5.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ImageContainer style={{ marginRight: "0px" }}>
                 <Img
-                  style={{ maxWidth: "400px" }}
+                  style={{ maxHeight: "400px" }}
                   loading={loading}
                   src={src}
                 />
@@ -316,18 +285,9 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             design problem at a time.
           </Text>
         </TextBox>
-        <ColorContainer>
-          {KawaiTodoColors.map((color, index) => (
-            <ColorBox color={color} key={index}>
-              <ColorText color={color}>
-                {color === "#FFFFFF" ? "#F23657" : "#FFFFFF"}
-              </ColorText>
-            </ColorBox>
-          ))}
-        </ColorContainer>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://imgur.com/Blzz3uR.jpg"}
+            src={"https://i.imgur.com/Qa0sz0C.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
@@ -337,7 +297,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/Blzz3uR.jpg"}
+            src={"https://i.imgur.com/5yHn1Ft.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
@@ -347,7 +307,17 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/QD1XQPy.jpg"}
+            src={"https://i.imgur.com/pbuIk5R.jpg"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+          >
+            {(src, loading) => (
+              <ImageContainer>
+                <Screenshot loading={loading} src={src} />
+              </ImageContainer>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={"https://i.imgur.com/jAUXL8C.jpg"}
             placeholder={"https://imgur.com/iFkI2wR.jpg"}
           >
             {(src, loading) => (
@@ -357,11 +327,11 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/scPZA9d.jpg"}
+            src={"https://i.imgur.com/j9eQsPc.jpg"}
             placeholder={"https://imgur.com/TRheCeq.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer>
+              <ImageContainer style={{ marginRight: "0" }}>
                 <Screenshot loading={loading} src={src} />
               </ImageContainer>
             )}
@@ -383,4 +353,4 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
   );
 };
 
-export default KawaiTodoApp;
+export default FukinWeather;

@@ -236,6 +236,7 @@ const MovieApp: React.FunctionComponent<any> = () => {
               </IconContainer>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/kawai-todo"}
               >
                 <GithubIcon />

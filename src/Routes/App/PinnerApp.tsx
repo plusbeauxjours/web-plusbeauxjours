@@ -272,6 +272,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
               </IconContainer>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/pinner-app"}
               >
                 <LinkBox>
@@ -282,6 +283,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
 
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/pinner-backend"}
               >
                 <LinkBox>

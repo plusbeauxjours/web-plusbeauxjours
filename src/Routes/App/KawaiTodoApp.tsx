@@ -268,6 +268,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
               </IconContainer>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/kawai-todo"}
               >
                 <LinkBox>
@@ -305,13 +306,13 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/yErTt0I.jpg"}
+            src={"https://i.imgur.com/38txEnK.jpg"}
             placeholder={"https://imgur.com/KsThdJ5.jpg"}
           >
             {(src, loading) => (
               <ImageContainer>
                 <Img
-                  style={{ maxWidth: "400px" }}
+                  style={{ maxHeight: "400px" }}
                   loading={loading}
                   src={src}
                 />

@@ -232,6 +232,7 @@ const PuberWeb: React.FunctionComponent<any> = () => {
             <LinkContainer>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://wonderful-visvesvaraya-af346f.netlify.com"}
               >
                 <LinkBox>
@@ -241,6 +242,7 @@ const PuberWeb: React.FunctionComponent<any> = () => {
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/puber-client"}
               >
                 <LinkBox>
@@ -250,6 +252,7 @@ const PuberWeb: React.FunctionComponent<any> = () => {
               </a>
               <a
                 target="_blank"
+                rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/puber-server"}
               >
                 <LinkBox>
