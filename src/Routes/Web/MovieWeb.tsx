@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
@@ -149,6 +149,7 @@ interface IProps {
 const MovieWebColors = ["#17171A"];
 
 const MovieWeb: React.FunctionComponent<any> = () => {
+  useEffect(() => window.scrollTo(0, 0));
   return (
     <Container>
       <Helmet>

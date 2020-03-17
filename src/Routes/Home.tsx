@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "../Styles/typed-components";
 import Helmet from "react-helmet";
 import SkillBox from "../Components/SkillBox";
@@ -27,26 +27,27 @@ const PortfolioContainer = styled.div`
   margin-bottom: 300px;
 `;
 
-const Text = styled.p``;
-
-const HomeHome: React.FunctionComponent<any> = () => (
-  <Container>
-    <Helmet>
-      <title>Home | Plusbeauxjours</title>
-    </Helmet>
-    <MainBox />
-    <ColumnContainer>
-      <ProfileBox />
-      <SkillBox />
-    </ColumnContainer>
-    <PortfolioContainer>
-      <PortfolioBox />
-      <PortfolioThumbnail />
-    </PortfolioContainer>
-    <ArchitecturalWorksBox />
-    <TestimonialBox />
-    <Footer />
-  </Container>
-);
+const HomeHome: React.FunctionComponent<any> = () => {
+  useEffect(() => window.scrollTo(0, 0));
+  return (
+    <Container>
+      <Helmet>
+        <title>Home | Plusbeauxjours</title>
+      </Helmet>
+      <MainBox />
+      <ColumnContainer>
+        <ProfileBox />
+        <SkillBox />
+      </ColumnContainer>
+      <PortfolioContainer>
+        <PortfolioBox />
+        <PortfolioThumbnail />
+      </PortfolioContainer>
+      <ArchitecturalWorksBox />
+      <TestimonialBox />
+      <Footer />
+    </Container>
+  );
+};
 
 export default HomeHome;

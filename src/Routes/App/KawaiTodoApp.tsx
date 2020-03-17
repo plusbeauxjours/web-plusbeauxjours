@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
@@ -210,6 +210,7 @@ const KawaiTodoColors = ["#F23657", "#FFFFFF"];
 const KawaiTodoApp: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
   const [appleModalOpen, setAppleModalOpen] = useState<boolean>(false);
+  useEffect(() => window.scrollTo(0, 0));
   return (
     <Container>
       <Helmet>

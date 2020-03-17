@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
 import { WebIcon, GithubIcon } from "../../Icons";
-import { keyframes } from "styled-components";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
@@ -149,56 +148,6 @@ const Text = styled.div`
   text-align: center;
 `;
 
-const ModalAnimation = keyframes`
-	  from{
-	    opacity:0;
-	    transform:scale(1.1);
-	  }
-	  to{
-	    opacity:1;
-	    transform:none;
-	  }
-  `;
-
-const ModalContainer = styled.div`
-  z-index: 8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-`;
-
-const ModalOverlay = styled.div`
-  z-index: 5;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  background-color: ${props => props.theme.modalOverlayColor};
-`;
-
-const Modal = styled.div`
-  z-index: 10;
-  position: absolute;
-  width: 100%;
-  max-width: 800px;
-  margin-top: 80px;
-  animation: ${ModalAnimation} 0.1s linear;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-const QR = styled.div`
-  width: 300px;
-  height: 300px;
-  background-color: red;
-`;
-
 interface IProps {
   loading?: boolean;
   color?: string;
@@ -207,20 +156,12 @@ interface IProps {
 const PuberWebColors = ["#C2C2C2", "#F3F3F3", "#000000"];
 
 const PuberWeb: React.FunctionComponent<any> = () => {
-  const [modalOpen, setModalOpen] = useState<boolean>(false);
+  useEffect(() => window.scrollTo(0, 0));
   return (
     <Container>
       <Helmet>
         <title>Puber-web | Plusbeauxjours</title>
       </Helmet>
-      {modalOpen && (
-        <ModalContainer>
-          <ModalOverlay onClick={() => setModalOpen(false)} />
-          <Modal>
-            <QR />
-          </Modal>
-        </ModalContainer>
-      )}
       <Wrapper>
         <PortfolioMainContainer>
           <MainTitilBox>

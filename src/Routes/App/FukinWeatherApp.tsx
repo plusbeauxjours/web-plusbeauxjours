@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "../../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
@@ -177,6 +177,7 @@ interface IProps {
 const FukinWeather: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
   const [appleModalOpen, setAppleModalOpen] = useState<boolean>(false);
+  useEffect(() => window.scrollTo(0, 0));
   return (
     <Container>
       <Helmet>
@@ -245,13 +246,13 @@ const FukinWeather: React.FunctionComponent<any> = () => {
         </TextBox>
         <SketchContainer>
           <ProgressiveImage
-            src={"https://imgur.com/8ZE2kiH.jpg"}
+            src={"https://i.imgur.com/j7LVzdl.jpg"}
             placeholder={"https://imgur.com/AWMJDgz.jpg"}
           >
             {(src, loading) => (
               <ImageContainer>
                 <Img
-                  style={{ maxWidth: "200px" }}
+                  style={{ maxWidth: "200px", marginRight: "30px" }}
                   loading={loading}
                   src={src}
                 />
@@ -259,11 +260,11 @@ const FukinWeather: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/38txEnK.jpg"}
+            src={"https://i.imgur.com/4jhC3Mh.jpg"}
             placeholder={"https://imgur.com/KsThdJ5.jpg"}
           >
             {(src, loading) => (
-              <ImageContainer style={{ marginRight: "0px" }}>
+              <ImageContainer>
                 <Img
                   style={{ maxHeight: "400px" }}
                   loading={loading}

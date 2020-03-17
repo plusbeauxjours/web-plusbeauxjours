@@ -47,7 +47,7 @@ const InputWrapper = styled.div<IProps>`
     left: 20px;
     font-size: ${({ focused }) => (focused ? "11px" : "20px")};
     transform: ${({ focused }) =>
-      focused ? "translateY(-40px) translateX(-20px);" : "translateY(-40%);"};
+      focused ? "translateY(-45px) translateX(-20px);" : "translateY(-60%);"};
   }
 `;
 

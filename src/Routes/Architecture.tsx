@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../Components/Wrapper";
@@ -119,6 +119,7 @@ interface IProps {
 const Architecture: React.FunctionComponent<any> = () => {
   const [modalOpen, setModalOpen] = useState<boolean>(false);
   const [key, setKey] = useState<number>(0);
+  useEffect(() => window.scrollTo(0, 0));
   return (
     <>
       {modalOpen && (

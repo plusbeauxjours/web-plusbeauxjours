@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../Components/Wrapper";
@@ -78,233 +78,241 @@ const TextBox = styled.div`
   position: absolute;
 `;
 
-const Portfolio: React.FunctionComponent<any> = () => (
-  <Container>
-    <Helmet>
-      <title>Portfolio | Plusbeauxjours</title>
-    </Helmet>
-    <Wrapper>
-      <MiddleContainer>
-        <GridContainer>
-          <Link to={"/portfolio/web/pinner-web"}>
-            <Square>
-              <InnerBox>
-                <ProgressiveImage
-                  src={"https://imgur.com/8wafbNQ.jpg"}
-                  placeholder={"https://imgur.com/hShIsmd.jpg"}
-                >
-                  {(src, loading) => (
-                    <Img
-                      loading={loading}
-                      style={{ maxWidth: "800px", width: "100%" }}
-                      src={src}
-                      alt="an image"
-                    />
-                  )}
-                </ProgressiveImage>
-                <TextBox>
-                  <Bold>Pinner-Web</Bold>
-                  <Text>
-                    Meet-up app with Django, React, Graphene, Typescript
-                  </Text>
-                </TextBox>
-              </InnerBox>
-            </Square>
-          </Link>
-          <Link to={"/portfolio/web/airbnp-web"}>
-            <Square>
-              <InnerBox>
-                <ProgressiveImage
-                  src={"https://imgur.com/3WnX9SX.jpg"}
-                  placeholder={"https://imgur.com/HDNvJwg.jpg"}
-                >
-                  {(src, loading) => (
-                    <Img
-                      loading={loading}
-                      style={{ maxWidth: "800px", width: "100%" }}
-                      src={src}
-                      alt="an image"
-                    />
-                  )}
-                </ProgressiveImage>
-                <TextBox>
-                  <Bold>Airbnp-Web</Bold>
-                  <Text>Air-bnb clone with Django, Tailwind</Text>
-                </TextBox>
-              </InnerBox>
-            </Square>
-          </Link>
-          <Link to={"/portfolio/web/puber-web"}>
-            <Square>
-              <InnerBox>
-                <ProgressiveImage
-                  src={"https://imgur.com/ScrdaJd.jpg"}
-                  placeholder={"https://imgur.com/V5lxAcw.jpg"}
-                >
-                  {(src, loading) => (
-                    <Img
-                      loading={loading}
-                      style={{ maxWidth: "800px", width: "100%" }}
-                      src={src}
-                      alt="an image"
-                    />
-                  )}
-                </ProgressiveImage>
-                <TextBox>
-                  <Bold>Puber-Web</Bold>
-                  <Text>
-                    Uber clone with Node.js, React, Graphql, Typescript{" "}
-                  </Text>
-                </TextBox>
-              </InnerBox>
-            </Square>
-          </Link>
-          <Link to={"/portfolio/web/note-web"}>
-            <Square>
-              <InnerBox>
-                <ProgressiveImage
-                  src={"https://imgur.com/ScrdaJd.jpg"}
-                  placeholder={"https://imgur.com/V5lxAcw.jpg"}
-                >
-                  {(src, loading) => (
-                    <Img
-                      loading={loading}
-                      style={{ maxWidth: "800px", width: "100%" }}
-                      src={src}
-                      alt="an image"
-                    />
-                  )}
-                </ProgressiveImage>
-                <TextBox>
-                  <Bold>Note-Web</Bold>
-                  <Text>Note application with React, Graphql, Typescript</Text>
-                </TextBox>
-              </InnerBox>
-            </Square>
-          </Link>
-          <Link to={"/portfolio/web/movie-web"}>
-            <Square>
-              <InnerBox>
-                <ProgressiveImage
-                  src={"https://i.imgur.com/kI67Xtw.jpg"}
-                  placeholder={"https://imgur.com/faN3wWl.jpg"}
-                >
-                  {(src, loading) => (
-                    <Img
-                      loading={loading}
-                      style={{ maxWidth: "800px", width: "100%" }}
-                      src={src}
-                      alt="an image"
-                    />
-                  )}
-                </ProgressiveImage>
-                <TextBox>
-                  <Bold>Movie-Web</Bold>
-                  <Text>Movie application with React, Graphql, Typescript</Text>
-                </TextBox>
-              </InnerBox>
-            </Square>
-          </Link>
-        </GridContainer>
-        <GridContainer>
-          <Link to={"/portfolio/app/pinner-app"}>
-            <Square>
-              <InnerBox>
-                <ProgressiveImage
-                  src={"https://imgur.com/3IH6AoJ.jpg"}
-                  placeholder={"https://imgur.com/6NqUvhu.jpg"}
-                >
-                  {(src, loading) => (
-                    <Img
-                      loading={loading}
-                      style={{ maxWidth: "800px", width: "100%" }}
-                      src={src}
-                      alt="an image"
-                    />
-                  )}
-                </ProgressiveImage>
-                <TextBox>
-                  <Bold>Pinner-App</Bold>
-                  <Text>
-                    Meet-up app with Django, React-Native, Graphene, Typescript
-                  </Text>
-                </TextBox>
-              </InnerBox>
-            </Square>
-          </Link>
-          <Link to={"/portfolio/app/kawai-todo-app"}>
-            <Square>
-              <InnerBox>
-                <ProgressiveImage
-                  src={"https://imgur.com/feJqEXf.jpg"}
-                  placeholder={"https://imgur.com/ZPm0kbD.jpg"}
-                >
-                  {(src, loading) => (
-                    <Img
-                      loading={loading}
-                      style={{ maxWidth: "800px", width: "100%" }}
-                      src={src}
-                      alt="an image"
-                    />
-                  )}
-                </ProgressiveImage>
-                <TextBox>
-                  <Bold>Kawai To Do-App</Bold>
-                  <Text>To do app with React-Native</Text>
-                </TextBox>
-              </InnerBox>
-            </Square>
-          </Link>
-          <Link to={"/portfolio/app/fukin-weather-app"}>
-            <Square>
-              <InnerBox>
-                <ProgressiveImage
-                  src={"https://imgur.com/6sPSn1q.jpg"}
-                  placeholder={"https://imgur.com/Cup2zqI.jpg"}
-                >
-                  {(src, loading) => (
-                    <Img
-                      loading={loading}
-                      style={{ maxWidth: "800px", width: "100%" }}
-                      src={src}
-                      alt="an image"
-                    />
-                  )}
-                </ProgressiveImage>
-                <TextBox>
-                  <Bold>Fukin Weather-App</Bold>
-                  <Text>Weather app with React-Native</Text>
-                </TextBox>
-              </InnerBox>
-            </Square>
-          </Link>
-          <Link to={"/portfolio/app/fukin-weather-app"}>
-            <Square>
-              <InnerBox>
-                <ProgressiveImage
-                  src={"https://imgur.com/6sPSn1q.jpg"}
-                  placeholder={"https://imgur.com/Cup2zqI.jpg"}
-                >
-                  {(src, loading) => (
-                    <Img
-                      loading={loading}
-                      style={{ maxWidth: "800px", width: "100%" }}
-                      src={src}
-                      alt="an image"
-                    />
-                  )}
-                </ProgressiveImage>
-                <TextBox>
-                  <Bold>Movie-App</Bold>
-                  <Text>Movie app with React-Native</Text>
-                </TextBox>
-              </InnerBox>
-            </Square>
-          </Link>
-        </GridContainer>
-      </MiddleContainer>
-    </Wrapper>
-  </Container>
-);
+const Portfolio: React.FunctionComponent<any> = () => {
+  useEffect(() => window.scrollTo(0, 0));
+  return (
+    <Container>
+      <Helmet>
+        <title>Portfolio | Plusbeauxjours</title>
+      </Helmet>
+      <Wrapper>
+        <MiddleContainer>
+          <GridContainer>
+            <Link to={"/portfolio/web/pinner-web"}>
+              <Square>
+                <InnerBox>
+                  <ProgressiveImage
+                    src={"https://imgur.com/8wafbNQ.jpg"}
+                    placeholder={"https://imgur.com/hShIsmd.jpg"}
+                  >
+                    {(src, loading) => (
+                      <Img
+                        loading={loading}
+                        style={{ maxWidth: "800px", width: "100%" }}
+                        src={src}
+                        alt="an image"
+                      />
+                    )}
+                  </ProgressiveImage>
+                  <TextBox>
+                    <Bold>Pinner-Web</Bold>
+                    <Text>
+                      Meet-up app with Django, React, Graphene, Typescript
+                    </Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+            <Link to={"/portfolio/web/airbnp-web"}>
+              <Square>
+                <InnerBox>
+                  <ProgressiveImage
+                    src={"https://imgur.com/3WnX9SX.jpg"}
+                    placeholder={"https://imgur.com/HDNvJwg.jpg"}
+                  >
+                    {(src, loading) => (
+                      <Img
+                        loading={loading}
+                        style={{ maxWidth: "800px", width: "100%" }}
+                        src={src}
+                        alt="an image"
+                      />
+                    )}
+                  </ProgressiveImage>
+                  <TextBox>
+                    <Bold>Airbnp-Web</Bold>
+                    <Text>Air-bnb clone with Django, Tailwind</Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+            <Link to={"/portfolio/web/puber-web"}>
+              <Square>
+                <InnerBox>
+                  <ProgressiveImage
+                    src={"https://imgur.com/ScrdaJd.jpg"}
+                    placeholder={"https://imgur.com/V5lxAcw.jpg"}
+                  >
+                    {(src, loading) => (
+                      <Img
+                        loading={loading}
+                        style={{ maxWidth: "800px", width: "100%" }}
+                        src={src}
+                        alt="an image"
+                      />
+                    )}
+                  </ProgressiveImage>
+                  <TextBox>
+                    <Bold>Puber-Web</Bold>
+                    <Text>
+                      Uber clone with Node.js, React, Graphql, Typescript{" "}
+                    </Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+            <Link to={"/portfolio/web/note-web"}>
+              <Square>
+                <InnerBox>
+                  <ProgressiveImage
+                    src={"https://imgur.com/ScrdaJd.jpg"}
+                    placeholder={"https://imgur.com/V5lxAcw.jpg"}
+                  >
+                    {(src, loading) => (
+                      <Img
+                        loading={loading}
+                        style={{ maxWidth: "800px", width: "100%" }}
+                        src={src}
+                        alt="an image"
+                      />
+                    )}
+                  </ProgressiveImage>
+                  <TextBox>
+                    <Bold>Note-Web</Bold>
+                    <Text>
+                      Note application with React, Graphql, Typescript
+                    </Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+            <Link to={"/portfolio/web/movie-web"}>
+              <Square>
+                <InnerBox>
+                  <ProgressiveImage
+                    src={"https://i.imgur.com/kI67Xtw.jpg"}
+                    placeholder={"https://imgur.com/faN3wWl.jpg"}
+                  >
+                    {(src, loading) => (
+                      <Img
+                        loading={loading}
+                        style={{ maxWidth: "800px", width: "100%" }}
+                        src={src}
+                        alt="an image"
+                      />
+                    )}
+                  </ProgressiveImage>
+                  <TextBox>
+                    <Bold>Movie-Web</Bold>
+                    <Text>
+                      Movie application with React, Graphql, Typescript
+                    </Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+          </GridContainer>
+          <GridContainer>
+            <Link to={"/portfolio/app/pinner-app"}>
+              <Square>
+                <InnerBox>
+                  <ProgressiveImage
+                    src={"https://imgur.com/3IH6AoJ.jpg"}
+                    placeholder={"https://imgur.com/6NqUvhu.jpg"}
+                  >
+                    {(src, loading) => (
+                      <Img
+                        loading={loading}
+                        style={{ maxWidth: "800px", width: "100%" }}
+                        src={src}
+                        alt="an image"
+                      />
+                    )}
+                  </ProgressiveImage>
+                  <TextBox>
+                    <Bold>Pinner-App</Bold>
+                    <Text>
+                      Meet-up app with Django, React-Native, Graphene,
+                      Typescript
+                    </Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+            <Link to={"/portfolio/app/kawai-todo-app"}>
+              <Square>
+                <InnerBox>
+                  <ProgressiveImage
+                    src={"https://imgur.com/feJqEXf.jpg"}
+                    placeholder={"https://imgur.com/ZPm0kbD.jpg"}
+                  >
+                    {(src, loading) => (
+                      <Img
+                        loading={loading}
+                        style={{ maxWidth: "800px", width: "100%" }}
+                        src={src}
+                        alt="an image"
+                      />
+                    )}
+                  </ProgressiveImage>
+                  <TextBox>
+                    <Bold>Kawai To Do-App</Bold>
+                    <Text>To do app with React-Native</Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+            <Link to={"/portfolio/app/fukin-weather-app"}>
+              <Square>
+                <InnerBox>
+                  <ProgressiveImage
+                    src={"https://imgur.com/6sPSn1q.jpg"}
+                    placeholder={"https://imgur.com/Cup2zqI.jpg"}
+                  >
+                    {(src, loading) => (
+                      <Img
+                        loading={loading}
+                        style={{ maxWidth: "800px", width: "100%" }}
+                        src={src}
+                        alt="an image"
+                      />
+                    )}
+                  </ProgressiveImage>
+                  <TextBox>
+                    <Bold>Fukin Weather-App</Bold>
+                    <Text>Weather app with React-Native</Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+            <Link to={"/portfolio/app/fukin-weather-app"}>
+              <Square>
+                <InnerBox>
+                  <ProgressiveImage
+                    src={"https://imgur.com/6sPSn1q.jpg"}
+                    placeholder={"https://imgur.com/Cup2zqI.jpg"}
+                  >
+                    {(src, loading) => (
+                      <Img
+                        loading={loading}
+                        style={{ maxWidth: "800px", width: "100%" }}
+                        src={src}
+                        alt="an image"
+                      />
+                    )}
+                  </ProgressiveImage>
+                  <TextBox>
+                    <Bold>Movie-App</Bold>
+                    <Text>Movie app with React-Native</Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+          </GridContainer>
+        </MiddleContainer>
+      </Wrapper>
+    </Container>
+  );
+};
 
 export default Portfolio;
