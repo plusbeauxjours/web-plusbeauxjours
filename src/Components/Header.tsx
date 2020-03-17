@@ -130,7 +130,7 @@ const Header: React.FunctionComponent<IProps> = () => {
           <CText>PLUSBEAUXJOURS</CText>
         </Link>
         <TextContainer>
-          <Link to={"/portfolio"}>
+          <Link to={"/projects"}>
             <Text>Portfolio</Text>
           </Link>
           <Link to={"/architecture"}>

@@ -102,7 +102,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
       <GridContainer>
-        <Link to={"/portfolio/web/pinner-web"}>
+        <Link to={"/projects/web/pinner-web"}>
           <Square>
             <InnerBox>
               <ProgressiveImage
@@ -127,7 +127,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
             </InnerBox>
           </Square>
         </Link>
-        <Link to={"/portfolio/web/airbnp-web"}>
+        <Link to={"/projects/web/airbnp-web"}>
           <Square>
             <InnerBox>
               <ProgressiveImage
@@ -150,7 +150,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
             </InnerBox>
           </Square>
         </Link>
-        <Link to={"/portfolio/web/puber-web"}>
+        <Link to={"/projects/web/puber-web"}>
           <Square>
             <InnerBox>
               <ProgressiveImage
@@ -175,7 +175,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
             </InnerBox>
           </Square>
         </Link>
-        <Link to={"/portfolio/app/pinner-app"}>
+        <Link to={"/projects/app/pinner-app"}>
           <Square>
             <InnerBox>
               <ProgressiveImage
@@ -200,7 +200,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
             </InnerBox>
           </Square>
         </Link>
-        <Link to={"/portfolio/app/kawai-todo-app"}>
+        <Link to={"/projects/app/kawai-todo-app"}>
           <Square>
             <InnerBox>
               <ProgressiveImage
@@ -223,7 +223,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
             </InnerBox>
           </Square>
         </Link>
-        <Link to={"/portfolio/app/fukin-weather-app"}>
+        <Link to={"/projects/app/fukin-weather-app"}>
           <Square>
             <InnerBox>
               <ProgressiveImage
@@ -247,7 +247,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
           </Square>
         </Link>
       </GridContainer>
-      <Link to={"/portfolio"}>
+      <Link to={"/projects"}>
         <BtnContainer>
           <Btn>SEE MORE</Btn>
         </BtnContainer>

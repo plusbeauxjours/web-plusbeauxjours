@@ -13,7 +13,7 @@ import MovieApp from "../Routes/App/MovieApp";
 import Architecture from "../Routes/Architecture";
 import PrivacyPolicy from "../Routes/PrivacyPolicy";
 import Header from "./Header";
-import Portfolio from "../Routes/Portfolio";
+import Projects from "../Routes/Projects";
 import styled from "../Styles/typed-components";
 
 const Wrapper = styled.div`
@@ -26,77 +26,25 @@ export default () => (
   <Router>
     <Wrapper>
       <Header />
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/"
-        exact
-        component={Home}
-      />
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/privacy-policy"
-        exact
-        component={PrivacyPolicy}
-      />
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/portfolio"
-        exact
-        component={Portfolio}
-      />
+      <Route path="/" exact component={Home} />
+      <Route path="/privacy-policy" exact component={PrivacyPolicy} />
+      <Route path="/projects" exact component={Projects} />
       {/* web */}
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/portfolio/web/pinner-web"
-        component={PinnerWeb}
-      />
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/portfolio/web/puber-web"
-        component={PuberWeb}
-      />
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/portfolio/web/airbnp-web"
-        component={AirbnpWeb}
-      />
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/portfolio/web/movie-web"
-        component={MovieWeb}
-      />
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/portfolio/web/note-web"
-        component={NoteWeb}
-      />
+      <Route path="/projects/web/pinner-web" component={PinnerWeb} />
+      <Route path="/projects/web/puber-web" component={PuberWeb} />
+      <Route path="/projects/web/airbnp-web" component={AirbnpWeb} />
+      <Route path="/projects/web/movie-web" component={MovieWeb} />
+      <Route path="/projects/web/note-web" component={NoteWeb} />
       {/* app */}
+      <Route path="/projects/app/pinner-app" component={PinnerApp} />
       <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/portfolio/app/pinner-app"
-        component={PinnerApp}
-      />
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/portfolio/app/fukin-weather-app"
+        path="/projects/app/fukin-weather-app"
         component={FukinWeatherApp}
       />
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/portfolio/app/kawai-todo-app"
-        component={KawaiTodoApp}
-      />
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/portfolio/app/movie-app"
-        component={MovieApp}
-      />
+      <Route path="/projects/app/kawai-todo-app" component={KawaiTodoApp} />
+      <Route path="/projects/app/movie-app" component={MovieApp} />
       {/* architectural works */}
-      <Route
-        onUpdate={() => window.scrollTo(0, 0)}
-        path="/architecture"
-        component={Architecture}
-      />
+      <Route path="/architecture" component={Architecture} />
     </Wrapper>
   </Router>
 );

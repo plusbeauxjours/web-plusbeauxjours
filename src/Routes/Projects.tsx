@@ -78,17 +78,17 @@ const TextBox = styled.div`
   position: absolute;
 `;
 
-const Portfolio: React.FunctionComponent<any> = () => {
+const Projects: React.FunctionComponent<any> = () => {
   useEffect(() => window.scrollTo(0, 0));
   return (
     <Container>
       <Helmet>
-        <title>Portfolio | Plusbeauxjours</title>
+        <title>Project | Plusbeauxjours</title>
       </Helmet>
       <Wrapper>
         <MiddleContainer>
           <GridContainer>
-            <Link to={"/portfolio/web/pinner-web"}>
+            <Link to={"/projects/web/pinner-web"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
@@ -113,7 +113,7 @@ const Portfolio: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/portfolio/web/airbnp-web"}>
+            <Link to={"/projects/web/airbnp-web"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
@@ -136,7 +136,7 @@ const Portfolio: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/portfolio/web/puber-web"}>
+            <Link to={"/projects/web/puber-web"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
@@ -161,7 +161,7 @@ const Portfolio: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/portfolio/web/note-web"}>
+            <Link to={"/projects/web/note-web"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
@@ -186,7 +186,7 @@ const Portfolio: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/portfolio/web/movie-web"}>
+            <Link to={"/projects/web/movie-web"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
@@ -213,7 +213,7 @@ const Portfolio: React.FunctionComponent<any> = () => {
             </Link>
           </GridContainer>
           <GridContainer>
-            <Link to={"/portfolio/app/pinner-app"}>
+            <Link to={"/projects/app/pinner-app"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
@@ -239,7 +239,7 @@ const Portfolio: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/portfolio/app/kawai-todo-app"}>
+            <Link to={"/projects/app/kawai-todo-app"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
@@ -262,7 +262,7 @@ const Portfolio: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/portfolio/app/fukin-weather-app"}>
+            <Link to={"/projects/app/fukin-weather-app"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
@@ -285,7 +285,7 @@ const Portfolio: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/portfolio/app/fukin-weather-app"}>
+            <Link to={"/projects/app/fukin-weather-app"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
@@ -315,4 +315,4 @@ const Portfolio: React.FunctionComponent<any> = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;
