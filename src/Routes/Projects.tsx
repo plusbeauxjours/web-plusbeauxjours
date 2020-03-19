@@ -285,11 +285,11 @@ const Projects: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/projects/app/fukin-weather-app"}>
+            <Link to={"/projects/app/movie-app"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
-                    src={"https://imgur.com/6sPSn1q.jpg"}
+                    src={"https://i.imgur.com/cwOUEmC.jpg"}
                     placeholder={"https://imgur.com/Cup2zqI.jpg"}
                   >
                     {(src, loading) => (

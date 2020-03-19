@@ -293,7 +293,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/4jhC3Mh.jpg"}
+            src={"https://i.imgur.com/CR9QdeV.jpg"}
             placeholder={"https://imgur.com/KsThdJ5.jpg"}
           >
             {(src, loading) => (

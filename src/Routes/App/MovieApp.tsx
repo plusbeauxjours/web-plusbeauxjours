@@ -79,8 +79,6 @@ const ColorBox = styled.div<IProps>`
   width: 200px;
   height: 200px;
   background-color: ${props => props.color};
-  border: ${props =>
-    props.color === "#FFFFFF" ? "1px solid #F23657" : "none"};
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -121,7 +119,7 @@ const ScreenshotContainer = styled.div`
 
 const Screenshot = styled.img<IProps>`
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
@@ -202,7 +200,7 @@ interface IProps {
   color?: string;
 }
 
-const KawaiTodoColors = ["#F23657", "#FFFFFF"];
+const MovieWebColors = ["#17171A"];
 
 const MovieApp: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
@@ -234,7 +232,7 @@ const MovieApp: React.FunctionComponent<any> = () => {
           <MainTitilBox>
             <MainTitle>Movie - App</MainTitle>
             <MainTitleTextContainer>
-              <MainTitleText>8th Mar 2018 - 14th Mar 2018</MainTitleText>
+              <MainTitleText>14th Mar - 19th Mar 2018 2019</MainTitleText>
               <MainTitleText>1 WEEK</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
@@ -247,7 +245,7 @@ const MovieApp: React.FunctionComponent<any> = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={"https://github.com/plusbeauxjours/kawai-todo"}
+                href={"https://github.com/plusbeauxjours/movie-app"}
               >
                 <GithubIcon />
               </a>
@@ -307,17 +305,15 @@ const MovieApp: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <ColorContainer>
-          {KawaiTodoColors.map((color, index) => (
+          {MovieWebColors.map((color, index) => (
             <ColorBox color={color} key={index}>
-              <ColorText color={color}>
-                {color === "#FFFFFF" ? "#F23657" : "#FFFFFF"}
-              </ColorText>
+              <ColorText color={color}>#17171A</ColorText>
             </ColorBox>
           ))}
         </ColorContainer>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://imgur.com/Blzz3uR.jpg"}
+            src={"https://i.imgur.com/CPuKVNw.gif"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
@@ -327,7 +323,7 @@ const MovieApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/Blzz3uR.jpg"}
+            src={"https://i.imgur.com/J8NwvYm.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
@@ -337,7 +333,17 @@ const MovieApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/QD1XQPy.jpg"}
+            src={"https://i.imgur.com/mbXCKkG.jpg"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+          >
+            {(src, loading) => (
+              <ScreenshotBox>
+                <Screenshot loading={loading} src={src} />
+              </ScreenshotBox>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={"https://i.imgur.com/AorcK5h.jpg"}
             placeholder={"https://imgur.com/iFkI2wR.jpg"}
           >
             {(src, loading) => (
@@ -347,11 +353,11 @@ const MovieApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://imgur.com/scPZA9d.jpg"}
+            src={"https://i.imgur.com/oSj88nk.jpg"}
             placeholder={"https://imgur.com/TRheCeq.jpg"}
           >
             {(src, loading) => (
-              <ScreenshotBox>
+              <ScreenshotBox style={{ marginRight: "0" }}>
                 <Screenshot loading={loading} src={src} />
               </ScreenshotBox>
             )}

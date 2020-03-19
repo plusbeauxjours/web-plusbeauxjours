@@ -100,6 +100,8 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
+const SketchContainer = styled.div``;
+
 const ScreenshotContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -217,13 +219,13 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/PMSvtWX.jpg"}
+            src={"https://i.imgur.com/dBhGLSr.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
-              <DiagramContainer>
+              <SketchContainer>
                 <Diagram loading={loading} src={src} />
-              </DiagramContainer>
+              </SketchContainer>
             )}
           </ProgressiveImage>
         </TextBox>
@@ -232,12 +234,15 @@ const PuberWeb: React.FunctionComponent<any> = () => {
             STACK
             <br /> Rapport is a close and harmonious relationship in which the
             people or groups concerned are “in sync” with each other, understand
-            each other's feelings or ideas, and communicate smoothly.
+            each other's feelings or ideas, and communicate smoothly. Rapport is
+            a close and harmonious relationship in which the people or groups
+            concerned are “in sync” with each other, understand each other's
+            feelings or ideas, and communicate smoothly.
           </Text>
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/ujyikM7.jpg"}
+            src={"https://i.imgur.com/ShXjbkS.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
@@ -252,7 +257,9 @@ const PuberWeb: React.FunctionComponent<any> = () => {
             ABOUT ALTS
             <br /> Since beginning my journey as a freelance designer nearly 8
             years ago, I've done remote work for agencies, consulted for design
-            problem at a time.
+            problem at a time. Rapport is a close and harmonious relationship in
+            which the people or groups concerned are “in sync” with each other,
+            understand each other's feelings or ideas, and communicate smoothly.
           </Text>
         </TextBox>
         <TextBox>

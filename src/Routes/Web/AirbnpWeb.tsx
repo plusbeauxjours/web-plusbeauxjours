@@ -214,7 +214,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/xBjFzfB.jpg"}
+            src={"https://i.imgur.com/I4eaGjZ.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
