@@ -174,14 +174,14 @@ interface IProps {
   color?: string;
 }
 
-const FukinWeather: React.FunctionComponent<any> = () => {
+const AwesomeWeather: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
   const [appleModalOpen, setAppleModalOpen] = useState<boolean>(false);
   useEffect(() => window.scrollTo(0, 0));
   return (
     <Container>
       <Helmet>
-        <title>Fukin Weather-app | Plusbeauxjours</title>
+        <title>Awesome Weather-app | Plusbeauxjours</title>
       </Helmet>
       {androidModalOpen && (
         <ModalContainer>
@@ -202,7 +202,7 @@ const FukinWeather: React.FunctionComponent<any> = () => {
       <Wrapper>
         <PortfolioMainContainer>
           <MainTitilBox>
-            <MainTitle>Fukin Weather - App</MainTitle>
+            <MainTitle>Awesome Weather - App</MainTitle>
             <MainTitleTextContainer>
               <MainTitleText>30th Nov 2018 - 5th Dec 2018</MainTitleText>
               <MainTitleText>1 WEEK</MainTitleText>
@@ -353,4 +353,4 @@ const FukinWeather: React.FunctionComponent<any> = () => {
   );
 };
 
-export default FukinWeather;
+export default AwesomeWeather;

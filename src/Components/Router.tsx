@@ -7,7 +7,7 @@ import AirbnpWeb from "../Routes/Web/AirbnpWeb";
 import MovieWeb from "../Routes/Web/MovieWeb";
 import NoteWeb from "../Routes/Web/NoteWeb";
 import PinnerApp from "../Routes/App/PinnerApp";
-import FukinWeatherApp from "../Routes/App/FukinWeatherApp";
+import AwesomeWeatherApp from "../Routes/App/AwesomeWeatherApp";
 import KawaiTodoApp from "../Routes/App/KawaiTodoApp";
 import MovieApp from "../Routes/App/MovieApp";
 import Architecture from "../Routes/Architecture";
@@ -38,8 +38,8 @@ export default () => (
       {/* app */}
       <Route path="/projects/app/pinner-app" component={PinnerApp} />
       <Route
-        path="/projects/app/fukin-weather-app"
-        component={FukinWeatherApp}
+        path="/projects/app/awesome-weather-app"
+        component={AwesomeWeatherApp}
       />
       <Route path="/projects/app/kawai-todo-app" component={KawaiTodoApp} />
       <Route path="/projects/app/movie-app" component={MovieApp} />

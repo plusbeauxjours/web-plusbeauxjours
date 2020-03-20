@@ -10,5 +10,6 @@
 - [ ] Note-web
 
 - [ ] Pinner-app
-- [ ] FukinWeather-app
+- [ ] AwesomeWeather-app
 - [ ] KawaiToDo-app
+- [ ] PopcornMovie-app

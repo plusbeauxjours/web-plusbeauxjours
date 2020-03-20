@@ -262,7 +262,7 @@ const Projects: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/projects/app/fukin-weather-app"}>
+            <Link to={"/projects/app/awesome-weather-app"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
@@ -279,7 +279,7 @@ const Projects: React.FunctionComponent<any> = () => {
                     )}
                   </ProgressiveImage>
                   <TextBox>
-                    <Bold>Fukin Weather-App</Bold>
+                    <Bold>Awesome Weather-App</Bold>
                     <Text>Weather app with React-Native</Text>
                   </TextBox>
                 </InnerBox>
