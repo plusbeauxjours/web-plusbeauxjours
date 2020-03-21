@@ -28,7 +28,7 @@ const MainTitilBox = styled.div`
 `;
 
 const MainTitle = styled.div`
-  font-size: 40px;
+  font-size: 33px;
   font-weight: 600;
   margin-bottom: 10px;
   line-height: 40px;

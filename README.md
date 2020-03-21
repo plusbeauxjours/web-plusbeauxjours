@@ -11,5 +11,5 @@
 
 - [ ] Pinner-app
 - [ ] AwesomeWeather-app
-- [ ] KawaiToDo-app
+- [ ] KittyToDo-app
 - [ ] PopcornMovie-app

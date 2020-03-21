@@ -239,11 +239,11 @@ const Projects: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/projects/app/kawai-todo-app"}>
+            <Link to={"/projects/app/kitty-todo-app"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
-                    src={"https://imgur.com/feJqEXf.jpg"}
+                    src={"https://i.imgur.com/BAB2d4p.jpg"}
                     placeholder={"https://imgur.com/ZPm0kbD.jpg"}
                   >
                     {(src, loading) => (
@@ -256,7 +256,7 @@ const Projects: React.FunctionComponent<any> = () => {
                     )}
                   </ProgressiveImage>
                   <TextBox>
-                    <Bold>Kawai To Do-App</Bold>
+                    <Bold>Kitty To Do-App</Bold>
                     <Text>To do app with React-Native</Text>
                   </TextBox>
                 </InnerBox>
@@ -266,7 +266,7 @@ const Projects: React.FunctionComponent<any> = () => {
               <Square>
                 <InnerBox>
                   <ProgressiveImage
-                    src={"https://imgur.com/6sPSn1q.jpg"}
+                    src={"https://i.imgur.com/GtBA9HG.jpg"}
                     placeholder={"https://imgur.com/Cup2zqI.jpg"}
                   >
                     {(src, loading) => (

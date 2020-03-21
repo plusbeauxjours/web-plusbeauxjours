@@ -150,7 +150,7 @@ interface IProps {
   color?: string;
 }
 
-const KawaiTodoColors = ["#F23657", "#FFFFFF"];
+const KittyTodoColors = ["#F23657", "#FFFFFF"];
 
 const MovieWeb: React.FunctionComponent<any> = () => {
   useEffect(() => window.scrollTo(0, 0));
@@ -244,7 +244,7 @@ const MovieWeb: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <ColorContainer>
-          {KawaiTodoColors.map((color, index) => (
+          {KittyTodoColors.map((color, index) => (
             <ColorBox color={color} key={index}>
               <ColorText color={color}>
                 {color === "#FFFFFF" ? "#F23657" : "#FFFFFF"}

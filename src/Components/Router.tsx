@@ -8,7 +8,7 @@ import MovieWeb from "../Routes/Web/MovieWeb";
 import NoteWeb from "../Routes/Web/NoteWeb";
 import PinnerApp from "../Routes/App/PinnerApp";
 import AwesomeWeatherApp from "../Routes/App/AwesomeWeatherApp";
-import KawaiTodoApp from "../Routes/App/KawaiTodoApp";
+import KittyTodoApp from "../Routes/App/KittyTodoApp";
 import MovieApp from "../Routes/App/MovieApp";
 import Architecture from "../Routes/Architecture";
 import PrivacyPolicy from "../Routes/PrivacyPolicy";
@@ -41,7 +41,7 @@ export default () => (
         path="/projects/app/awesome-weather-app"
         component={AwesomeWeatherApp}
       />
-      <Route path="/projects/app/kawai-todo-app" component={KawaiTodoApp} />
+      <Route path="/projects/app/kitty-todo-app" component={KittyTodoApp} />
       <Route path="/projects/app/movie-app" component={MovieApp} />
       {/* architectural works */}
       <Route path="/architecture" component={Architecture} />

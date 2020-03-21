@@ -205,16 +205,16 @@ interface IProps {
   color?: string;
 }
 
-const KawaiTodoColors = ["#F23657", "#FFFFFF"];
+const KittyTodoColors = ["#F23657", "#FFFFFF"];
 
-const KawaiTodoApp: React.FunctionComponent<any> = () => {
+const KittyTodoApp: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
   const [appleModalOpen, setAppleModalOpen] = useState<boolean>(false);
   useEffect(() => window.scrollTo(0, 0));
   return (
     <Container>
       <Helmet>
-        <title>Kawai Todo-app | Plusbeauxjours</title>
+        <title>Kitty Todo-app | Plusbeauxjours</title>
       </Helmet>
       {androidModalOpen && (
         <ModalContainer>
@@ -235,7 +235,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
       <Wrapper>
         <PortfolioMainContainer>
           <MainTitilBox>
-            <MainTitle>Kawai To do - App</MainTitle>
+            <MainTitle>Kitty To do - App</MainTitle>
             <MainTitleTextContainer>
               <MainTitleText>8th Mar 2018 - 14th Mar 2018</MainTitleText>
               <MainTitleText>1 WEEK</MainTitleText>
@@ -256,7 +256,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={"https://github.com/plusbeauxjours/kawai-todo"}
+                href={"https://github.com/plusbeauxjours/kitty-todo"}
               >
                 <LinkBox>
                   <GithubIcon />
@@ -319,7 +319,7 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <ColorContainer>
-          {KawaiTodoColors.map((color, index) => (
+          {KittyTodoColors.map((color, index) => (
             <ColorBox color={color} key={index}>
               <ColorText color={color}>
                 {color === "#FFFFFF" ? "#F23657" : "#FFFFFF"}
@@ -385,4 +385,4 @@ const KawaiTodoApp: React.FunctionComponent<any> = () => {
   );
 };
 
-export default KawaiTodoApp;
+export default KittyTodoApp;
