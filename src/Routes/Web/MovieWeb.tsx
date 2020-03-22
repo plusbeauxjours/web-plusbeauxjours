@@ -200,27 +200,13 @@ const MovieWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <SketchContainer>
           <ProgressiveImage
-            src={"https://imgur.com/8ZE2kiH.jpg"}
+            src={"https://i.imgur.com/AL7jxfr.jpg"}
             placeholder={"https://imgur.com/AWMJDgz.jpg"}
           >
             {(src, loading) => (
               <ImageContainer>
                 <Img
-                  style={{ maxWidth: "200px", marginRight: "30px" }}
-                  loading={loading}
-                  src={src}
-                />
-              </ImageContainer>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://imgur.com/yErTt0I.jpg"}
-            placeholder={"https://imgur.com/KsThdJ5.jpg"}
-          >
-            {(src, loading) => (
-              <ImageContainer>
-                <Img
-                  style={{ maxWidth: "400px" }}
+                  style={{ maxWidth: "800px" }}
                   loading={loading}
                   src={src}
                 />

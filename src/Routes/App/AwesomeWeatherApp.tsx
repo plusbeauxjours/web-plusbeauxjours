@@ -246,27 +246,13 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
         </TextBox>
         <SketchContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/j7LVzdl.jpg"}
+            src={"https://i.imgur.com/Pdruav0.jpg"}
             placeholder={"https://imgur.com/AWMJDgz.jpg"}
           >
             {(src, loading) => (
               <ImageContainer>
                 <Img
-                  style={{ maxWidth: "200px", marginRight: "30px" }}
-                  loading={loading}
-                  src={src}
-                />
-              </ImageContainer>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://i.imgur.com/4jhC3Mh.jpg"}
-            placeholder={"https://imgur.com/KsThdJ5.jpg"}
-          >
-            {(src, loading) => (
-              <ImageContainer>
-                <Img
-                  style={{ maxHeight: "400px" }}
+                  style={{ maxWidth: "600px" }}
                   loading={loading}
                   src={src}
                 />
