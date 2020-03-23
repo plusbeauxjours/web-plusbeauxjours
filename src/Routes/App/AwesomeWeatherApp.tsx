@@ -204,7 +204,7 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
           <MainTitilBox>
             <MainTitle>Awesome Weather - App</MainTitle>
             <MainTitleTextContainer>
-              <MainTitleText>30th Nov 2018 - 5th Dec 2018</MainTitleText>
+              <MainTitleText>30th Nov 2017 - 5th Dec 2017</MainTitleText>
               <MainTitleText>1 WEEK</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>

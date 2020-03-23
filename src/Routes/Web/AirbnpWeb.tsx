@@ -132,7 +132,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
           <MainTitilBox>
             <MainTitle>Airbnp - Web</MainTitle>
             <MainTitleTextContainer>
-              <MainTitleText>5th Feb 2020 - 9th Mar 2019</MainTitleText>
+              <MainTitleText>5th Feb 2020 - 9th Mar 2020</MainTitleText>
               <MainTitleText>1 MONTH</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>

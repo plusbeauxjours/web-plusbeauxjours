@@ -160,7 +160,7 @@ const MovieWeb: React.FunctionComponent<any> = () => {
           <MainTitilBox>
             <MainTitle>Movie - Web</MainTitle>
             <MainTitleTextContainer>
-              <MainTitleText>28th Aug - 8th Sep 2018 2019</MainTitleText>
+              <MainTitleText>28th Aug 2019 - 8th Sep 2019</MainTitleText>
               <MainTitleText>2 WEEKS</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
@@ -200,7 +200,7 @@ const MovieWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <SketchContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/AL7jxfr.jpg"}
+            src={"https://i.imgur.com/wfukrAk.jpg"}
             placeholder={"https://imgur.com/AWMJDgz.jpg"}
           >
             {(src, loading) => (

@@ -169,8 +169,8 @@ const PuberWeb: React.FunctionComponent<any> = () => {
           <MainTitilBox>
             <MainTitle>Puber - Web</MainTitle>
             <MainTitleTextContainer>
-              <MainTitleText>19th Dec 2018 - 12th Jan 2019</MainTitleText>
-              <MainTitleText>1 MONTH</MainTitleText>
+              <MainTitleText>5th Nov 2018 - 12th Jan 2019</MainTitleText>
+              <MainTitleText>2 MONTHS</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
               <a

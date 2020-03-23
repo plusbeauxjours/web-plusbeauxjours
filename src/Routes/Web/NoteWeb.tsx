@@ -131,7 +131,6 @@ const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
   font-weight: 400;
-  color: ${props => (props.color === "#FFFFFF" ? "#F23657" : "#FFFFFF")};
 `;
 
 const TextBox = styled.div`
@@ -150,28 +149,26 @@ interface IProps {
   color?: string;
 }
 
-const KittyTodoColors = ["#F23657", "#FFFFFF"];
-
-const MovieWeb: React.FunctionComponent<any> = () => {
+const NoteWeb: React.FunctionComponent<any> = () => {
   useEffect(() => window.scrollTo(0, 0));
   return (
     <Container>
       <Helmet>
-        <title>Movie-web | Plusbeauxjours</title>
+        <title>Note-web | Plusbeauxjours</title>
       </Helmet>
       <Wrapper>
         <PortfolioMainContainer>
           <MainTitilBox>
-            <MainTitle>Movie - Web</MainTitle>
+            <MainTitle>Note - Web</MainTitle>
             <MainTitleTextContainer>
-              <MainTitleText>8th Mar 2018 - 14th Mar 2018</MainTitleText>
+              <MainTitleText>19th Mar 2020 - 23th Mar 2020</MainTitleText>
               <MainTitleText>1 WEEK</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={"https://musing-roentgen-9a0963.netlify.com"}
+                href={"https://sad-hopper-a8925a.netlify.com"}
               >
                 <LinkBox>
                   <WebIcon />
@@ -181,7 +178,7 @@ const MovieWeb: React.FunctionComponent<any> = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={"https://github.com/plusbeauxjours/petflix"}
+                href={"https://github.com/plusbeauxjours/note-web"}
               >
                 <LinkBox>
                   <GithubIcon />
@@ -244,13 +241,9 @@ const MovieWeb: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <ColorContainer>
-          {KittyTodoColors.map((color, index) => (
-            <ColorBox color={color} key={index}>
-              <ColorText color={color}>
-                {color === "#FFFFFF" ? "#F23657" : "#FFFFFF"}
-              </ColorText>
-            </ColorBox>
-          ))}
+          <ColorBox color={"#fff5eb"}>
+            <ColorText>#FFF5EB</ColorText>
+          </ColorBox>
         </ColorContainer>
         <ScreenshotContainer>
           <ProgressiveImage
@@ -310,4 +303,4 @@ const MovieWeb: React.FunctionComponent<any> = () => {
   );
 };
 
-export default MovieWeb;
+export default NoteWeb;

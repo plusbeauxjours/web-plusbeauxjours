@@ -127,7 +127,6 @@ const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
   font-weight: 400;
-  color: ${props => (props.color === "#FFFFFF" ? "#F23657" : "#FFFFFF")};
 `;
 
 const TextBox = styled.div`
@@ -232,7 +231,7 @@ const MovieApp: React.FunctionComponent<any> = () => {
           <MainTitilBox>
             <MainTitle>Movie - App</MainTitle>
             <MainTitleTextContainer>
-              <MainTitleText>14th Mar - 19th Mar 2018 2019</MainTitleText>
+              <MainTitleText>14th Mar 2019 - 19th Mar 2019</MainTitleText>
               <MainTitleText>1 WEEK</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
@@ -265,27 +264,13 @@ const MovieApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <SketchContainer>
           <ProgressiveImage
-            src={"https://imgur.com/8ZE2kiH.jpg"}
+            src={"https://i.imgur.com/ibvV8ie.jpg"}
             placeholder={"https://imgur.com/AWMJDgz.jpg"}
           >
             {(src, loading) => (
               <ImageContainer>
                 <Img
-                  style={{ maxWidth: "200px", marginRight: "30px" }}
-                  loading={loading}
-                  src={src}
-                />
-              </ImageContainer>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={"https://imgur.com/yErTt0I.jpg"}
-            placeholder={"https://imgur.com/KsThdJ5.jpg"}
-          >
-            {(src, loading) => (
-              <ImageContainer>
-                <Img
-                  style={{ maxWidth: "400px" }}
+                  style={{ maxWidth: "800px" }}
                   loading={loading}
                   src={src}
                 />
