@@ -334,7 +334,16 @@ const PinnerApp: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <TextBox>
-          <Text>ALTS</Text>
+          <ProgressiveImage
+            src={"https://i.imgur.com/hmxmvUq.jpg"}
+            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
         </TextBox>
         <TextBox>
           <Text>

@@ -14,7 +14,7 @@ const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: 200;
   line-height: 35px;
@@ -36,13 +36,16 @@ const Img = styled.img`
   overflow: hidden;
 `;
 
+const NameBox = styled(TextBox)`
+  line-height: 25px;
+  margin-bottom: 0px;
+`;
+
 const Name = styled.div`
   font-weight: 600;
-  margin-bottom: 10px;
 `;
 
 const Company = styled.p`
-  width: 80%;
   text-align: center;
 `;
 
@@ -52,15 +55,17 @@ const Testimonial: React.FunctionComponent<any> = () => (
       <TestimonialContainer>
         <Img src="https://imgur.com/QyvJLxQ.jpg" />
         <TextBox>
-          "Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.""
+          "Any team would be lucky to work with Minjae, apart from being a
+          programmer that gets things done and shipped on time he is also a
+          quick learner, he can accommodate to any stack for he is never afraid
+          of taking risks and trying new technologies, his soft skills are at
+          the same level with his programming ability which makes him a delight
+          to work and communicate with"
         </TextBox>
-        <TextBox>
-          <Name>Pascal Tremblay</Name>
-          <Company>Creative Lead, Good Kind</Company>
-        </TextBox>
+        <NameBox>
+          <Name>Nicolás Serrano Arévalo</Name>
+          <Company>Co-founder, NOMADCODERS</Company>
+        </NameBox>
       </TestimonialContainer>
     </Wrapper>
   </Container>

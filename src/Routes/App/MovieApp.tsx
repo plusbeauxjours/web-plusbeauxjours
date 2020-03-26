@@ -123,10 +123,11 @@ const Screenshot = styled.img<IProps>`
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
-const ColorText = styled.div<IProps>`
+const ColorText = styled.div`
   position: absolute;
   text-align: center;
   font-weight: 400;
+  color: white;
 `;
 
 const TextBox = styled.div`
@@ -198,8 +199,6 @@ interface IProps {
   loading?: boolean;
   color?: string;
 }
-
-const MovieWebColors = ["#17171A"];
 
 const MovieApp: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
@@ -290,11 +289,9 @@ const MovieApp: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <ColorContainer>
-          {MovieWebColors.map((color, index) => (
-            <ColorBox color={color} key={index}>
-              <ColorText color={color}>#17171A</ColorText>
-            </ColorBox>
-          ))}
+          <ColorBox color={"#17171A"}>
+            <ColorText>#17171A</ColorText>
+          </ColorBox>
         </ColorContainer>
         <ScreenshotContainer>
           <ProgressiveImage

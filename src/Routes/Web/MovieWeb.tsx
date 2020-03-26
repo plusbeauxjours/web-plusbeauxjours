@@ -146,8 +146,6 @@ interface IProps {
   color?: string;
 }
 
-const MovieWebColors = ["#17171A"];
-
 const MovieWeb: React.FunctionComponent<any> = () => {
   useEffect(() => window.scrollTo(0, 0));
   return (
@@ -226,11 +224,9 @@ const MovieWeb: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <ColorContainer>
-          {MovieWebColors.map((color, index) => (
-            <ColorBox color={color} key={index}>
-              <ColorText color={color}>#17171A</ColorText>
-            </ColorBox>
-          ))}
+          <ColorBox color={"#17171A"}>
+            <ColorText>#17171A</ColorText>
+          </ColorBox>
         </ColorContainer>
         <ScreenshotContainer>
           <ProgressiveImage

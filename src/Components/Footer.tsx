@@ -53,7 +53,7 @@ const ContactBoldTextBox = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 30px;
+  padding: 40px;
 `;
 
 const Text = styled.div``;
@@ -190,7 +190,7 @@ const Footer: React.FunctionComponent<any> = () => {
             </ContactBoldTextBox>
           </ContactContainer>
           <Box>
-            <FooterText>"Making hard, Learning hard, Living hard"</FooterText>
+            <FooterText>"Make hard, Learn hard, Live hard"</FooterText>
             <SText>Handcrafted by plusbeauxjours © twentytwenty</SText>
           </Box>
         </ColumnContainer>
