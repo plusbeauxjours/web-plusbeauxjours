@@ -226,7 +226,7 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/PMSvtWX.jpg"}
+            src={"https://i.imgur.com/glomfGu.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (
@@ -246,7 +246,7 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/ujyikM7.jpg"}
+            src={"https://i.imgur.com/OCpU9yP.jpg"}
             placeholder={"https://imgur.com/rwkmgCR.jpg"}
           >
             {(src, loading) => (

@@ -150,7 +150,11 @@ const Architecture: React.FunctionComponent<any> = () => {
                 {(src, loading) => (
                   <Img
                     loading={loading}
-                    style={{ maxWidth: "1200px", width: "100%" }}
+                    style={{
+                      maxWidth: "1200px",
+                      width: "100%",
+                      opacity: loading ? 0.5 : 1
+                    }}
                     src={src}
                     alt="an image"
                   />

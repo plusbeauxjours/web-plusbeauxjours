@@ -5,7 +5,6 @@ import PinnerWeb from "../Routes/Web/PinnerWeb";
 import PuberWeb from "../Routes/Web/PuberWeb";
 import AirbnpWeb from "../Routes/Web/AirbnpWeb";
 import MovieWeb from "../Routes/Web/MovieWeb";
-import NoteWeb from "../Routes/Web/NoteWeb";
 import PinnerApp from "../Routes/App/PinnerApp";
 import AwesomeWeatherApp from "../Routes/App/AwesomeWeatherApp";
 import KittyTodoApp from "../Routes/App/KittyTodoApp";
@@ -34,7 +33,6 @@ export default () => (
       <Route path="/projects/web/puber-web" component={PuberWeb} />
       <Route path="/projects/web/airbnp-web" component={AirbnpWeb} />
       <Route path="/projects/web/movie-web" component={MovieWeb} />
-      <Route path="/projects/web/note-web" component={NoteWeb} />
       {/* app */}
       <Route path="/projects/app/pinner-app" component={PinnerApp} />
       <Route

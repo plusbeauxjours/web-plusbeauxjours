@@ -113,12 +113,12 @@ const Projects: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/projects/web/airbnp-web"}>
+            <Link to={"/projects/app/pinner-app"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
-                    src={"https://imgur.com/3WnX9SX.jpg"}
-                    placeholder={"https://imgur.com/HDNvJwg.jpg"}
+                    src={"https://imgur.com/3IH6AoJ.jpg"}
+                    placeholder={"https://imgur.com/6NqUvhu.jpg"}
                   >
                     {(src, loading) => (
                       <Img
@@ -130,8 +130,11 @@ const Projects: React.FunctionComponent<any> = () => {
                     )}
                   </ProgressiveImage>
                   <TextBox>
-                    <Bold>Airbnp-Web</Bold>
-                    <Text>Air-bnb clone with Django, Tailwind</Text>
+                    <Bold>Pinner-App</Bold>
+                    <Text>
+                      Meet-up app with Django, React-Native, Graphene,
+                      Typescript
+                    </Text>
                   </TextBox>
                 </InnerBox>
               </Square>
@@ -161,12 +164,12 @@ const Projects: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/projects/web/note-web"}>
+            <Link to={"/projects/web/airbnp-web"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
-                    src={"https://imgur.com/ScrdaJd.jpg"}
-                    placeholder={"https://imgur.com/V5lxAcw.jpg"}
+                    src={"https://imgur.com/3WnX9SX.jpg"}
+                    placeholder={"https://imgur.com/HDNvJwg.jpg"}
                   >
                     {(src, loading) => (
                       <Img
@@ -178,10 +181,8 @@ const Projects: React.FunctionComponent<any> = () => {
                     )}
                   </ProgressiveImage>
                   <TextBox>
-                    <Bold>Note-Web</Bold>
-                    <Text>
-                      Note application with React, Graphql, Typescript
-                    </Text>
+                    <Bold>Airbnp-Web</Bold>
+                    <Text>Air-bnb clone with Django, Tailwind</Text>
                   </TextBox>
                 </InnerBox>
               </Square>
@@ -211,14 +212,12 @@ const Projects: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-          </GridContainer>
-          <GridContainer>
-            <Link to={"/projects/app/pinner-app"}>
+            <Link to={"/projects/app/movie-app"}>
               <Square>
                 <InnerBox>
                   <ProgressiveImage
-                    src={"https://imgur.com/3IH6AoJ.jpg"}
-                    placeholder={"https://imgur.com/6NqUvhu.jpg"}
+                    src={"https://i.imgur.com/cwOUEmC.jpg"}
+                    placeholder={"https://imgur.com/Cup2zqI.jpg"}
                   >
                     {(src, loading) => (
                       <Img
@@ -230,11 +229,8 @@ const Projects: React.FunctionComponent<any> = () => {
                     )}
                   </ProgressiveImage>
                   <TextBox>
-                    <Bold>Pinner-App</Bold>
-                    <Text>
-                      Meet-up app with Django, React-Native, Graphene,
-                      Typescript
-                    </Text>
+                    <Bold>Movie-App</Bold>
+                    <Text>Movie app with React-Native</Text>
                   </TextBox>
                 </InnerBox>
               </Square>
@@ -281,29 +277,6 @@ const Projects: React.FunctionComponent<any> = () => {
                   <TextBox>
                     <Bold>Awesome Weather-App</Bold>
                     <Text>Weather app with React-Native</Text>
-                  </TextBox>
-                </InnerBox>
-              </Square>
-            </Link>
-            <Link to={"/projects/app/movie-app"}>
-              <Square>
-                <InnerBox>
-                  <ProgressiveImage
-                    src={"https://i.imgur.com/cwOUEmC.jpg"}
-                    placeholder={"https://imgur.com/Cup2zqI.jpg"}
-                  >
-                    {(src, loading) => (
-                      <Img
-                        loading={loading}
-                        style={{ maxWidth: "800px", width: "100%" }}
-                        src={src}
-                        alt="an image"
-                      />
-                    )}
-                  </ProgressiveImage>
-                  <TextBox>
-                    <Bold>Movie-App</Bold>
-                    <Text>Movie app with React-Native</Text>
                   </TextBox>
                 </InnerBox>
               </Square>
