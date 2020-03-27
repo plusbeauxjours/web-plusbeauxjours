@@ -113,7 +113,6 @@ const ScreenshotContainer = styled.div`
 const Screenshot = styled.img<IProps>`
   width: 100%;
   max-width: 300px;
-
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
@@ -246,7 +245,6 @@ const PinnerApp: React.FunctionComponent<any> = () => {
               <MainTitleText>3 MONTHS</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
-              f
               <IconContainer onClick={() => setAndroidModalOpen(true)}>
                 <LinkBox>
                   <AndroidIcon />

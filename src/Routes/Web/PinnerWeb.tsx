@@ -102,13 +102,6 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
-const ScreenshotBox = styled(ImageContainer)`
-  max-width: 300px;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-`;
-
 const ScreenshotContainer = styled.div`
   display: flex;
   flex-direction: column;
