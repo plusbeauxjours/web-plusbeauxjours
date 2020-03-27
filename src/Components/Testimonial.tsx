@@ -26,6 +26,8 @@ const TestimonialContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 50px 0;
+  height: 100%;
+  margin-bottom: 30px;
 `;
 
 const Img = styled.img`

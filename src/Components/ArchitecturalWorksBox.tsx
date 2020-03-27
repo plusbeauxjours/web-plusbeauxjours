@@ -14,6 +14,7 @@ const Bold = styled.div`
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 30px;
+  line-height: 40px;
 `;
 
 const Box = styled.div`
@@ -56,7 +57,8 @@ const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 200px;
+  height: 100%;
+  margin-bottom: 30px;
 `;
 
 const ArchitectureImages = [

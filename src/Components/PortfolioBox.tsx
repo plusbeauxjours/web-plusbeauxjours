@@ -4,8 +4,9 @@ import Wrapper from "./Wrapper";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
-  height: 200px;
+  height: 100%;
   width: 100%;
+  margin-bottom: 30px;
 `;
 
 const Bold = styled.div`

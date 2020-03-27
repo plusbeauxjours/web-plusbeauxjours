@@ -32,6 +32,7 @@ const MainTitle = styled.div`
   font-weight: 600;
   margin-bottom: 10px;
   line-height: 40px;
+  padding: 10px;
 `;
 
 const MainTitleText = styled.div`
