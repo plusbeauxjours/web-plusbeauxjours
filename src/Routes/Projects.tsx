@@ -88,31 +88,6 @@ const Projects: React.FunctionComponent<any> = () => {
       <Wrapper>
         <MiddleContainer>
           <GridContainer>
-            <Link to={"/projects/web/pinner-web"}>
-              <Square>
-                <InnerBox>
-                  <ProgressiveImage
-                    src={"https://imgur.com/8wafbNQ.jpg"}
-                    placeholder={"https://imgur.com/hShIsmd.jpg"}
-                  >
-                    {(src, loading) => (
-                      <Img
-                        loading={loading}
-                        style={{ maxWidth: "800px", width: "100%" }}
-                        src={src}
-                        alt="an image"
-                      />
-                    )}
-                  </ProgressiveImage>
-                  <TextBox>
-                    <Bold>Pinner-Web</Bold>
-                    <Text>
-                      Meet-up app with Django, React, Graphene, Typescript
-                    </Text>
-                  </TextBox>
-                </InnerBox>
-              </Square>
-            </Link>
             <Link to={"/projects/app/pinner-app"}>
               <Square>
                 <InnerBox>
@@ -134,6 +109,31 @@ const Projects: React.FunctionComponent<any> = () => {
                     <Text>
                       Meet-up app with Django, React-Native, Graphene,
                       Typescript
+                    </Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+            <Link to={"/projects/web/pinner-web"}>
+              <Square>
+                <InnerBox>
+                  <ProgressiveImage
+                    src={"https://imgur.com/8wafbNQ.jpg"}
+                    placeholder={"https://imgur.com/hShIsmd.jpg"}
+                  >
+                    {(src, loading) => (
+                      <Img
+                        loading={loading}
+                        style={{ maxWidth: "800px", width: "100%" }}
+                        src={src}
+                        alt="an image"
+                      />
+                    )}
+                  </ProgressiveImage>
+                  <TextBox>
+                    <Bold>Pinner-Web</Bold>
+                    <Text>
+                      Meet-up app with Django, React, Graphene, Typescript
                     </Text>
                   </TextBox>
                 </InnerBox>

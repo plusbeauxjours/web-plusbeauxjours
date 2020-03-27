@@ -174,8 +174,8 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/pzu9mA1.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Airbnp_web/Airbnp_web_sketch.jpg")}
+            placeholder={require("../../Images/Web/Airbnp_web/Airbnp_web_sketch_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -194,8 +194,8 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/iNStgwN.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Airbnp_web/Airbnp_web_alt.jpg")}
+            placeholder={require("../../Images/Web/Airbnp_web/Airbnp_web_alt_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
@@ -214,8 +214,8 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/I4eaGjZ.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Airbnp_web/Airbnp_web_screenshot.jpg")}
+            placeholder={require("../../Images/Web/Airbnp_web/Airbnp_web_screenshot_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
@@ -224,8 +224,8 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/ou89UvI.gif"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Airbnp_web/Airbnp_web_video.gif")}
+            placeholder={require("../../Images/Web/Airbnp_web/Airbnp_web_video_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer style={{ marginTop: "60px" }}>

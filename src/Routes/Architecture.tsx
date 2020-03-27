@@ -79,36 +79,40 @@ const Img = styled.img<IProps>`
 
 const ArchitectureImages = [
   {
-    main: "https://imgur.com/ErfydkQ.jpg",
-    thumbnail: "https://imgur.com/47JrV0I.jpg"
+    main: require("../Images/ArchitecturalWorks/ArchitecturalWorks_01.png"),
+    thumbnail: require("../Images/ArchitecturalWorks/ArchitecturalWorks_01_tiny.png")
   },
   {
-    main: "https://imgur.com/ahccgMu.jpg",
-    thumbnail: "https://imgur.com/XAkvb6T.jpg"
+    main: require("../Images/ArchitecturalWorks/ArchitecturalWorks_02.png"),
+    thumbnail: require("../Images/ArchitecturalWorks/ArchitecturalWorks_02_tiny.png")
   },
   {
-    main: "https://imgur.com/pIUMHxa.jpg",
-    thumbnail: "https://imgur.com/e2aHNcm.jpg"
+    main: require("../Images/ArchitecturalWorks/ArchitecturalWorks_03.png"),
+    thumbnail: require("../Images/ArchitecturalWorks/ArchitecturalWorks_03_tiny.png")
   },
   {
-    main: "https://imgur.com/EFdeODg.jpg",
-    thumbnail: "https://imgur.com/kBzmS0C.jpg"
+    main: require("../Images/ArchitecturalWorks/ArchitecturalWorks_04.png"),
+    thumbnail: require("../Images/ArchitecturalWorks/ArchitecturalWorks_04_tiny.png")
   },
   {
-    main: "https://imgur.com/PbhTGb7.jpg",
-    thumbnail: "https://imgur.com/Dxc4Suh.jpg"
+    main: require("../Images/ArchitecturalWorks/ArchitecturalWorks_11.png"),
+    thumbnail: require("../Images/ArchitecturalWorks/ArchitecturalWorks_11_tiny.png")
   },
   {
-    main: "https://imgur.com/WFgjCYC.jpg",
-    thumbnail: "https://imgur.com/TzF4MpN.jpg"
+    main: require("../Images/ArchitecturalWorks/ArchitecturalWorks_12.png"),
+    thumbnail: require("../Images/ArchitecturalWorks/ArchitecturalWorks_12_tiny.png")
   },
   {
-    main: "https://imgur.com/ZXiVZc3.jpg",
-    thumbnail: "https://imgur.com/F3Gzi16.jpg"
+    main: require("../Images/ArchitecturalWorks/ArchitecturalWorks_13.png"),
+    thumbnail: require("../Images/ArchitecturalWorks/ArchitecturalWorks_13_tiny.png")
   },
   {
-    main: "https://imgur.com/rIzAgv7.jpg",
-    thumbnail: "https://imgur.com/fIhlzma.jpg"
+    main: require("../Images/ArchitecturalWorks/ArchitecturalWorks_14.png"),
+    thumbnail: require("../Images/ArchitecturalWorks/ArchitecturalWorks_14_tiny.png")
+  },
+  {
+    main: require("../Images/ArchitecturalWorks/ArchitecturalWorks_15.png"),
+    thumbnail: require("../Images/ArchitecturalWorks/ArchitecturalWorks_15_tiny.png")
   }
 ];
 

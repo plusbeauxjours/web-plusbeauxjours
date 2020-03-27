@@ -198,8 +198,8 @@ const MovieWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <SketchContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/wfukrAk.jpg"}
-            placeholder={"https://imgur.com/AWMJDgz.jpg"}
+            src={require("../../Images/Web/Movie_web/Movie_web_sketch.jpg")}
+            placeholder={require("../../Images/Web/Movie_web/Movie_web_sketch_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
@@ -230,8 +230,8 @@ const MovieWeb: React.FunctionComponent<any> = () => {
         </ColorContainer>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/lqPMGpE.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Movie_web/Movie_web_screenshot.jpg")}
+            placeholder={require("../../Images/Web/Movie_web/Movie_web_screenshot_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
