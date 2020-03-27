@@ -102,95 +102,14 @@ const SkillBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
       <GridContainer>
-        <Link to={"/projects/web/pinner-web"}>
-          <Square>
-            <InnerBox>
-              <ProgressiveImage
-                src={"https://imgur.com/8wafbNQ.jpg"}
-                placeholder={"https://imgur.com/hShIsmd.jpg"}
-              >
-                {(src, loading) => (
-                  <Img
-                    loading={loading}
-                    style={{ maxWidth: "800px", width: "100%" }}
-                    src={src}
-                    alt="an image"
-                  />
-                )}
-              </ProgressiveImage>
-              <TextBox>
-                <Bold>Pinner-Web</Bold>
-                <Text>
-                  Meet-up app with Django, React, Graphene, Typescript
-                </Text>
-              </TextBox>
-            </InnerBox>
-          </Square>
-        </Link>
-        <Link to={"/projects/web/airbnp-web"}>
-          <Square>
-            <InnerBox>
-              <ProgressiveImage
-                src={"https://imgur.com/3WnX9SX.jpg"}
-                placeholder={"https://imgur.com/HDNvJwg.jpg"}
-              >
-                {(src, loading) => (
-                  <Img
-                    loading={loading}
-                    style={{ maxWidth: "800px", width: "100%" }}
-                    src={src}
-                    alt="an image"
-                  />
-                )}
-              </ProgressiveImage>
-              <TextBox>
-                <Bold>Airbnp-Web</Bold>
-                <Text>air-bnb clone with Django, Tailwind</Text>
-              </TextBox>
-            </InnerBox>
-          </Square>
-        </Link>
-        <Link to={"/projects/web/puber-web"}>
-          <Square>
-            <InnerBox>
-              <ProgressiveImage
-                src={"https://imgur.com/ScrdaJd.jpg"}
-                placeholder={"https://imgur.com/V5lxAcw.jpg"}
-              >
-                {(src, loading) => (
-                  <Img
-                    loading={loading}
-                    style={{ maxWidth: "800px", width: "100%" }}
-                    src={src}
-                    alt="an image"
-                  />
-                )}
-              </ProgressiveImage>
-              <TextBox>
-                <Bold>Puber-Web</Bold>
-                <Text>
-                  nuber clone with Node.js, React, Graphql, Typescript{" "}
-                </Text>
-              </TextBox>
-            </InnerBox>
-          </Square>
-        </Link>
         <Link to={"/projects/app/pinner-app"}>
           <Square>
             <InnerBox>
-              <ProgressiveImage
-                src={"https://imgur.com/3IH6AoJ.jpg"}
-                placeholder={"https://imgur.com/6NqUvhu.jpg"}
-              >
-                {(src, loading) => (
-                  <Img
-                    loading={loading}
-                    style={{ maxWidth: "800px", width: "100%" }}
-                    src={src}
-                    alt="an image"
-                  />
-                )}
-              </ProgressiveImage>
+              <Img
+                src={require("../Images/Thumbnails/Pinner_app_thumbnail.jpg")}
+                style={{ maxWidth: "800px", width: "100%" }}
+                alt="an image"
+              />
               <TextBox>
                 <Bold>Pinner-App</Bold>
                 <Text>
@@ -200,22 +119,63 @@ const SkillBox: React.FunctionComponent<any> = () => (
             </InnerBox>
           </Square>
         </Link>
+        <Link to={"/projects/web/pinner-web"}>
+          <Square>
+            <InnerBox>
+              <Img
+                src={require("../Images/Thumbnails/Pinner_web_thumbnail.jpg")}
+                style={{ maxWidth: "800px", width: "100%" }}
+                alt="an image"
+              />
+              <TextBox>
+                <Bold>Pinner-Web</Bold>
+                <Text>
+                  Meet-up app with Django, React, Graphene, Typescript
+                </Text>
+              </TextBox>
+            </InnerBox>
+          </Square>
+        </Link>
+        <Link to={"/projects/web/puber-web"}>
+          <Square>
+            <InnerBox>
+              <Img
+                src={require("../Images/Thumbnails/Puber_web_thumbnail.jpg")}
+                style={{ maxWidth: "800px", width: "100%" }}
+                alt="an image"
+              />
+              <TextBox>
+                <Bold>Puber-Web</Bold>
+                <Text>
+                  nuber clone with Node.js, React, Graphql, Typescript{" "}
+                </Text>
+              </TextBox>
+            </InnerBox>
+          </Square>
+        </Link>
+        <Link to={"/projects/web/airbnp-web"}>
+          <Square>
+            <InnerBox>
+              <Img
+                src={require("../Images/Thumbnails/Airbnp_web_thumbnail.jpg")}
+                style={{ maxWidth: "800px", width: "100%" }}
+                alt="an image"
+              />
+              <TextBox>
+                <Bold>Airbnp-Web</Bold>
+                <Text>air-bnb clone with Django, Tailwind</Text>
+              </TextBox>
+            </InnerBox>
+          </Square>
+        </Link>
         <Link to={"/projects/app/kitty-todo-app"}>
           <Square>
             <InnerBox>
-              <ProgressiveImage
-                src={"https://i.imgur.com/BAB2d4p.jpg"}
-                placeholder={"https://imgur.com/ZPm0kbD.jpg"}
-              >
-                {(src, loading) => (
-                  <Img
-                    loading={loading}
-                    style={{ maxWidth: "800px", width: "100%" }}
-                    src={src}
-                    alt="an image"
-                  />
-                )}
-              </ProgressiveImage>
+              <Img
+                src={require("../Images/Thumbnails/Kitty_app_thumbnail.jpg")}
+                style={{ maxWidth: "800px", width: "100%" }}
+                alt="an image"
+              />
               <TextBox>
                 <Bold>Kitty To Do-App</Bold>
                 <Text>To do app with React-Native</Text>
@@ -226,19 +186,11 @@ const SkillBox: React.FunctionComponent<any> = () => (
         <Link to={"/projects/app/awesome-weather-app"}>
           <Square>
             <InnerBox>
-              <ProgressiveImage
-                src={"https://i.imgur.com/GtBA9HG.jpg"}
-                placeholder={"https://imgur.com/Cup2zqI.jpg"}
-              >
-                {(src, loading) => (
-                  <Img
-                    loading={loading}
-                    style={{ maxWidth: "800px", width: "100%" }}
-                    src={src}
-                    alt="an image"
-                  />
-                )}
-              </ProgressiveImage>
+              <Img
+                src={require("../Images/Thumbnails/Movie_app_thumbnail.jpg")}
+                style={{ maxWidth: "800px", width: "100%" }}
+                alt="an image"
+              />
               <TextBox>
                 <Bold>Awesome Weather-App</Bold>
                 <Text>Weather app with React-Native</Text>

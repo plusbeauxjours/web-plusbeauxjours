@@ -219,8 +219,8 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/dBhGLSr.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Puber_web/Puber_web_sketch.jpg")}
+            placeholder={require("../../Images/Web/Puber_web/Puber_web_sketch_tiny.jpg")}
           >
             {(src, loading) => (
               <SketchContainer>
@@ -242,8 +242,8 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/ShXjbkS.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Puber_web/Puber_web_diagram.jpg")}
+            placeholder={require("../../Images/Web/Puber_web/Puber_web_diagram_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -264,8 +264,8 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/SD1mUmn.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Puber_web/Puber_web_alts.jpg")}
+            placeholder={require("../../Images/Web/Puber_web/Puber_web_alts_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -299,8 +299,8 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/MWnEEGD.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Puber_web/Puber_web_alts.jpg")}
+            placeholder={require("../../Images/Web/Puber_web/Puber_web_alts_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
@@ -309,8 +309,8 @@ const PuberWeb: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/SwwhOOn.gif"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Puber_web/Puber_web_video.gif")}
+            placeholder={require("../../Images/Web/Puber_web/Puber_web_video_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer style={{ marginTop: "60px" }}>

@@ -61,12 +61,12 @@ const TextBox = styled.div`
 
 const ArchitectureImages = [
   {
-    main: "https://imgur.com/XVuDk5d.jpg",
-    thumbnail: "https://imgur.com/QyvJLxQ.jpg"
+    main: require("../Images/Thumbnails/Architectural_works_thumbnail_01.jpg"),
+    thumbnail: require("../Images/Thumbnails/Architectural_works_thumbnail_01_tiny.jpg")
   },
   {
-    main: "https://imgur.com/DihdyYN.jpg",
-    thumbnail: "https://imgur.com/x2ZRmeC.jpg"
+    main: require("../Images/Thumbnails/Architectural_works_thumbnail_02.jpg"),
+    thumbnail: require("../Images/Thumbnails/Architectural_works_thumbnail_02_tiny.jpg")
   }
 ];
 

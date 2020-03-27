@@ -102,6 +102,9 @@ const TextContainer = styled.div`
   display: flex;
   width: 300px;
   justify-content: space-between;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 interface IProps extends RouteComponentProps<any> {}
 

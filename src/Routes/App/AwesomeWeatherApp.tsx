@@ -223,7 +223,7 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={"https://github.com/plusbeauxjours/fucking-weather"}
+                href={"https://github.com/plusbeauxjours/awesome-weather"}
               >
                 <LinkBox>
                   <GithubIcon />
@@ -246,8 +246,8 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
         </TextBox>
         <SketchContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/Pdruav0.jpg"}
-            placeholder={"https://imgur.com/AWMJDgz.jpg"}
+            src={require("../../Images/App/Awesome_app/Awesome_app_sketch.jpg")}
+            placeholder={require("../../Images/App/Awesome_app/Awesome_app_sketch_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
@@ -273,8 +273,8 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/Qa0sz0C.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Awesome_app/Awesome_app_screenshot_s1.jpg")}
+            placeholder={require("../../Images/App/Awesome_app/Awesome_app_screenshot_s1_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -283,8 +283,8 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/5yHn1Ft.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Awesome_app/Awesome_app_screenshot_s2.jpg")}
+            placeholder={require("../../Images/App/Awesome_app/Awesome_app_screenshot_s2_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -293,8 +293,8 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/pbuIk5R.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Awesome_app/Awesome_app_screenshot_s3.jpg")}
+            placeholder={require("../../Images/App/Awesome_app/Awesome_app_screenshot_s3_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -303,8 +303,8 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/jAUXL8C.jpg"}
-            placeholder={"https://imgur.com/iFkI2wR.jpg"}
+            src={require("../../Images/App/Awesome_app/Awesome_app_screenshot_s4.jpg")}
+            placeholder={require("../../Images/App/Awesome_app/Awesome_app_screenshot_s4_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -313,8 +313,8 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/j9eQsPc.jpg"}
-            placeholder={"https://imgur.com/TRheCeq.jpg"}
+            src={require("../../Images/App/Awesome_app/Awesome_app_screenshot_s5.jpg")}
+            placeholder={require("../../Images/App/Awesome_app/Awesome_app_screenshot_s5_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox style={{ marginRight: "0" }}>

@@ -226,8 +226,8 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/glomfGu.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Pinner_web/Pinner_web_sketch.jpg")}
+            placeholder={require("../../Images/Web/Pinner_web/Pinner_web_sketch_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -246,8 +246,8 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/OCpU9yP.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Pinner_web/Pinner_web_diagram.jpg")}
+            placeholder={require("../../Images/Web/Pinner_web/Pinner_web_diagram_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -266,8 +266,8 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/l7NszSe.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Pinner_web/Pinner_web_alts.jpg")}
+            placeholder={require("../../Images/Web/Pinner_web/Pinner_web_alts_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -301,8 +301,8 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/Hyh3hwq.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Pinner_web/Pinner_web_screenshot.jpg")}
+            placeholder={require("../../Images/Web/Pinner_web/Pinner_web_screenshot_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
@@ -311,8 +311,8 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/KpVr1id.gif"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/Web/Pinner_web/Pinner_web_video.gif")}
+            placeholder={require("../../Images/Web/Pinner_web/Pinner_web_video_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer style={{ marginTop: "20px" }}>

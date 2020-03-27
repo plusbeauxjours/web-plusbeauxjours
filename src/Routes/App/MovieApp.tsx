@@ -263,8 +263,8 @@ const MovieApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <SketchContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/ibvV8ie.jpg"}
-            placeholder={"https://imgur.com/AWMJDgz.jpg"}
+            src={require("../../Images/App/Movie_app/Movie_app_sketch.jpg")}
+            placeholder={require("../../Images/App/Movie_app/Movie_app_sketch_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
@@ -295,8 +295,8 @@ const MovieApp: React.FunctionComponent<any> = () => {
         </ColorContainer>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/CPuKVNw.gif"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Movie_app/Movie_app_video.gif")}
+            placeholder={require("../../Images/App/Movie_app/Movie_app_video_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -305,8 +305,8 @@ const MovieApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/J8NwvYm.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Movie_app/Movie_app_screenshot_s1.jpg")}
+            placeholder={require("../../Images/App/Movie_app/Movie_app_screenshot_s1_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -315,8 +315,8 @@ const MovieApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/mbXCKkG.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Movie_app/Movie_app_screenshot_s2.jpg")}
+            placeholder={require("../../Images/App/Movie_app/Movie_app_screenshot_s2_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -325,8 +325,8 @@ const MovieApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/AorcK5h.jpg"}
-            placeholder={"https://imgur.com/iFkI2wR.jpg"}
+            src={require("../../Images/App/Movie_app/Movie_app_screenshot_s3.jpg")}
+            placeholder={require("../../Images/App/Movie_app/Movie_app_screenshot_s3_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -335,8 +335,8 @@ const MovieApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/oSj88nk.jpg"}
-            placeholder={"https://imgur.com/TRheCeq.jpg"}
+            src={require("../../Images/App/Movie_app/Movie_app_screenshot_s4.jpg")}
+            placeholder={require("../../Images/App/Movie_app/Movie_app_screenshot_s4_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox style={{ marginRight: "0" }}>

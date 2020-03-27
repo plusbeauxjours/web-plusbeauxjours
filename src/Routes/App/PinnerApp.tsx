@@ -295,8 +295,8 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/PMSvtWX.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Pinner_app/Pinner_app_sketch.jpg")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_sketch_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -315,8 +315,8 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/ujyikM7.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Pinner_app/Pinner_app_diagram.jpg")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_diagram_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -335,8 +335,8 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={"https://i.imgur.com/hmxmvUq.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Pinner_app/Pinner_app_alts.jpg")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_alts_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -370,8 +370,8 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/WV3Pxkv.gif"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Pinner_app/Pinner_app_video.gif")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_video_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -380,8 +380,8 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/eicc8fR.png"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Pinner_app/Pinner_app_screenshot_s1.jpg")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_screenshot_s1_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -390,8 +390,8 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/oWz4IVj.png"}
-            placeholder={"https://imgur.com/iFkI2wR.jpg"}
+            src={require("../../Images/App/Pinner_app/Pinner_app_screenshot_s2.jpg")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_screenshot_s2_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -400,8 +400,8 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/wZbSeDk.png"}
-            placeholder={"https://imgur.com/TRheCeq.jpg"}
+            src={require("../../Images/App/Pinner_app/Pinner_app_screenshot_s3.jpg")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_screenshot_s3_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -410,7 +410,6 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
         </ScreenshotContainer>
-
         <TextBox>
           <Text>
             LONG TERM GAINS

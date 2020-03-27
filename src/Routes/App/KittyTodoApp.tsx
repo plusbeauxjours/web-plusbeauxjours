@@ -279,8 +279,8 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <SketchContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/j7LVzdl.jpg"}
-            placeholder={"https://imgur.com/AWMJDgz.jpg"}
+            src={require("../../Images/App/Kitty_app/Kitty_app_sketch_s1.jpg")}
+            placeholder={require("../../Images/App/Kitty_app/Kitty_app_sketch_s1_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
@@ -293,8 +293,8 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/CR9QdeV.jpg"}
-            placeholder={"https://imgur.com/KsThdJ5.jpg"}
+            src={require("../../Images/App/Kitty_app/Kitty_app_sketch_s2.jpg")}
+            placeholder={require("../../Images/App/Kitty_app/Kitty_app_sketch_s2_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
@@ -329,8 +329,8 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
         </ColorContainer>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={"https://i.imgur.com/qH10jI5.gif"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Kitty_app/Kitty_app_video.gif")}
+            placeholder={require("../../Images/App/Kitty_app/Kitty_app_video_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -339,8 +339,8 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/5ZTjXaJ.jpg"}
-            placeholder={"https://imgur.com/rwkmgCR.jpg"}
+            src={require("../../Images/App/Kitty_app/Kitty_app_screenshot_s1.jpg")}
+            placeholder={require("../../Images/App/Kitty_app/Kitty_app_screenshot_s1_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -349,8 +349,8 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/BqtKYvP.jpg"}
-            placeholder={"https://imgur.com/iFkI2wR.jpg"}
+            src={require("../../Images/App/Kitty_app/Kitty_app_screenshot_s2.jpg")}
+            placeholder={require("../../Images/App/Kitty_app/Kitty_app_screenshot_s2_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -359,8 +359,8 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={"https://i.imgur.com/xfvFJQu.jpg"}
-            placeholder={"https://imgur.com/TRheCeq.jpg"}
+            src={require("../../Images/App/Kitty_app/Kitty_app_screenshot_s3.jpg")}
+            placeholder={require("../../Images/App/Kitty_app/Kitty_app_screenshot_s3_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>

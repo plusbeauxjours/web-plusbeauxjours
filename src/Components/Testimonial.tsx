@@ -46,6 +46,7 @@ const Name = styled.div`
 `;
 
 const Company = styled.p`
+  font-size: 15px;
   text-align: center;
 `;
 
