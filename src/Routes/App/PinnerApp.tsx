@@ -99,7 +99,6 @@ const ImageContainer = styled.div`
 const ScreenshotBox = styled(ImageContainer)`
   max-width: 300px;
   width: 100%;
-  height: 100%;
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -247,6 +246,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
               <MainTitleText>3 MONTHS</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
+              f
               <IconContainer onClick={() => setAndroidModalOpen(true)}>
                 <LinkBox>
                   <AndroidIcon />
@@ -269,7 +269,6 @@ const PinnerApp: React.FunctionComponent<any> = () => {
                   <LinkText>CLIENT</LinkText>
                 </LinkBox>
               </a>
-
               <a
                 target="_blank"
                 rel="noopener noreferrer"
