@@ -5,7 +5,7 @@ import Testimonial from "./Testimonial";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
-  height: 900px;
+  height: 1000px;
   width: 100%;
 `;
 

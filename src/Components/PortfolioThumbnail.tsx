@@ -186,7 +186,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
           <Square>
             <InnerBox>
               <Img
-                src={require("../Images/Thumbnails/Movie_app_thumbnail.jpg")}
+                src={require("../Images/Thumbnails/Awesome_app_thumbnail.jpg")}
                 style={{ maxWidth: "800px", width: "100%" }}
                 alt="an image"
               />

@@ -7,7 +7,6 @@ const Container = styled.div`
   max-width: 700px;
   width: 100%;
   margin-top: 30px;
-  margin-bottom: 80px;
 `;
 
 const TextBox = styled.div`
