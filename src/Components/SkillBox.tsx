@@ -95,6 +95,10 @@ const ThirdBox = styled.div`
   height: 400px;
 `;
 
+const Img = styled.img`
+  width: 90px;
+`;
+
 const FrontEndToolsList = [
   "VSCode",
   "Photoshop",
@@ -140,9 +144,8 @@ const SkillBox: React.FunctionComponent<any> = () => (
       <BoxContainer>
         <DevidedContainer>
           <FirstBox>
-            <Icon>
-              <FrontEndIcon />
-            </Icon>
+            <Img src={require("../Images/Icon/web.jpg")} />
+            <Img src={require("../Images/Icon/mobile.jpg")} />
             <Bold>Front-end Developer</Bold>
             <Text>
               I like to code things from scratch, and enjoy bringing ideas to
@@ -164,9 +167,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
         </DevidedContainer>
         <DevidedContainer>
           <FirstBox>
-            <Icon>
-              <BackEndIcon />
-            </Icon>
+            <Img src={require("../Images/Icon/server.jpg")} />
             <Bold>Back-end Developer</Bold>
             <Text>
               I like to code things from scratch, and enjoy bringing ideas to
@@ -188,9 +189,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
         </DevidedContainer>
         <DevidedContainer>
           <FirstBox>
-            <Icon>
-              <ArchitectureIcon />
-            </Icon>
+            <Img src={require("../Images/Icon/architecture.jpg")} />
             <Bold>Architecture Designer</Bold>
             <Text>
               I like to code things from scratch, and enjoy bringing ideas to

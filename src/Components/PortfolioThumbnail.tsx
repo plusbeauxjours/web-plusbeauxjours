@@ -3,7 +3,6 @@ import styled from "../Styles/typed-components";
 import Wrapper from "./Wrapper";
 import { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import ProgressiveImage from "react-progressive-image";
 
 const Container = styled.div`
   background-color: ${props => props.theme.whiteColor};
