@@ -107,16 +107,18 @@ const Img = styled.img<IProps>`
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
+const ScreenshotBox = styled(ImageContainer)`
+  max-width: 300px;
+  width: 100%;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+`;
+
 const ScreenshotContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-`;
-
-const ScreenshotBox = styled(ImageContainer)`
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 `;
 
 const Screenshot = styled.img<IProps>`
@@ -124,7 +126,6 @@ const Screenshot = styled.img<IProps>`
   max-width: 300px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
-
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
