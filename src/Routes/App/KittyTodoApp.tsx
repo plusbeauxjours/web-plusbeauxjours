@@ -102,17 +102,18 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
-const Img = styled.img<IProps>`
-  width: 100%;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
-`;
-
 const ScreenshotBox = styled(ImageContainer)`
   max-width: 300px;
   width: 100%;
   &:not(:last-child) {
     margin-right: 30px;
   }
+`;
+
+const Img = styled.img<IProps>`
+  width: 100%;
+  height: 100%;
+  filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
 const ScreenshotContainer = styled.div`
