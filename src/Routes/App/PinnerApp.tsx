@@ -145,11 +145,6 @@ const TextBox = styled.div`
   justify-content: center;
 `;
 
-const Text = styled.div`
-  width: 80%;
-  text-align: center;
-`;
-
 const IconContainer = styled.div`
   cursor: pointer;
 `;
@@ -202,6 +197,26 @@ const QR = styled.div`
   width: 300px;
   height: 300px;
   background-color: red;
+`;
+
+const Bold = styled.p`
+  font-weight: 400;
+  margin-bottom: 10px;
+`;
+
+const Text = styled.div`
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+const GreyLine = styled.div`
+  border-bottom: 1px solid ${props => props.theme.borderColor};
+  width: 300px;
+  margin: 20px 0;
 `;
 
 interface IProps {
@@ -282,13 +297,13 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            INTRO
-            <br /> Since beginning my journey as a freelance designer nearly 8
-            years ago, I've done remote work for agencies, consulted for
-            startups, and collaborated with talented people to create digital
-            products for both business and consumer use. I'm quietly confident,
-            naturally curious, and perpetually working on improving my chops one
-            design problem at a time.
+            <Bold>About this project</Bold>
+            Since beginning my journey as a freelance designer nearly 8 years
+            ago, I've done remote work for agencies, consulted for startups, and
+            collaborated with talented people to create digital products for
+            both business and consumer use. I'm quietly confident, naturally
+            curious, and perpetually working on improving my chops one design
+            problem at a time.
           </Text>
         </TextBox>
         <TextBox>
@@ -305,10 +320,22 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <Text>
-            STACK
-            <br /> Rapport is a close and harmonious relationship in which the
-            people or groups concerned are “in sync” with each other, understand
-            each other's feelings or ideas, and communicate smoothly.
+            <Bold>Technical Sheet</Bold>
+            Technical Sheet Code technologies I got involved with while working
+            on this project..
+            <GreyLine />
+            <ul>
+              <li>Django</li>
+              <li>Graphene</li>
+              <li>Sentry</li>
+              <li>React-Native</li>
+              <li>Apollo</li>
+              <li>Firebase</li>
+              <li>TypeScript</li>
+              <li>Styled-Components</li>
+              <li>GoogleMapAPI</li>
+              <li>Heroku</li>
+            </ul>
           </Text>
         </TextBox>
         <TextBox>
@@ -325,9 +352,9 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <Text>
-            ABOUT ALTS
-            <br /> Since beginning my journey as a freelance designer nearly 8
-            years ago, I've done remote work for agencies, consulted for design
+            <Bold>Alts</Bold>
+            Since beginning my journey as a freelance designer nearly 8 years
+            ago, I've done remote work for agencies, consulted for design
             problem at a time.
           </Text>
         </TextBox>
@@ -345,9 +372,9 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <Text>
-            ABOUT COLORS
-            <br /> Since beginning my journey as a freelance designer nearly 8
-            years ago, I've done remote work for agencies, consulted for design
+            <Bold>About colors</Bold>
+            Since beginning my journey as a freelance designer nearly 8 years
+            ago, I've done remote work for agencies, consulted for design
             problem at a time.
           </Text>
         </TextBox>
@@ -360,9 +387,9 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </ColorContainer>
         <TextBox>
           <Text>
-            ABOUT DESIGN
-            <br /> Since beginning my journey as a freelance designer nearly 8
-            years ago, I've done remote work for agencies, consulted for design
+            <Bold>About design</Bold>
+            Since beginning my journey as a freelance designer nearly 8 years
+            ago, I've done remote work for agencies, consulted for design
             problem at a time.
           </Text>
         </TextBox>
@@ -410,13 +437,12 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            LONG TERM GAINS
-            <br /> Since beginning my journey as a freelance designer nearly 8
-            years ago, I've done remote work for agencies, consulted for
-            startups, and collaborated with talented people to create digital
-            products for both business and consumer use. I'm quietly confident,
-            naturally curious, and perpetually working on improving my chops one
-            design problem at a time.
+            <Bold>Long term gains</Bold> Since beginning my journey as a
+            freelance designer nearly 8 years ago, I've done remote work for
+            agencies, consulted for startups, and collaborated with talented
+            people to create digital products for both business and consumer
+            use. I'm quietly confident, naturally curious, and perpetually
+            working on improving my chops one design problem at a time.
           </Text>
         </TextBox>
       </Wrapper>

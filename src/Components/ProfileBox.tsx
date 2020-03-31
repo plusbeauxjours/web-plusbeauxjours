@@ -35,11 +35,13 @@ const ProfileBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
       <TextBox>
-        <Bold>Hi, I’m Minjae Lee. Nice to meet you.</Bold>
+        <Bold>Hello, I am Minjae.</Bold>
         <Text>
-          Since beginning my journey as a software developer nearly 2 years ago,
-          I'm quietly confident, naturally curious, and enjoying adjust to
-          different work environment.
+          More than 2 years of experience in both Front-end and Back-end
+          development of applications, My mixed background of both technical and
+          creative studies, helps me approach each phase of a project in a
+          proactive way. I'm quietly confident, naturally curious, and enjoying
+          adjust to different work environment.
         </Text>
       </TextBox>
     </Wrapper>

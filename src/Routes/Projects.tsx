@@ -3,7 +3,6 @@ import styled from "../Styles/typed-components";
 import Helmet from "react-helmet";
 import Wrapper from "../Components/Wrapper";
 import { Link } from "react-router-dom";
-import ProgressiveImage from "react-progressive-image";
 import { keyframes } from "styled-components";
 
 const Container = styled.div`
