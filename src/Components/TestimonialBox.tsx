@@ -12,7 +12,6 @@ const Container = styled.div`
 const Bold = styled.div`
   font-size: 40px;
   font-weight: 600;
-  margin-bottom: 30px;
 `;
 
 const TextBox = styled.div`
@@ -38,7 +37,7 @@ const TestimonialBox: React.FunctionComponent<any> = () => (
       <Line />
       <TextBox>
         <Bold>Testimonial</Bold>
-        <Text>People I've met with have said some nice things...</Text>
+        {/* <Text>People I've met have said some nice things...</Text> */}
         <Testimonial />
       </TextBox>
     </Wrapper>

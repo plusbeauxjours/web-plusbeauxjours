@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "../Styles/typed-components";
 import Wrapper from "./Wrapper";
-import { FrontEndIcon, BackEndIcon, ArchitectureIcon } from "../Icons";
 
 const Container = styled.div`
   background-color: ${props => props.theme.whiteColor};
@@ -49,15 +48,6 @@ const DevidedContainer = styled.div`
   }
 `;
 
-const Icon = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  svg {
-    fill: ${props => props.theme.blueColor};
-  }
-`;
 const Bold = styled.p`
   font-size: 20px;
   font-weight: 600;
@@ -97,6 +87,7 @@ const ThirdBox = styled.div`
 
 const Img = styled.img`
   width: 90px;
+  height: 90px;
 `;
 
 const FrontEndToolsList = [
@@ -148,8 +139,8 @@ const SkillBox: React.FunctionComponent<any> = () => (
             <Img src={require("../Images/Icon/mobile.jpg")} />
             <Bold>Front-end Developer</Bold>
             <Text>
-              I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.
+              I like to code things from sketch, and enjoy bringing ideas to
+              life in the browser or application.
             </Text>
           </FirstBox>
           <SecondBox>
@@ -170,13 +161,13 @@ const SkillBox: React.FunctionComponent<any> = () => (
             <Img src={require("../Images/Icon/server.jpg")} />
             <Bold>Back-end Developer</Bold>
             <Text>
-              I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.
+              I am a huge fan of Django Framework flavor to ensure having robust
+              website or application.
             </Text>
           </FirstBox>
           <SecondBox>
             <CText>Languages I speak:</CText>
-            <Text>Python, Javascript, Graphql, PostgresQL</Text>
+            <Text>Python, Javascript, Graphql</Text>
           </SecondBox>
           <ThirdBox>
             <CText>Dev Tools:</CText>
@@ -190,15 +181,15 @@ const SkillBox: React.FunctionComponent<any> = () => (
         <DevidedContainer>
           <FirstBox>
             <Img src={require("../Images/Icon/architecture.jpg")} />
-            <Bold>Architecture Designer</Bold>
+            <Bold>Architectural Designer</Bold>
             <Text>
-              I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.
+              I make images and manage a construction team. I enjoy making what
+              I imagine into reality.
             </Text>
           </FirstBox>
           <SecondBox>
             <CText>Languages I speak:</CText>
-            <Text>Korean, English, Number, Image, Plan</Text>
+            <Text>Korean, English, Number, Image</Text>
           </SecondBox>
           <ThirdBox>
             <CText>Design Tools:</CText>

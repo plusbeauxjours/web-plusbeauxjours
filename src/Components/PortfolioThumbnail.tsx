@@ -146,7 +146,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
               <TextBox>
                 <Bold>Puber-Web</Bold>
                 <Text>
-                  nuber clone with Node.js, React, Graphql, Typescript{" "}
+                  Uber clone with Node.js, React, Graphql, Typescript{" "}
                 </Text>
               </TextBox>
             </InnerBox>
@@ -162,7 +162,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
               />
               <TextBox>
                 <Bold>Airbnp-Web</Bold>
-                <Text>air-bnb clone with Django, Tailwind</Text>
+                <Text>Air-bnb clone with Django, Tailwind</Text>
               </TextBox>
             </InnerBox>
           </Square>

@@ -297,7 +297,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this project</Bold>
+            <Bold>About this Project</Bold>
             Since beginning my journey as a freelance designer nearly 8 years
             ago, I've done remote work for agencies, consulted for startups, and
             collaborated with talented people to create digital products for
@@ -352,10 +352,9 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <Text>
-            <Bold>Alts</Bold>
-            Since beginning my journey as a freelance designer nearly 8 years
-            ago, I've done remote work for agencies, consulted for design
-            problem at a time.
+            <Bold>Alts</Bold>I compared with few different designs to find best
+            UI and balance. I considered performance to reduce the time to
+            complete a task and increase user satisfaction.
           </Text>
         </TextBox>
         <TextBox>
@@ -372,10 +371,10 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <Text>
-            <Bold>About colors</Bold>
-            Since beginning my journey as a freelance designer nearly 8 years
-            ago, I've done remote work for agencies, consulted for design
-            problem at a time.
+            <Bold>About Colors</Bold>
+            User can choose a theme between darkmode and lightmode easily on
+            setting screen and the theme of both has 2 tones. A color blue is
+            used as a point in both themes.
           </Text>
         </TextBox>
         <ColorContainer>
@@ -387,7 +386,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </ColorContainer>
         <TextBox>
           <Text>
-            <Bold>About design</Bold>
+            <Bold>About Design</Bold>
             Since beginning my journey as a freelance designer nearly 8 years
             ago, I've done remote work for agencies, consulted for design
             problem at a time.
@@ -437,7 +436,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            <Bold>Long term gains</Bold> Since beginning my journey as a
+            <Bold>Long Term Gains</Bold> Since beginning my journey as a
             freelance designer nearly 8 years ago, I've done remote work for
             agencies, consulted for startups, and collaborated with talented
             people to create digital products for both business and consumer

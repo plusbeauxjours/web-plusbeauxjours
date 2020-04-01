@@ -107,6 +107,7 @@ const ScreenshotContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 100px;
 `;
 
 const Screenshot = styled.img<IProps>`
@@ -223,7 +224,7 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this project</Bold>
+            <Bold>About this Project</Bold>
             Since beginning my journey as a freelance designer nearly 8 years
             ago, I've done remote work for agencies, consulted for startups, and
             collaborated with talented people to create digital products for
@@ -277,12 +278,9 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <Text>
-            <Bold>Alts</Bold>Since beginning my journey as a freelance designer
-            nearly 8 years ago, I've done remote work for agencies, consulted
-            for design problem at a time. Rapport is a close and harmonious
-            relationship in which the people or groups concerned are “in sync”
-            with each other, understand each other's feelings or ideas, and
-            communicate smoothly.
+            <Bold>About Design</Bold> Since beginning my journey as a freelance
+            designer nearly 8 years ago, I've done remote work for agencies,
+            consulted for design problem at a time.
           </Text>
         </TextBox>
         <TextBox>
@@ -297,13 +295,6 @@ const PuberWeb: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
         </TextBox>
-        <TextBox>
-          <Text>
-            <Bold>About colors</Bold> Since beginning my journey as a freelance
-            designer nearly 8 years ago, I've done remote work for agencies,
-            consulted for design problem at a time.
-          </Text>
-        </TextBox>
         <ColorContainer>
           {PuberWebColors.map((color, index) => (
             <ColorBox color={color} key={index}>
@@ -311,17 +302,10 @@ const PuberWeb: React.FunctionComponent<any> = () => {
             </ColorBox>
           ))}
         </ColorContainer>
-        <TextBox>
-          <Text>
-            <Bold>About design</Bold> Since beginning my journey as a freelance
-            designer nearly 8 years ago, I've done remote work for agencies,
-            consulted for design problem at a time.
-          </Text>
-        </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={require("../../Images/Web/Puber_web/Puber_web_alts.jpg")}
-            placeholder={require("../../Images/Web/Puber_web/Puber_web_alts_tiny.jpg")}
+            src={require("../../Images/Web/Puber_web/Puber_web_screenshot.jpg")}
+            placeholder={require("../../Images/Web/Puber_web/Puber_web_screenshot_tiny.jpg")}
           >
             {(src, loading) => (
               <ImageContainer>
@@ -342,7 +326,7 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            <Bold>Long term gains</Bold> Since beginning my journey as a
+            <Bold>Long Term Gains</Bold> Since beginning my journey as a
             freelance designer nearly 8 years ago, I've done remote work for
             agencies, consulted for startups, and collaborated with talented
             people to create digital products for both business and consumer

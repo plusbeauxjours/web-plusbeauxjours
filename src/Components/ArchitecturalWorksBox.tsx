@@ -27,6 +27,7 @@ const Box = styled.div`
 
 const Text = styled.p`
   width: 80%;
+  line-height: 30px;
 `;
 
 const ImageAnimation = keyframes`

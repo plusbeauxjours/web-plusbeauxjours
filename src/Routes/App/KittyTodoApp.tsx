@@ -283,7 +283,7 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this project</Bold> Since beginning my journey as a
+            <Bold>About this Project</Bold> Since beginning my journey as a
             freelance designer nearly 8 years ago, I've done remote work for
             agencies, consulted for startups, and collaborated with talented
             people to create digital products for both business and consumer
@@ -387,7 +387,7 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            <Bold>Long term gains</Bold>Since beginning my journey as a
+            <Bold>Long Term Gains</Bold>Since beginning my journey as a
             freelance designer nearly 8 years ago, I've done remote work for
             agencies, consulted for startups, and collaborated with talented
             people to create digital products for both business and consumer

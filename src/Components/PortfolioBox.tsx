@@ -25,6 +25,8 @@ const TextBox = styled.div`
 
 const Text = styled.p`
   width: 80%;
+  line-height: 30px;
+  margin-bottom: 30px;
 `;
 
 const PortfolioBox: React.FunctionComponent<any> = () => (
@@ -35,6 +37,7 @@ const PortfolioBox: React.FunctionComponent<any> = () => (
         <Text>
           I'm a bit of a digital product junky. Over the years, I've used
           hundreds of web and mobile apps in different industries and verticals.
+          I cloned few web to improve skills and get to know how it works.
           Eventually, I decided that it would be a fun challenge to try
           designing and building my own.
         </Text>

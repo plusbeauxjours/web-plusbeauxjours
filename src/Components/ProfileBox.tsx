@@ -29,6 +29,7 @@ const TextBox = styled.div`
 
 const Text = styled.p`
   width: 80%;
+  line-height: 30px;
 `;
 
 const ProfileBox: React.FunctionComponent<any> = () => (
@@ -38,10 +39,12 @@ const ProfileBox: React.FunctionComponent<any> = () => (
         <Bold>Hello, I am Minjae.</Bold>
         <Text>
           More than 2 years of experience in both Front-end and Back-end
-          development of applications, My mixed background of both technical and
+          development of applications, my mixed background of both technical and
           creative studies, helps me approach each phase of a project in a
           proactive way. I'm quietly confident, naturally curious, and enjoying
-          adjust to different work environment.
+          adjust to different work environment. Outside of work I have a
+          beautiful wife and cat (obviously). I'd love to get coffee and get to
+          know you, so don’t hesitate to get in touch.
         </Text>
       </TextBox>
     </Wrapper>

@@ -23,7 +23,9 @@ const TextBox = styled.div`
   padding-top: 50px;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  line-height: 30px;
+`;
 
 const MainBox: React.FunctionComponent<any> = () => (
   <Container>

@@ -15,8 +15,6 @@ const TextBox = styled.div`
   align-items: center;
   margin-bottom: 50px;
   text-align: center;
-  font-weight: 200;
-  line-height: 35px;
 `;
 
 const TestimonialContainer = styled.div`
@@ -47,22 +45,29 @@ const Name = styled.div`
 `;
 
 const Company = styled.p`
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
+`;
+
+const Text = styled.p`
+  width: 80%;
+  line-height: 30px;
 `;
 
 const Testimonial: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
       <TestimonialContainer>
-        <Img src="https://imgur.com/QyvJLxQ.jpg" />
+        <Img src={require("../Images/Etc/Nicolas_Serrano.jpeg")} />
         <TextBox>
-          "Any team would be lucky to work with Minjae, apart from being a
-          programmer that gets things done and shipped on time he is also a
-          quick learner, he can accommodate to any stack for he is never afraid
-          of taking risks and trying new technologies, his soft skills are at
-          the same level with his programming ability which makes him a delight
-          to work and communicate with"
+          <Text>
+            "Any team would be lucky to work with Minjae, apart from being a
+            programmer that gets things done and shipped on time he is also a
+            quick learner, he can accommodate to any stack for he is never
+            afraid of taking risks and trying new technologies, his soft skills
+            are at the same level with his programming ability which makes him a
+            delight to work and communicate with"
+          </Text>
         </TextBox>
         <NameBox>
           <Name>Nicolás Serrano Arévalo</Name>

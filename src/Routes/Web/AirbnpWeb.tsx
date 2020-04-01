@@ -178,7 +178,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this project</Bold>
+            <Bold>About this Project</Bold>
             <br /> Since beginning my journey as a freelance designer nearly 8
             years ago, I've done remote work for agencies, consulted for
             startups, and collaborated with talented people to create digital
@@ -228,7 +228,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            <Bold>About design</Bold>
+            <Bold>About Design</Bold>
             Since beginning my journey as a freelance designer nearly 8 years
             ago, I've done remote work for agencies, consulted for design
             problem at a time.
@@ -258,7 +258,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            <Bold>Long term gains</Bold>
+            <Bold>Long Term Gains</Bold>
             Since beginning my journey as a freelance designer nearly 8 years
             ago, I've done remote work for agencies, consulted for startups, and
             collaborated with talented people to create digital products for
