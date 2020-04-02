@@ -4,6 +4,7 @@ import Wrapper from "./Wrapper";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
+  margin-bottom: 300px;
   height: 100%;
   width: 100%;
   margin-bottom: 30px;

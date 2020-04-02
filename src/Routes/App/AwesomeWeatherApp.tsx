@@ -8,6 +8,7 @@ import { keyframes } from "styled-components";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
+  margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
@@ -95,6 +96,7 @@ const ScreenshotContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 200px;
 `;
 
 const Screenshot = styled.img<IProps>`
@@ -274,11 +276,13 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
           </ProgressiveImage>
         </SketchContainer>
         <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox>
           <Text>
             <Bold>Technical Sheet</Bold>
             Technical Sheet Code technologies I got involved with while working
             on this project..
-            <GreyLine />
             <ul>
               <li>React-Native</li>
               <li>Axios</li>
@@ -286,6 +290,9 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
               <li>Styled-Components</li>
             </ul>
           </Text>
+        </TextBox>
+        <TextBox>
+          <GreyLine />
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage

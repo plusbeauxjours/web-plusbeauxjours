@@ -5,6 +5,7 @@ import Testimonial from "./Testimonial";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
+  margin-bottom: 300px;
   height: 1000px;
   width: 100%;
 `;
@@ -23,10 +24,6 @@ const TextBox = styled.div`
   margin: 80px 0;
 `;
 
-const Text = styled.p`
-  width: 80%;
-`;
-
 const Line = styled.div`
   border-bottom: 1px solid ${props => props.theme.borderColor};
 `;
@@ -37,7 +34,6 @@ const TestimonialBox: React.FunctionComponent<any> = () => (
       <Line />
       <TextBox>
         <Bold>Testimonial</Bold>
-        {/* <Text>People I've met have said some nice things...</Text> */}
         <Testimonial />
       </TextBox>
     </Wrapper>

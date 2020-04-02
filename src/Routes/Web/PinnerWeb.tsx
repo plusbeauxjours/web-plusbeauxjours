@@ -7,6 +7,7 @@ import { WebIcon, GithubIcon } from "../../Icons";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
+  margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
@@ -107,6 +108,7 @@ const ScreenshotContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 200px;
 `;
 
 const Screenshot = styled.img<IProps>`
@@ -244,11 +246,13 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
           </ProgressiveImage>
         </TextBox>
         <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox>
           <Text>
             <Bold>Technical Sheet</Bold>
             Technical Sheet Code technologies I got involved with while working
             on this project..
-            <GreyLine />
             <ul>
               <li>Django</li>
               <li>Graphene</li>
@@ -275,6 +279,9 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
           </ProgressiveImage>
         </TextBox>
         <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox>
           <Text>
             <Bold>Alts</Bold>I compared with few different designs to find best
             UI and balance. I considered performance to reduce the time to
@@ -294,6 +301,9 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
           </ProgressiveImage>
         </TextBox>
         <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox>
           <Text>
             <Bold>About Colors</Bold>
             User can choose a theme between darkmode and lightmode easily on
@@ -309,11 +319,7 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
           ))}
         </ColorContainer>
         <TextBox>
-          <Text>
-            <Bold>About Design</Bold> Since beginning my journey as a freelance
-            designer nearly 8 years ago, I've done remote work for agencies,
-            consulted for design problem at a time.
-          </Text>
+          <GreyLine />
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage

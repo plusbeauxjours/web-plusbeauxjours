@@ -38,6 +38,9 @@ const GlobalStyle = createGlobalStyle`
     li{
         font-size: 14px;
     }
+    ul{
+        margin-top: 70px;
+    }
 `;
 
 export default GlobalStyle;

@@ -7,6 +7,7 @@ import { WebIcon, GithubIcon } from "../../Icons";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
+  margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
@@ -200,11 +201,13 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
           </ProgressiveImage>
         </TextBox>
         <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox>
           <Text>
             <Bold>Technical Sheet</Bold>
             Code technologies I got involved with while working on this
             project..
-            <GreyLine />
             <ul>
               <li>Django</li>
               <li>Django-Templete</li>
@@ -213,6 +216,9 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
               <li>AWS</li>
             </ul>
           </Text>
+        </TextBox>
+        <TextBox>
+          <GreyLine />
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
@@ -227,12 +233,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
           </ProgressiveImage>
         </ScreenshotContainer>
         <TextBox>
-          <Text>
-            <Bold>About Design</Bold>
-            Since beginning my journey as a freelance designer nearly 8 years
-            ago, I've done remote work for agencies, consulted for design
-            problem at a time.
-          </Text>
+          <GreyLine />
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage

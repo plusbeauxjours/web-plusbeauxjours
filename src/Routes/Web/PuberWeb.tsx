@@ -7,6 +7,7 @@ import { WebIcon, GithubIcon } from "../../Icons";
 
 const Container = styled.div`
   background-color: ${props => props.theme.bgColor};
+  margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
@@ -107,7 +108,7 @@ const ScreenshotContainer = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 200px;
 `;
 
 const Screenshot = styled.img<IProps>`
@@ -120,7 +121,7 @@ const DiagramContainer = styled.div``;
 
 const Diagram = styled.img<IProps>`
   width: 100%;
-  max-width: 800px;
+  max-width: 660px;
   filter: ${props => (props.loading ? "blur(6px)" : "")};
 `;
 
@@ -246,13 +247,16 @@ const PuberWeb: React.FunctionComponent<any> = () => {
           </ProgressiveImage>
         </TextBox>
         <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox>
           <Text>
             <Bold>Technical Sheet</Bold>
             Technical Sheet Code technologies I got involved with while working
             on this project..
-            <GreyLine />
             <ul>
               <li>NodeJS</li>
+              <li>Express</li>
               <li>GraphQL</li>
               <li>TypeORM</li>
               <li>React</li>
@@ -277,23 +281,7 @@ const PuberWeb: React.FunctionComponent<any> = () => {
           </ProgressiveImage>
         </TextBox>
         <TextBox>
-          <Text>
-            <Bold>About Design</Bold> Since beginning my journey as a freelance
-            designer nearly 8 years ago, I've done remote work for agencies,
-            consulted for design problem at a time.
-          </Text>
-        </TextBox>
-        <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/Web/Puber_web/Puber_web_alts.jpg")}
-            placeholder={require("../../Images/Web/Puber_web/Puber_web_alts_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
+          <GreyLine />
         </TextBox>
         <ColorContainer>
           {PuberWebColors.map((color, index) => (
@@ -302,6 +290,9 @@ const PuberWeb: React.FunctionComponent<any> = () => {
             </ColorBox>
           ))}
         </ColorContainer>
+        <TextBox>
+          <GreyLine />
+        </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
             src={require("../../Images/Web/Puber_web/Puber_web_screenshot.jpg")}
