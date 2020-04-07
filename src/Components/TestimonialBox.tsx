@@ -4,8 +4,8 @@ import Wrapper from "./Wrapper";
 import Testimonial from "./Testimonial";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
-  margin-bottom: 300px;
+  background-color: ${(props) => props.theme.bgColor};
+  margin-bottom: 100px;
   height: 1000px;
   width: 100%;
 `;
@@ -25,7 +25,7 @@ const TextBox = styled.div`
 `;
 
 const Line = styled.div`
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
 `;
 
 const TestimonialBox: React.FunctionComponent<any> = () => (

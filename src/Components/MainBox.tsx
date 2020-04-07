@@ -3,7 +3,7 @@ import styled from "../Styles/typed-components";
 import Wrapper from "./Wrapper";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
   height: 800px;
 `;
@@ -33,9 +33,9 @@ const MainBox: React.FunctionComponent<any> = () => (
     <Wrapper>
       <TextBox>
         <Bold>
-          Architecture Designer,
+          Front-end Developer & Back-end Developer,
           <br />
-          Front-end Developer & Back-end Developer
+          Architecture Designer
         </Bold>
         <Text>I design and build a building before.</Text>
         <Text>

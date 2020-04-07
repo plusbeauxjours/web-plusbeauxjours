@@ -3,7 +3,7 @@ import styled from "../Styles/typed-components";
 import Wrapper from "./Wrapper";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
   max-width: 700px;
   width: 100%;
@@ -67,7 +67,7 @@ const Testimonial: React.FunctionComponent<any> = () => (
             quick learner, he can accommodate to any stack for he is never
             afraid of taking risks and trying new technologies, his soft skills
             are at the same level with his programming ability which makes him a
-            delight to work and communicate with"
+            delight to work and communicate with."
           </Text>
         </TextBox>
         <NameBox>

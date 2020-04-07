@@ -6,7 +6,7 @@ import { keyframes } from "styled-components";
 import { ContactMailIcon } from "../Icons";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.blueColor};
+  background-color: ${(props) => props.theme.blueColor};
   width: 100%;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: ${props => props.theme.whiteColor};
+  color: ${(props) => props.theme.whiteColor};
   text-align: center;
 `;
 const Bold = styled.div`
@@ -32,7 +32,7 @@ const Bold = styled.div`
 const SText = styled.div`
   font-weight: 200;
   font-size: 14px;
-  color: ${props => props.theme.whiteColor};
+  color: ${(props) => props.theme.whiteColor};
   margin-bottom: 50px;
   margin-top: 100px;
 `;
@@ -64,14 +64,14 @@ const FooterText = styled.div`
 `;
 
 const ContactContainer = styled.div`
-  background-color: ${props => props.theme.darkBlueColor};
+  background-color: ${(props) => props.theme.darkBlueColor};
   width: 90%;
   max-width: 800px;
   border-radius: 20px;
   height: 200px;
   bottom: 100px;
   position: relative;
-  color: ${props => props.theme.whiteColor};
+  color: ${(props) => props.theme.whiteColor};
 `;
 
 const BtnContainer = styled.div`
@@ -83,8 +83,8 @@ const Btn = styled.button`
   width: 300px;
   height: 45px;
   margin-top: 20px;
-  background-color: ${props => props.theme.blueColor};
-  color: ${props => props.theme.whiteColor};
+  background-color: ${(props) => props.theme.blueColor};
+  color: ${(props) => props.theme.whiteColor};
   border-radius: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -122,7 +122,7 @@ const ModalOverlay = styled.div`
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: ${props => props.theme.modalOverlayColor};
+  background-color: ${(props) => props.theme.modalOverlayColor};
 `;
 
 const Modal = styled.div`
@@ -150,7 +150,7 @@ const Icon = styled.div`
   margin-top: 5px;
   margin-right: 5px;
   svg {
-    fill: ${props => props.theme.whiteColor};
+    fill: ${(props) => props.theme.whiteColor};
   }
 `;
 
@@ -191,7 +191,7 @@ const Footer: React.FunctionComponent<any> = () => {
             </ContactBoldTextBox>
           </ContactContainer>
           <Box>
-            <FooterText>"Make hard, Learn hard, Live hard"</FooterText>
+            {/* <FooterText>"Make hard, Learn hard, Live hard"</FooterText> */}
             <SText>Handcrafted by plusbeauxjours © twentytwenty</SText>
           </Box>
         </ColumnContainer>

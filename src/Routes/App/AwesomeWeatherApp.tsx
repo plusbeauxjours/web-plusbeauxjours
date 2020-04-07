@@ -7,16 +7,16 @@ import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   display: flex;
   justify-content: space-around;
   height: 400px;
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
 `;
 
 const MainTitilBox = styled.div`
@@ -45,7 +45,7 @@ const MainTitleTextContainer = styled.div`
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
-  border-top: 1px solid ${props => props.theme.borderColor};
+  border-top: 1px solid ${(props) => props.theme.borderColor};
 `;
 
 const LinkContainer = styled.div`
@@ -89,20 +89,19 @@ const ScreenshotBox = styled(ImageContainer)`
 
 const Img = styled.img<IProps>`
   width: 100%;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const ScreenshotContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 200px;
 `;
 
 const Screenshot = styled.img<IProps>`
   width: 100%;
   max-width: 300px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const TextBox = styled.div`
@@ -143,7 +142,7 @@ const ModalOverlay = styled.div`
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: ${props => props.theme.modalOverlayColor};
+  background-color: ${(props) => props.theme.modalOverlayColor};
 `;
 
 const Modal = styled.div`
@@ -180,7 +179,7 @@ const Text = styled.div`
 `;
 
 const GreyLine = styled.div`
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   width: 300px;
   margin: 20px 0;
 `;
@@ -251,12 +250,11 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this Project</Bold> Since beginning my journey as a
-            freelance designer nearly 8 years ago, I've done remote work for
-            agencies, consulted for startups, and collaborated with talented
-            people to create digital products for both business and consumer
-            use. I'm quietly confident, naturally curious, and perpetually
-            working on improving my chops one design problem at a time.
+            <Bold>About this Project</Bold>My first project with React-Native is
+            simple weather application. I've leanred how to deploy mobile
+            application on Apple App Store and Google Play Store and what
+            "Component's Life Cycle" is. I used openweathermap API to get
+            weather information.
           </Text>
         </TextBox>
         <SketchContainer>
@@ -275,22 +273,6 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
         </SketchContainer>
-        <TextBox>
-          <GreyLine />
-        </TextBox>
-        <TextBox>
-          <Text>
-            <Bold>Technical Sheet</Bold>
-            Technical Sheet Code technologies I got involved with while working
-            on this project..
-            <ul>
-              <li>React-Native</li>
-              <li>Axios</li>
-              <li>TypeScript</li>
-              <li>Styled-Components</li>
-            </ul>
-          </Text>
-        </TextBox>
         <TextBox>
           <GreyLine />
         </TextBox>
@@ -346,16 +328,6 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
         </ScreenshotContainer>
-        <TextBox>
-          <Text>
-            <Bold>Long Term Gains</Bold> Since beginning my journey as a
-            freelance designer nearly 8 years ago, I've done remote work for
-            agencies, consulted for startups, and collaborated with talented
-            people to create digital products for both business and consumer
-            use. I'm quietly confident, naturally curious, and perpetually
-            working on improving my chops one design problem at a time.
-          </Text>
-        </TextBox>
       </Wrapper>
     </Container>
   );

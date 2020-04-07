@@ -7,16 +7,16 @@ import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   display: flex;
   justify-content: space-around;
   height: 400px;
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
 `;
 
 const MainTitilBox = styled.div`
@@ -45,7 +45,7 @@ const MainTitleTextContainer = styled.div`
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
-  border-top: 1px solid ${props => props.theme.borderColor};
+  border-top: 1px solid ${(props) => props.theme.borderColor};
 `;
 
 const LinkContainer = styled.div`
@@ -82,8 +82,8 @@ const ColorBox = styled.div<IProps>`
   align-items: center;
   width: 200px;
   height: 200px;
-  background-color: ${props => props.color};
-  border: ${props =>
+  background-color: ${(props) => props.color};
+  border: ${(props) =>
     props.color === "#FFFFFF" ? "1px solid #F23657" : "none"};
   &:not(:last-child) {
     margin-right: 30px;
@@ -114,7 +114,7 @@ const ScreenshotBox = styled(ImageContainer)`
 const Img = styled.img<IProps>`
   width: 100%;
   height: 100%;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const ScreenshotContainer = styled.div`
@@ -127,13 +127,13 @@ const ScreenshotContainer = styled.div`
 const Screenshot = styled.img<IProps>`
   width: 100%;
   max-width: 300px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
   font-weight: 400;
-  color: ${props => (props.color === "#FFFFFF" ? "#F23657" : "#FFFFFF")};
+  color: ${(props) => (props.color === "#FFFFFF" ? "#F23657" : "#FFFFFF")};
 `;
 
 const TextBox = styled.div`
@@ -174,7 +174,7 @@ const ModalOverlay = styled.div`
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: ${props => props.theme.modalOverlayColor};
+  background-color: ${(props) => props.theme.modalOverlayColor};
 `;
 
 const Modal = styled.div`
@@ -211,7 +211,7 @@ const Text = styled.div`
 `;
 
 const GreyLine = styled.div`
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   width: 300px;
   margin: 20px 0;
 `;
@@ -284,12 +284,7 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this Project</Bold> Since beginning my journey as a
-            freelance designer nearly 8 years ago, I've done remote work for
-            agencies, consulted for startups, and collaborated with talented
-            people to create digital products for both business and consumer
-            use. I'm quietly confident, naturally curious, and perpetually
-            working on improving my chops one design problem at a time.
+            <Bold>About this Project</Bold>
           </Text>
         </TextBox>
         <SketchContainer>
@@ -394,16 +389,6 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
         </ScreenshotContainer>
-        <TextBox>
-          <Text>
-            <Bold>Long Term Gains</Bold>Since beginning my journey as a
-            freelance designer nearly 8 years ago, I've done remote work for
-            agencies, consulted for startups, and collaborated with talented
-            people to create digital products for both business and consumer
-            use. I'm quietly confident, naturally curious, and perpetually
-            working on improving my chops one design problem at a time.
-          </Text>
-        </TextBox>
       </Wrapper>
     </Container>
   );

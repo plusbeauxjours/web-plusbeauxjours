@@ -6,16 +6,16 @@ import ProgressiveImage from "react-progressive-image";
 import { WebIcon, GithubIcon } from "../../Icons";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   display: flex;
   justify-content: space-around;
   height: 400px;
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   @media screen and (max-width: 830px) {
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,7 @@ const MainTitleTextContainer = styled.div`
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
-  border-top: 1px solid ${props => props.theme.borderColor};
+  border-top: 1px solid ${(props) => props.theme.borderColor};
 `;
 
 const LinkContainer = styled.div`
@@ -89,7 +89,7 @@ const ColorBox = styled.div<IProps>`
   align-items: center;
   width: 200px;
   height: 200px;
-  background-color: ${props => props.color};
+  background-color: ${(props) => props.color};
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -109,7 +109,7 @@ const ImageContainer = styled.div`
 
 const Img = styled.img<IProps>`
   width: 100%;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const ScreenshotContainer = styled.div`
@@ -122,7 +122,7 @@ const ScreenshotContainer = styled.div`
 const Screenshot = styled.img<IProps>`
   width: 100%;
   max-width: 800px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 const ColorText = styled.div<IProps>`
   position: absolute;
@@ -152,7 +152,7 @@ const Text = styled.div`
 `;
 
 const GreyLine = styled.div`
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   width: 300px;
   margin: 20px 0;
 `;
@@ -203,12 +203,13 @@ const MovieWeb: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this Project</Bold>Since beginning my journey as a
-            freelance designer nearly 8 years ago, I've done remote work for
-            agencies, consulted for startups, and collaborated with talented
-            people to create digital products for both business and consumer
-            use. I'm quietly confident, naturally curious, and perpetually
-            working on improving my chops one design problem at a time.
+            <Bold>About this Project</Bold>To practice container and
+            presentational design pattern, I coded up with React and TMDb API
+            for 2weeks. It took too long time because I've tried to write clean
+            code. Thanks to that I can save a time to consider what is the best
+            way to write a code with class component. ( Hooks let me do the
+            sameks thing without an arbitrary division. ) I enjoyed to use TMDb
+            API, there was huge information on response.
           </Text>
         </TextBox>
         <SketchContainer>
@@ -267,16 +268,6 @@ const MovieWeb: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
         </ScreenshotContainer>
-        <TextBox>
-          <Text>
-            <Bold>Long Term Gains</Bold> Since beginning my journey as a
-            freelance designer nearly 8 years ago, I've done remote work for
-            agencies, consulted for startups, and collaborated with talented
-            people to create digital products for both business and consumer
-            use. I'm quietly confident, naturally curious, and perpetually
-            working on improving my chops one design problem at a time.
-          </Text>
-        </TextBox>
       </Wrapper>
     </Container>
   );
