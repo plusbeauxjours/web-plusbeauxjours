@@ -7,16 +7,16 @@ import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   display: flex;
   justify-content: space-around;
   height: 400px;
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
 `;
 
 const MainTitilBox = styled.div`
@@ -46,7 +46,7 @@ const MainTitleTextContainer = styled.div`
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
-  border-top: 1px solid ${props => props.theme.borderColor};
+  border-top: 1px solid ${(props) => props.theme.borderColor};
 `;
 
 const LinkContainer = styled.div`
@@ -83,8 +83,8 @@ const ColorBox = styled.div<IProps>`
   align-items: center;
   width: 200px;
   height: 200px;
-  background-color: ${props => props.color};
-  border: ${props =>
+  background-color: ${(props) => props.color};
+  border: ${(props) =>
     props.color === "#FFFFFF" ? "1px solid #F23657" : "none"};
   &:not(:last-child) {
     margin-right: 30px;
@@ -104,6 +104,10 @@ const ScreenshotBox = styled(ImageContainer)`
     margin-right: 30px;
   }
 `;
+const Img = styled.img<IProps>`
+  width: 100%;
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
+`;
 
 const ScreenshotContainer = styled.div`
   display: flex;
@@ -115,7 +119,7 @@ const ScreenshotContainer = styled.div`
 const Screenshot = styled.img<IProps>`
   width: 100%;
   max-width: 300px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const DiagramContainer = styled.div``;
@@ -123,13 +127,13 @@ const DiagramContainer = styled.div``;
 const Diagram = styled.img<IProps>`
   width: 100%;
   max-width: 800px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
   font-weight: 400;
-  color: ${props => {
+  color: ${(props) => {
     if (props.color === "#318CEE") {
       return "#EDEDED";
     } else {
@@ -179,7 +183,7 @@ const ModalOverlay = styled.div`
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: ${props => props.theme.modalOverlayColor};
+  background-color: ${(props) => props.theme.modalOverlayColor};
 `;
 
 const Modal = styled.div`
@@ -193,12 +197,6 @@ const Modal = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`;
-
-const QR = styled.div`
-  width: 300px;
-  height: 300px;
-  background-color: red;
 `;
 
 const Bold = styled.p`
@@ -216,7 +214,7 @@ const Text = styled.div`
 `;
 
 const GreyLine = styled.div`
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   width: 300px;
   margin: 20px 0;
 `;
@@ -241,7 +239,10 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         <ModalContainer>
           <ModalOverlay onClick={() => setAndroidModalOpen(false)} />
           <Modal>
-            <QR />
+            <Img
+              style={{ maxWidth: "300px" }}
+              src={require("../../Images/App/Pinner_app/PinnerApp_Android.jpg")}
+            />
           </Modal>
         </ModalContainer>
       )}
@@ -249,7 +250,10 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         <ModalContainer>
           <ModalOverlay onClick={() => setAppleModalOpen(false)} />
           <Modal>
-            <QR />
+            <Img
+              style={{ maxWidth: "300px" }}
+              src={require("../../Images/App/Pinner_app/PinnerApp_IOS.jpg")}
+            />
           </Modal>
         </ModalContainer>
       )}

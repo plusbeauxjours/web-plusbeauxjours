@@ -184,12 +184,6 @@ const Modal = styled.div`
   justify-content: center;
 `;
 
-const QR = styled.div`
-  width: 300px;
-  height: 300px;
-  background-color: red;
-`;
-
 const Bold = styled.p`
   font-weight: 400;
   margin-bottom: 10px;
@@ -228,7 +222,10 @@ const MovieApp: React.FunctionComponent<any> = () => {
         <ModalContainer>
           <ModalOverlay onClick={() => setAndroidModalOpen(false)} />
           <Modal>
-            <QR />
+            <Img
+              style={{ maxWidth: "300px" }}
+              src={require("../../Images/App/Movie_app/MovieApp_Android.jpg")}
+            />
           </Modal>
         </ModalContainer>
       )}
@@ -236,7 +233,10 @@ const MovieApp: React.FunctionComponent<any> = () => {
         <ModalContainer>
           <ModalOverlay onClick={() => setAppleModalOpen(false)} />
           <Modal>
-            <QR />
+            <Img
+              style={{ maxWidth: "300px" }}
+              src={require("../../Images/App/Movie_app/MovieApp_IOS.jpg")}
+            />
           </Modal>
         </ModalContainer>
       )}

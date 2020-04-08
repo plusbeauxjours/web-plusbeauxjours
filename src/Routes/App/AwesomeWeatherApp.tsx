@@ -158,12 +158,6 @@ const Modal = styled.div`
   justify-content: center;
 `;
 
-const QR = styled.div`
-  width: 300px;
-  height: 300px;
-  background-color: red;
-`;
-
 const Bold = styled.p`
   font-weight: 400;
   margin-bottom: 10px;
@@ -202,7 +196,10 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
         <ModalContainer>
           <ModalOverlay onClick={() => setAndroidModalOpen(false)} />
           <Modal>
-            <QR />
+            <Img
+              style={{ maxWidth: "300px" }}
+              src={require("../../Images/App/Awesome_app/AwesomeWeatherQR_Android.jpg")}
+            />
           </Modal>
         </ModalContainer>
       )}
@@ -210,7 +207,10 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
         <ModalContainer>
           <ModalOverlay onClick={() => setAppleModalOpen(false)} />
           <Modal>
-            <QR />
+            <Img
+              style={{ maxWidth: "300px" }}
+              src={require("../../Images/App/Awesome_app/AwesomeWeatherQR_IOS.jpg")}
+            />
           </Modal>
         </ModalContainer>
       )}
