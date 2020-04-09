@@ -284,7 +284,11 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this Project</Bold>
+            <Bold>About this Project</Bold>KittyToDo is basic React-Native
+            tutorial to have understanding AsyncStorage and state. ( By default,
+            setState triggers a re-render and setState updates the local state
+            asynchronously. ) A user can add a task, mark a task as completed,
+            edit and delete an already added task.
           </Text>
         </TextBox>
         <SketchContainer>
@@ -317,21 +321,6 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
         </SketchContainer>
-        <TextBox>
-          <GreyLine />
-        </TextBox>
-        <TextBox>
-          <Text>
-            <Bold>Technical Sheet</Bold>
-            Technical Sheet Code technologies I got involved with while working
-            on this project..
-            <ul>
-              <li>React-Native</li>
-              <li>TypeScript</li>
-              <li>Styled-Components</li>
-            </ul>
-          </Text>
-        </TextBox>
         <TextBox>
           <GreyLine />
         </TextBox>

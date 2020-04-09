@@ -11,8 +11,7 @@ import Footer from "../Components/Footer";
 import MainBox from "../Components/MainBox";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
-  margin-bottom: 300px;
+  background-color: ${(props) => props.theme.bgColor};
 `;
 
 const ColumnContainer = styled.div`

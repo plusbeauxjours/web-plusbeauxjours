@@ -5,6 +5,7 @@ import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
 import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.bgColor};
@@ -104,6 +105,18 @@ const ScreenshotBox = styled(ImageContainer)`
   }
 `;
 
+const LinkBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const LinkText = styled.div`
+  font-size: 6px;
+  text-align: center;
+  height: 8px;
+`;
+
 const Img = styled.img<IProps>`
   width: 100%;
   filter: ${(props) => (props.loading ? "blur(6px)" : "")};
@@ -189,6 +202,10 @@ const Bold = styled.p`
   margin-bottom: 10px;
 `;
 
+const Inline = styled.div`
+  flex-direction: row;
+`;
+
 const Text = styled.div`
   width: 80%;
   text-align: center;
@@ -250,29 +267,43 @@ const MovieApp: React.FunctionComponent<any> = () => {
             </MainTitleTextContainer>
             <LinkContainer>
               <IconContainer onClick={() => setAndroidModalOpen(true)}>
-                <AndroidIcon />
+                <LinkBox>
+                  <AndroidIcon />
+                  <LinkText>ANDROID</LinkText>
+                </LinkBox>
               </IconContainer>
               <IconContainer onClick={() => setAppleModalOpen(true)}>
-                <AppleIcon />
+                <LinkBox>
+                  <AppleIcon />
+                  <LinkText>IOS</LinkText>
+                </LinkBox>
               </IconContainer>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={"https://github.com/plusbeauxjours/movie-app"}
               >
-                <GithubIcon />
+                <LinkBox>
+                  <GithubIcon />
+                  <LinkText>GITHUB</LinkText>
+                </LinkBox>
               </a>
             </LinkContainer>
           </MainTitilBox>
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this Project</Bold> Since beginning my journey as a
-            freelance designer nearly 8 years ago, I've done remote work for
-            agencies, consulted for startups, and collaborated with talented
-            people to create digital products for both business and consumer
-            use. I'm quietly confident, naturally curious, and perpetually
-            working on improving my chops one design problem at a time.
+            <Bold>About this Project</Bold>
+            <Inline>
+              This React-Native project is a mobile application of&nbsp;
+              <Link to={"/projects/web/movie-web"}>movieWeb</Link>. Managing the
+              presentation of, and transition between, multiple screens is
+              typically handled by what is known as a navigator from
+              React-Navigation. I tried to write a code in a functional style
+              with React-Hooks ( Hooks is awesome!! ). One of the main benefits,
+              at least to me, is that code written in a functional style is much
+              easier to understand.
+            </Inline>
           </Text>
         </TextBox>
         <SketchContainer>

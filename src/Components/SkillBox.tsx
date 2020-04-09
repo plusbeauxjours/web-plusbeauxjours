@@ -3,8 +3,8 @@ import styled from "../Styles/typed-components";
 import Wrapper from "./Wrapper";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.whiteColor};
-  border: 1px solid ${props => props.theme.borderColor};
+  background-color: ${(props) => props.theme.whiteColor};
+  border: 1px solid ${(props) => props.theme.borderColor};
   width: 80%;
   max-width: 1200px;
   height: 900px;
@@ -37,13 +37,13 @@ const DevidedContainer = styled.div`
   align-items: center;
   text-align: center;
   &:not(:last-child) {
-    border-right: 1px solid ${props => props.theme.borderColor};
+    border-right: 1px solid ${(props) => props.theme.borderColor};
   }
   @media screen and (max-width: 1200px) {
     width: 100%;
     &:not(:last-child) {
       border-right: none;
-      border-bottom: 1px solid ${props => props.theme.borderColor};
+      border-bottom: 1px solid ${(props) => props.theme.borderColor};
     }
   }
 `;
@@ -57,7 +57,7 @@ const Bold = styled.p`
 const CText = styled.p`
   margin: 20px 0;
   font-weight: 400;
-  color: ${props => props.theme.blueColor};
+  color: ${(props) => props.theme.blueColor};
 `;
 
 const Text = styled.p`
@@ -102,7 +102,7 @@ const FrontEndToolsList = [
   "Sketch",
   "Github",
   "Terminal",
-  "Pen & Paper"
+  "Pen & Paper",
 ];
 
 const BackEndToolsList = [
@@ -116,7 +116,7 @@ const BackEndToolsList = [
   "TypeORM",
   "Github",
   "ContextAPI",
-  "Terminal"
+  "Terminal",
 ];
 
 const ArchitectureToolsList = [
@@ -125,8 +125,9 @@ const ArchitectureToolsList = [
   "Rhino",
   "React",
   "3dsMax",
+  "V-Ray",
   "SketchUp",
-  "Pen & Paper"
+  "Pen & Paper",
 ];
 
 const SkillBox: React.FunctionComponent<any> = () => (
