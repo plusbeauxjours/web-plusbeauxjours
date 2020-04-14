@@ -4,18 +4,20 @@ import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
 import { WebIcon, GithubIcon } from "../../Icons";
+import { Link } from "react-router-dom";
+import Projects from "../Projects";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   display: flex;
   justify-content: space-around;
   height: 400px;
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   @media screen and (max-width: 830px) {
     flex-direction: column;
     align-items: center;
@@ -52,7 +54,7 @@ const MainTitleTextContainer = styled.div`
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
-  border-top: 1px solid ${props => props.theme.borderColor};
+  border-top: 1px solid ${(props) => props.theme.borderColor};
 `;
 
 const LinkContainer = styled.div`
@@ -90,7 +92,7 @@ const ScreenshotContainer = styled.div`
 const Screenshot = styled.img<IProps>`
   width: 100%;
   max-width: 800px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const DiagramContainer = styled.div`
@@ -102,7 +104,7 @@ const DiagramContainer = styled.div`
 const Diagram = styled.img<IProps>`
   width: 100%;
   max-width: 800px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const TextBox = styled.div`
@@ -116,6 +118,10 @@ const Bold = styled.p`
   margin-bottom: 10px;
 `;
 
+const Inline = styled.div`
+  flex-direction: row;
+`;
+
 const Text = styled.div`
   width: 80%;
   text-align: center;
@@ -126,7 +132,7 @@ const Text = styled.div`
 `;
 
 const GreyLine = styled.div`
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   width: 300px;
   margin: 20px 0;
 `;
@@ -180,12 +186,15 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
         <TextBox>
           <Text>
             <Bold>About this Project</Bold>
-            <br /> Since beginning my journey as a freelance designer nearly 8
-            years ago, I've done remote work for agencies, consulted for
-            startups, and collaborated with talented people to create digital
-            products for both business and consumer use. I'm quietly confident,
-            naturally curious, and perpetually working on improving my chops one
-            design problem at a time.
+            <Inline>
+              I decided to clone one more two player market project with Django
+              when I've finished&nbsp;
+              <Link to={"/projects/web/puber-web"}>Puber</Link> which is two
+              player market project built with NodeJs. This project took only 1
+              month because of Django Template. I used Django Template instead
+              of any front-end framework to save time. I didn't need to think
+              about class-name while I'm using Tailwind.
+            </Inline>
           </Text>
         </TextBox>
         <TextBox>
@@ -212,7 +221,6 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
               <li>Django</li>
               <li>Django-Templete</li>
               <li>Tailwind</li>
-              <li>Styled-Components</li>
               <li>AWS</li>
             </ul>
           </Text>
@@ -260,12 +268,14 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
         <TextBox>
           <Text>
             <Bold>Long Term Gains</Bold>
-            Since beginning my journey as a freelance designer nearly 8 years
-            ago, I've done remote work for agencies, consulted for startups, and
-            collaborated with talented people to create digital products for
-            both business and consumer use. I'm quietly confident, naturally
-            curious, and perpetually working on improving my chops one design
-            problem at a time.
+            I've considered about front-end between React and Django Template. I
+            didn't want a many dynamic things or many interactive things on this
+            projects. It was going to be mostly about content. So Django
+            Template was a best option and also I made my own custom manage.py
+            commands to create fake data instead of click on Django Admin panel
+            to create date. I delighted to learn more about Django from this
+            project. This project will be on mobile application with REST API
+            with React-Native on May 2020.
           </Text>
         </TextBox>
       </Wrapper>
