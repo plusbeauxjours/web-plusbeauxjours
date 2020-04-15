@@ -130,10 +130,6 @@ const Contact: React.FunctionComponent<any> = () => {
   const [email, setEmail] = useState<string>("");
   const [text, setText] = useState<string>("");
 
-  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID || "";
-  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID || "";
-  const USER_ID = process.env.REACT_APP_USER_ID || "";
-
   const templatedsParams = {
     from_name: name,
     to_name: "plusbeauxjours@gmail.com",
@@ -142,16 +138,23 @@ const Contact: React.FunctionComponent<any> = () => {
   };
 
   const sendEmail = () => {
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, templatedsParams, USER_ID).then(
-      (result) => {
-        console.log(result.text);
-        toast.success("Email sent!!");
-      },
-      (error) => {
-        console.log(error.text);
-        toast.error(error.text);
-      }
-    );
+    emailjs
+      .send(
+        "gmail",
+        "template_5qToBuwo",
+        templatedsParams,
+        "user_8ytKsFL160TILx8KsgU0x"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Email sent!!");
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error(error.text);
+        }
+      );
     setName("");
     setEmail("");
     setText("");

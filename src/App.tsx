@@ -3,6 +3,7 @@ import Router from "./Components/Router";
 import { ToastContainer, toast } from "react-toastify";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./Styles/theme";
+import "react-toastify/dist/ReactToastify.css";
 import GlobalStyle from "./Styles/global-styles";
 
 export default () => (
