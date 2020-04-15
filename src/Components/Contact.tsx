@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import toastr from "toastr";
+import { toast } from "react-toastify";
 import styled from "../Styles/typed-components";
 
 const Container = styled.div`
@@ -145,11 +145,11 @@ const Contact: React.FunctionComponent<any> = () => {
     emailjs.send(SERVICE_ID, TEMPLATE_ID, templatedsParams, USER_ID).then(
       (result) => {
         console.log(result.text);
-        toastr.success("Email sent!!");
+        toast.success("Email sent!!");
       },
       (error) => {
         console.log(error.text);
-        toastr.error(error.text);
+        toast.error(error.text);
       }
     );
     setName("");
