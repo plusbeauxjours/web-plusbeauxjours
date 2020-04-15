@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Mailgun from "mailgun-js";
 import styled from "../Styles/typed-components";
 
 const Container = styled.div`
@@ -15,8 +16,8 @@ const Field = styled.div`
 `;
 
 const Input = styled.input`
-  background-color: ${props => props.theme.modalBgColor};
-  border: 1px solid ${props => props.theme.blackColor};
+  background-color: ${(props) => props.theme.modalBgColor};
+  border: 1px solid ${(props) => props.theme.blackColor};
   position: relative;
   border-radius: 10px;
   height: 50px;
@@ -92,8 +93,8 @@ const Textarea = styled.textarea`
   resize: none;
   overflow-y: hidden;
   font-weight: lighter;
-  background: ${props => props.theme.modalBgColor};
-  border: 1px solid ${props => props.theme.blackColor};
+  background: ${(props) => props.theme.modalBgColor};
+  border: 1px solid ${(props) => props.theme.blackColor};
 `;
 
 const BtnContainer = styled.div`
@@ -105,8 +106,8 @@ const Btn = styled.button`
   width: 300px;
   height: 45px;
   margin-top: 30px;
-  background-color: ${props => props.theme.blueColor};
-  color: ${props => props.theme.whiteColor};
+  background-color: ${(props) => props.theme.blueColor};
+  color: ${(props) => props.theme.whiteColor};
   border-radius: 15px;
   font-size: 20px;
   cursor: pointer;
@@ -127,6 +128,19 @@ const Contact: React.FunctionComponent<any> = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [text, setText] = useState<string>("");
+  const mailGunClient = new Mailgun({
+    apiKey: process.env.MAILGUN_API_KEY || "",
+    domain: "www.plusbeauxjours.com",
+  });
+  const sendEmail = () => {
+    const emailData = {
+      from: "no-reply@plusbeauxjours.com",
+      to: email,
+      name,
+      text,
+    };
+    return mailGunClient.messages().send(emailData);
+  };
   return (
     <Container>
       <Form action="" method="post">
@@ -136,7 +150,7 @@ const Contact: React.FunctionComponent<any> = () => {
               <Input
                 onFocus={() => setNameFocused(true)}
                 onBlur={() => setNameFocused(false)}
-                onChange={event => setName(event.target.value)}
+                onChange={(event) => setName(event.target.value)}
                 type="text"
                 value={name}
                 autoComplete={"off"}
@@ -148,7 +162,7 @@ const Contact: React.FunctionComponent<any> = () => {
               <Input
                 onFocus={() => setEmailFocused(true)}
                 onBlur={() => setEmailFocused(false)}
-                onChange={event => setEmail(event.target.value)}
+                onChange={(event) => setEmail(event.target.value)}
                 type="text"
                 value={email}
                 autoComplete={"off"}
@@ -163,11 +177,11 @@ const Contact: React.FunctionComponent<any> = () => {
             required
             onFocus={() => setTextFocused(true)}
             onBlur={() => setTextFocused(false)}
-            onChange={event => setText(event.target.value)}
+            onChange={(event) => setText(event.target.value)}
             autoComplete={"off"}
           />
         </TextInputWrapper>
-        <BtnContainer>
+        <BtnContainer onClick={() => sendEmail()}>
           <Btn>SUBMIT</Btn>
         </BtnContainer>
       </Form>
