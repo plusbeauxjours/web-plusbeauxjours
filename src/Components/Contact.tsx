@@ -129,13 +129,13 @@ const Contact: React.FunctionComponent<any> = () => {
   const [email, setEmail] = useState<string>("");
   const [text, setText] = useState<string>("");
   const mailGunClient = new Mailgun({
-    apiKey: process.env.MAILGUN_API_KEY || "",
+    apiKey: process.env.REACT_APP_MAILGUN_API_KEY || "",
     domain: "www.plusbeauxjours.com",
   });
   const sendEmail = () => {
     const emailData = {
-      from: "no-reply@plusbeauxjours.com",
-      to: email,
+      from: email,
+      to: "plusbeauxjours@gmail.com",
       name,
       text,
     };
