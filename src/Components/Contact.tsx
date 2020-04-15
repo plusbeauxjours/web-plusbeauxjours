@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios";
+import emailjs from "emailjs-com";
+import toastr from "toastr";
 import styled from "../Styles/typed-components";
 
 const Container = styled.div`
@@ -128,29 +129,32 @@ const Contact: React.FunctionComponent<any> = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [text, setText] = useState<string>("");
+
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID || "";
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID || "";
+  const USER_ID = process.env.REACT_APP_USER_ID || "";
+
+  const templatedsParams = {
+    from_name: name,
+    to_name: "plusbeauxjours@gmail.com",
+    subject: `${name} from WWW.PLUSBEAUXJOURS.COM`,
+    message_html: text,
+  };
+
   const sendEmail = () => {
-    axios
-      .post("https://api.mailgun.net/v3/www.plusbeauxjours.com/messages", {
-        data: new URLSearchParams({
-          from: email,
-          to: "plusbeauxjours@gmail.com",
-          subject: `${name} from PLUSBEAUXJOURS.COM`,
-          html: text,
-        }),
-        auth: {
-          username: "api",
-          password: process.env.REACT_APP_MAILGUN_API_KEY || "",
-        },
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-      })
-      .then(function (response) {
-        console.log(response.data);
-      })
-      .catch(function (error) {
-        console.log(error.response);
-      });
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templatedsParams, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        toastr.success("Email sent!!");
+      },
+      (error) => {
+        console.log(error.text);
+        toastr.error(error.text);
+      }
+    );
+    setName("");
+    setEmail("");
+    setText("");
   };
 
   return (
