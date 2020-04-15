@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Mailgun from "mailgun-js";
+import axios from "axios";
 import styled from "../Styles/typed-components";
 
 const Container = styled.div`
@@ -128,19 +128,31 @@ const Contact: React.FunctionComponent<any> = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [text, setText] = useState<string>("");
-  const mailGunClient = new Mailgun({
-    apiKey: process.env.REACT_APP_MAILGUN_API_KEY || "",
-    domain: "www.plusbeauxjours.com",
-  });
   const sendEmail = () => {
-    const emailData = {
-      from: email,
-      to: "plusbeauxjours@gmail.com",
-      name,
-      text,
-    };
-    return mailGunClient.messages().send(emailData);
+    axios
+      .post("https://api.mailgun.net/v3/www.plusbeauxjours.com/messages", {
+        data: new URLSearchParams({
+          from: email,
+          to: "plusbeauxjours@gmail.com",
+          subject: `${name} from PLUSBEAUXJOURS.COM`,
+          html: text,
+        }),
+        auth: {
+          username: "api",
+          password: process.env.REACT_APP_MAILGUN_API_KEY || "",
+        },
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
+      .then(function (response) {
+        console.log(response.data);
+      })
+      .catch(function (error) {
+        console.log(error.response);
+      });
   };
+
   return (
     <Container>
       <Form action="" method="post">
