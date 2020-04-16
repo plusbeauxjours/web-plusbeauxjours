@@ -6,7 +6,7 @@ import { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
 `;
 
@@ -40,7 +40,7 @@ const Img = styled.img`
   &:hover {
     animation: ${ImageAnimation} 2s linear;
   }
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
   width: 100%;
   max-width: 800px;
 `;
@@ -65,12 +65,12 @@ const TextBox = styled.div`
 const ArchitectureImages = [
   {
     main: require("../Images/Thumbnails/Architectural_works_thumbnail_01.jpg"),
-    thumbnail: require("../Images/Thumbnails/Architectural_works_thumbnail_01_tiny.jpg")
+    thumbnail: require("../Images/Thumbnails/Architectural_works_thumbnail_01_tiny.jpg"),
   },
   {
     main: require("../Images/Thumbnails/Architectural_works_thumbnail_02.jpg"),
-    thumbnail: require("../Images/Thumbnails/Architectural_works_thumbnail_02_tiny.jpg")
-  }
+    thumbnail: require("../Images/Thumbnails/Architectural_works_thumbnail_02_tiny.jpg"),
+  },
 ];
 
 interface IProps {
@@ -84,10 +84,13 @@ const ArchitecturalWorksBox: React.FunctionComponent<any> = () => (
         <TextBox>
           <Bold>My Architectural Works</Bold>
           <Text>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Architecture is simillar to programming. Observe and think about
+            problems. Build a team, and tons of drawing, tons of meeting, tons
+            of coffee were necessary to find a best way to solve it. They cannot
+            work alone, construction team always ask drawings to design team who
+            has tons of feedback from client. To have good communication and
+            save a time, I learned design tools and how manage a construction
+            team as a Full-stack Deeveloper.
           </Text>
         </TextBox>
         {ArchitectureImages.map((ArchitectureImages, index) => (

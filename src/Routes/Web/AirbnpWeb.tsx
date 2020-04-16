@@ -161,9 +161,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={
-                  "http://airbnp.eba-8dydnzzj.ap-northeast-2.elasticbeanstalk.com/"
-                }
+                href={"https://airbnp-django.shop"}
               >
                 <LinkBox>
                   <WebIcon />

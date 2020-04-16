@@ -6,16 +6,16 @@ import ProgressiveImage from "react-progressive-image";
 import { WebIcon, GithubIcon } from "../../Icons";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   display: flex;
   justify-content: space-around;
   height: 400px;
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   @media screen and (max-width: 830px) {
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,7 @@ const MainTitleTextContainer = styled.div`
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
-  border-top: 1px solid ${props => props.theme.borderColor};
+  border-top: 1px solid ${(props) => props.theme.borderColor};
 `;
 const LinkContainer = styled.div`
   display: flex;
@@ -88,8 +88,8 @@ const ColorBox = styled.div<IProps>`
   align-items: center;
   width: 200px;
   height: 200px;
-  background-color: ${props => props.color};
-  border: ${props => props.color === "#F3F3F3" && "1px solid #c2c2c2"};
+  background-color: ${(props) => props.color};
+  border: ${(props) => props.color === "#F3F3F3" && "1px solid #c2c2c2"};
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -114,7 +114,7 @@ const ScreenshotContainer = styled.div`
 const Screenshot = styled.img<IProps>`
   width: 100%;
   max-width: 800px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const DiagramContainer = styled.div``;
@@ -122,14 +122,14 @@ const DiagramContainer = styled.div``;
 const Diagram = styled.img<IProps>`
   width: 100%;
   max-width: 660px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
   font-weight: 400;
-  color: ${props => {
+  color: ${(props) => {
     if (props.color === "#000000") {
       return "#F3F3F3";
     } else {
@@ -162,7 +162,7 @@ const Text = styled.div`
 `;
 
 const GreyLine = styled.div`
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   width: 300px;
   margin: 20px 0;
 `;
@@ -225,13 +225,13 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this Project</Bold>
-            Since beginning my journey as a freelance designer nearly 8 years
-            ago, I've done remote work for agencies, consulted for startups, and
-            collaborated with talented people to create digital products for
-            both business and consumer use. I'm quietly confident, naturally
-            curious, and perpetually working on improving my chops one design
-            problem at a time.
+            Puber is my first clone project. The reason why I decide to clone
+            Uber is because I was interested in two player market project and
+            location based project. To better understand about Django and
+            Python, I wanted to compare with other languege like Express and
+            NodeJS. I write and read more than 7 times to get a better
+            understanding of how two player market project works and what
+            GraphQL is.
           </Text>
         </TextBox>
         <TextBox>
@@ -317,12 +317,12 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            <Bold>Long Term Gains</Bold> Since beginning my journey as a
-            freelance designer nearly 8 years ago, I've done remote work for
-            agencies, consulted for startups, and collaborated with talented
-            people to create digital products for both business and consumer
-            use. I'm quietly confident, naturally curious, and perpetually
-            working on improving my chops one design problem at a time.
+            <Bold>Long Term Gains</Bold> I've felt in love with GraphQL. GraphQL
+            is awesome. It's easy, simple and powerful. And also i love to
+            practice with Google Map API and Subscriptions in GraphQL. I
+            realized when I should use Django and when I should use NodeJS from
+            this project. The only thing I miss from it is I couldn't think
+            enough about design.
           </Text>
         </TextBox>
       </Wrapper>
