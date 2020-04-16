@@ -5,7 +5,6 @@ import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
 import { WebIcon, GithubIcon } from "../../Icons";
 import { Link } from "react-router-dom";
-import Projects from "../Projects";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.bgColor};

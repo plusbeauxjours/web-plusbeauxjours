@@ -4,18 +4,19 @@ import Helmet from "react-helmet";
 import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
 import { WebIcon, GithubIcon } from "../../Icons";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
 `;
 
 const PortfolioMainContainer = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   display: flex;
   justify-content: space-around;
   height: 400px;
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   @media screen and (max-width: 830px) {
     flex-direction: column;
     align-items: center;
@@ -52,7 +53,7 @@ const MainTitleTextContainer = styled.div`
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
-  border-top: 1px solid ${props => props.theme.borderColor};
+  border-top: 1px solid ${(props) => props.theme.borderColor};
 `;
 
 const LinkContainer = styled.div`
@@ -89,8 +90,8 @@ const ColorBox = styled.div<IProps>`
   align-items: center;
   width: 200px;
   height: 200px;
-  background-color: ${props => props.color};
-  border: ${props =>
+  background-color: ${(props) => props.color};
+  border: ${(props) =>
     props.color === "#FFFFFF" ? "1px solid #F23657" : "none"};
   &:not(:last-child) {
     margin-right: 30px;
@@ -114,7 +115,7 @@ const ScreenshotContainer = styled.div`
 const Screenshot = styled.img<IProps>`
   width: 100%;
   max-width: 800px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const DiagramContainer = styled.div``;
@@ -122,14 +123,14 @@ const DiagramContainer = styled.div``;
 const Diagram = styled.img<IProps>`
   width: 100%;
   max-width: 800px;
-  filter: ${props => (props.loading ? "blur(6px)" : "")};
+  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
   font-weight: 400;
-  color: ${props => {
+  color: ${(props) => {
     if (props.color === "#318CEE") {
       return "#EDEDED";
     } else {
@@ -162,9 +163,13 @@ const Text = styled.div`
 `;
 
 const GreyLine = styled.div`
-  border-bottom: 1px solid ${props => props.theme.borderColor};
+  border-bottom: 1px solid ${(props) => props.theme.borderColor};
   width: 300px;
   margin: 20px 0;
+`;
+
+const Inline = styled.div`
+  flex-direction: row;
 `;
 
 interface IProps {
@@ -225,12 +230,18 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
-            <Bold>About this Project</Bold>Since beginning my journey as a
-            freelance designer nearly 8 years ago, I've done remote work for
-            agencies, consulted for startups, and collaborated with talented
-            people to create digital products for both business and consumer
-            use. I'm quietly confident, naturally curious, and perpetually
-            working on improving my chops one design problem at a time.
+            <Bold>About this Project</Bold>
+            <Inline>
+              After finish&nbsp;
+              <Link to={"/projects/web/puber-web"}>Puber</Link>, I decided to
+              make my own application based on location. When I was a solo
+              travler in Europe for few months. I wanted to meet someone to
+              talk, to share trip tips or information. There was not too many
+              options I can choose. Only dating application or Korean
+              communities. So while traveling, I've learned programming to make
+              my own location based meet-up application. This is my first Django
+              with GraphQL (Graphene) and React project.
+            </Inline>
           </Text>
         </TextBox>
         <TextBox>
@@ -346,12 +357,12 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
 
         <TextBox>
           <Text>
-            <Bold>Long Term Gains</Bold> Since beginning my journey as a
-            freelance designer nearly 8 years ago, I've done remote work for
-            agencies, consulted for startups, and collaborated with talented
-            people to create digital products for both business and consumer
-            use. I'm quietly confident, naturally curious, and perpetually
-            working on improving my chops one design problem at a time.
+            <Bold>Long Term Gains</Bold>Things I did well in this project, is
+            creating city profile. I considered about city profile. I could not
+            put all cities in the world data in database. My best option was to
+            create city profile when user search that city by Google
+            Autocomplete Location Search API. Server create its own city profile
+            with Google's location code.
           </Text>
         </TextBox>
       </Wrapper>

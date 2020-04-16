@@ -225,6 +225,7 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         </PortfolioMainContainer>
         <TextBox>
           <Text>
+            <Bold>About this Project</Bold>
             Puber is my first clone project. The reason why I decide to clone
             Uber is because I was interested in two player market project and
             location based project. To better understand about Django and
