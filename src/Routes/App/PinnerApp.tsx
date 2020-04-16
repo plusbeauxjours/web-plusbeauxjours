@@ -5,6 +5,7 @@ import Wrapper from "../../Components/Wrapper";
 import ProgressiveImage from "react-progressive-image";
 import { AndroidIcon, AppleIcon, GithubIcon } from "../../Icons";
 import { keyframes } from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.bgColor};
@@ -219,6 +220,10 @@ const GreyLine = styled.div`
   margin: 20px 0;
 `;
 
+const Inline = styled.div`
+  flex-direction: row;
+`;
+
 interface IProps {
   loading?: boolean;
   color?: string;
@@ -304,12 +309,16 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         <TextBox>
           <Text>
             <Bold>About this Project</Bold>
-            Since beginning my journey as a freelance designer nearly 8 years
-            ago, I've done remote work for agencies, consulted for startups, and
-            collaborated with talented people to create digital products for
-            both business and consumer use. I'm quietly confident, naturally
-            curious, and perpetually working on improving my chops one design
-            problem at a time.
+            <Inline>
+              This projects is extended from&nbsp;
+              <Link to={"/projects/web/pinner-web"}>Pinner-Web</Link>, because I
+              think only few travelers want to visit Pinner by laptop to find
+              someone and mobile application has better performance. I used
+              React-Native for rendering either Android or iOS components,
+              Django (obviously), Graphene and Firebase for live chat.
+              Pinner-App records user's location and recommand user who has been
+              same city before.
+            </Inline>
           </Text>
         </TextBox>
         <TextBox>
@@ -445,8 +454,12 @@ const PinnerApp: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            <Bold>Long Term Gains</Bold>I learned about Firebase to add Chat
-            system in this project.
+            <Bold>Long Term Gains</Bold>I tried to write a code in a functional
+            style with React-Hooks. Most of queries were same as Pinner-Web, so
+            it was not difficult. I compared between functional style and class
+            style ( You can't use Hooks inside a class component ). I need to
+            practice more about Push-Notification in React-Native. I should
+            finish a project in less than 3 months.
           </Text>
         </TextBox>
       </Wrapper>

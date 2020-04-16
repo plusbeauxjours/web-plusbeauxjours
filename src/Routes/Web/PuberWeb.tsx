@@ -319,7 +319,7 @@ const PuberWeb: React.FunctionComponent<any> = () => {
         <TextBox>
           <Text>
             <Bold>Long Term Gains</Bold> I've felt in love with GraphQL. GraphQL
-            is awesome. It's easy, simple and powerful. And also i love to
+            is awesome. It's easy, simple and powerful. And also I love to
             practice with Google Map API and Subscriptions in GraphQL. I
             realized when I should use Django and when I should use NodeJS from
             this project. The only thing I miss from it is I couldn't think
