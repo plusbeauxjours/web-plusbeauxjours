@@ -14,17 +14,8 @@ ReactGA.initialize("UA-166957436-1", {
   },
 });
 if (window.location.host === "https://www.plusbeauxjours.com") {
-  ReactGA.pageview("/");
-  ReactGA.pageview("/projects");
-  ReactGA.pageview("/projects/web/pinner-web");
-  ReactGA.pageview("/projects/web/puber-web");
-  ReactGA.pageview("/projects/web/airbnp-web");
-  ReactGA.pageview("/projects/web/movie-web");
-  ReactGA.pageview("/projects/app/pinner-app");
-  ReactGA.pageview("/projects/app/awesome-weather-app");
-  ReactGA.pageview("/projects/app/kitty-todo-app");
-  ReactGA.pageview("/projects/app/movie-app");
-  ReactGA.pageview("/architecture");
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));
