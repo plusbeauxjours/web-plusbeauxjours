@@ -13,9 +13,6 @@ ReactGA.initialize("UA-166957436-1", {
     siteSpeedSampleRate: 100,
   },
 });
-if (window.location.host === "https://www.plusbeauxjours.com") {
-  ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
-}
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(<App />, document.getElementById("root"));
