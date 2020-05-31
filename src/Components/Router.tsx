@@ -1,6 +1,6 @@
 import React from "react";
 import ReactGA from "react-ga";
-import { HashRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "../Routes/Home";
 import PinnerWeb from "../Routes/Web/PinnerWeb";
 import PuberWeb from "../Routes/Web/PuberWeb";
@@ -22,46 +22,73 @@ const Wrapper = styled.div`
   min-height: 50vh;
 `;
 
-const initializeAnalytics = () => {
-  ReactGA.initialize("UA-166957436-1");
-  ReactGA.pageview("/");
-  ReactGA.pageview("/privacy-policy");
-  ReactGA.pageview("/projects");
-  ReactGA.pageview("/projects/web/pinner-web");
-  ReactGA.pageview("/projects/web/puber-web");
-  ReactGA.pageview("/projects/web/airbnp-web");
-  ReactGA.pageview("/projects/web/movie-web");
-  ReactGA.pageview("/projects/app/pinner-app");
-  ReactGA.pageview("/projects/app/awesome-weather-app");
-  ReactGA.pageview("/projects/app/kitty-todo-app");
-  ReactGA.pageview("/projects/app/movie-app");
-  ReactGA.pageview("/architecture");
+ReactGA.initialize(' UA-166957436-1")', { debug: true });
+const onUpdate = () => {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
 };
 
 export default () => {
-  initializeAnalytics();
   return (
     <Router>
       <Wrapper>
         <Header />
-        <Route path="/" exact component={Home} />
-        <Route path="/privacy-policy" exact component={PrivacyPolicy} />
-        <Route path="/projects" exact component={Projects} />
-        {/* web */}
-        <Route path="/projects/web/pinner-web" component={PinnerWeb} />
-        <Route path="/projects/web/puber-web" component={PuberWeb} />
-        <Route path="/projects/web/airbnp-web" component={AirbnpWeb} />
-        <Route path="/projects/web/movie-web" component={MovieWeb} />
-        {/* app */}
-        <Route path="/projects/app/pinner-app" component={PinnerApp} />
+        <Route onEnter={onUpdate} path="/" exact component={Home} />
         <Route
+          onEnter={onUpdate}
+          path="/privacy-policy"
+          exact
+          component={PrivacyPolicy}
+        />
+        <Route onEnter={onUpdate} path="/projects" exact component={Projects} />
+        {/* web */}
+        <Route
+          onEnter={onUpdate}
+          path="/projects/web/pinner-web"
+          component={PinnerWeb}
+        />
+        <Route
+          onEnter={onUpdate}
+          path="/projects/web/puber-web"
+          component={PuberWeb}
+        />
+        <Route
+          onEnter={onUpdate}
+          path="/projects/web/airbnp-web"
+          component={AirbnpWeb}
+        />
+        <Route
+          onEnter={onUpdate}
+          path="/projects/web/movie-web"
+          component={MovieWeb}
+        />
+        {/* app */}
+        <Route
+          onEnter={onUpdate}
+          path="/projects/app/pinner-app"
+          component={PinnerApp}
+        />
+        <Route
+          onEnter={onUpdate}
           path="/projects/app/awesome-weather-app"
           component={AwesomeWeatherApp}
         />
-        <Route path="/projects/app/kitty-todo-app" component={KittyTodoApp} />
-        <Route path="/projects/app/movie-app" component={MovieApp} />
+        <Route
+          onEnter={onUpdate}
+          path="/projects/app/kitty-todo-app"
+          component={KittyTodoApp}
+        />
+        <Route
+          onEnter={onUpdate}
+          path="/projects/app/movie-app"
+          component={MovieApp}
+        />
         {/* architectural works */}
-        <Route path="/architecture" component={Architecture} />
+        <Route
+          onEnter={onUpdate}
+          path="/architecture"
+          component={Architecture}
+        />
       </Wrapper>
     </Router>
   );
