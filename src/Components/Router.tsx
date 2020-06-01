@@ -15,6 +15,7 @@ import PrivacyPolicy from "../Routes/PrivacyPolicy";
 import Header from "./Header";
 import Projects from "../Routes/Projects";
 import styled from "../Styles/typed-components";
+import JahanuriApp from "../Routes/App/JahanuriApp";
 
 const Wrapper = styled.div`
   padding-top: 45px;
@@ -63,6 +64,11 @@ export default () => {
           component={MovieWeb}
         />
         {/* app */}
+        <Route
+          onEnter={onUpdate}
+          path="/projects/app/jahanuri-app"
+          component={JahanuriApp}
+        />
         <Route
           onEnter={onUpdate}
           path="/projects/app/pinner-app"
