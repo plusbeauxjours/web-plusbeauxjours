@@ -160,7 +160,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={"https://airbnp-django.shop"}
+                href={"https://www.airbnp-django.shop"}
               >
                 <LinkBox>
                   <WebIcon />
