@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { keyframes } from "styled-components";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   margin-bottom: 300px;
   height: 800px;
   margin-top: 50px;
@@ -36,7 +36,7 @@ const MiddleContainer = styled.div`
 
 const Square = styled.div`
   border-radius: 20px;
-  border: 1px solid ${props => props.theme.borderColor};
+  border: 1px solid ${(props) => props.theme.borderColor};
   width: 100%;
   height: 0;
   padding-bottom: 100%;
@@ -50,7 +50,7 @@ const Img = styled.img`
   &:hover {
     animation: ${ImageAnimation} 2s linear;
   }
-  filter: ${props =>
+  filter: ${(props) =>
     props.loading ? "blur(6px) opacity(90%)" : "opacity(90%)"};
   width: 100%;
   max-width: 800px;
@@ -88,6 +88,42 @@ const Projects: React.FunctionComponent<any> = () => {
       <Wrapper>
         <MiddleContainer>
           <GridContainer>
+            <Link to={"/projects/app/airbnp-app"}>
+              <Square>
+                <InnerBox>
+                  <Img
+                    src={require("../Images/Thumbnails/Airbnp_app_thumbnail.jpg")}
+                    style={{ maxWidth: "800px", width: "100%" }}
+                    alt="an image"
+                  />
+                  <TextBox>
+                    <Bold>Airbnp-App</Bold>
+                    <Text>
+                      Airbnb clone with Django, React-Native, REST-Api, Redux,
+                      Typescript
+                    </Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
+            <Link to={"/projects/app/jahanuri-app"}>
+              <Square>
+                <InnerBox>
+                  <Img
+                    src={require("../Images/Thumbnails/Jahanuri_app_thumbnail.jpg")}
+                    style={{ maxWidth: "800px", width: "100%" }}
+                    alt="an image"
+                  />
+                  <TextBox>
+                    <Bold>Jahanuri-App</Bold>
+                    <Text>
+                      Korean alternative medicine center's app with Django,
+                      React-Native, Graphene, Typescript
+                    </Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
             <Link to={"/projects/app/pinner-app"}>
               <Square>
                 <InnerBox>
@@ -99,8 +135,8 @@ const Projects: React.FunctionComponent<any> = () => {
                   <TextBox>
                     <Bold>Pinner-App</Bold>
                     <Text>
-                      Meet-up app with Django, React-Native, Graphene,
-                      Typescript
+                      solo travelere's meet-up app with Django, React-Native,
+                      Graphene, Typescript
                     </Text>
                   </TextBox>
                 </InnerBox>
@@ -117,7 +153,8 @@ const Projects: React.FunctionComponent<any> = () => {
                   <TextBox>
                     <Bold>Pinner-Web</Bold>
                     <Text>
-                      Meet-up app with Django, React, Graphene, Typescript
+                      solo travelere's meet-up app with Django, React, Graphene,
+                      Typescript
                     </Text>
                   </TextBox>
                 </InnerBox>

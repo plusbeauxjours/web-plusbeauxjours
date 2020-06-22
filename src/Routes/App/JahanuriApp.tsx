@@ -135,13 +135,13 @@ const ColorText = styled.div<IProps>`
   text-align: center;
   font-weight: 400;
   color: ${(props) => {
-    if (props.color === "#318CEE") {
+    if (props.color === "#4a9aa5") {
       return "#EDEDED";
     } else {
-      return "#318CEE";
+      return "#4a9aa5";
     }
   }};
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 400px) {
     display: none;
   }
 `;
@@ -229,13 +229,7 @@ interface IProps {
   color?: string;
 }
 
-const JahanuriAppColors = [
-  "#EDEDED",
-  "#E2E2E2",
-  "#318CEE",
-  "#1E1E1E",
-  "#161616",
-];
+const JahanuriAppColors = ["#F2F2F2", "#4a9aa5"];
 
 const JahanuriApp: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
@@ -252,7 +246,7 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           <Modal>
             <Img
               style={{ maxWidth: "300px" }}
-              src={require("../../Images/App/Jahanuri_app/PinnerApp_Android.jpg")}
+              src={require("../../Images/App/Jahanuri_app/Jahanuri_app_Android.jpg")}
             />
           </Modal>
         </ModalContainer>
@@ -263,7 +257,7 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           <Modal>
             <Img
               style={{ maxWidth: "300px" }}
-              src={require("../../Images/App/Jahanuri_app/PinnerApp_IOS.jpg")}
+              src={require("../../Images/App/Jahanuri_app/Jahanuri_app_IOS.jpg")}
             />
           </Modal>
         </ModalContainer>
@@ -273,7 +267,7 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           <MainTitilBox>
             <MainTitle>Jahanuri - App</MainTitle>
             <MainTitleTextContainer>
-              <MainTitleText>19th Apr 2020 - 31th May 2019</MainTitleText>
+              <MainTitleText>19th Apr 2020 - 31th May 2020</MainTitleText>
               <MainTitleText>6 WEEKS</MainTitleText>
             </MainTitleTextContainer>
             <LinkContainer>
@@ -327,8 +321,8 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={require("../../Images/App/Jahanuri_app/Pinner_app_sketch.jpg")}
-            placeholder={require("../../Images/App/Jahanuri_app/Pinner_app_sketch_tiny.jpg")}
+            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_mindmap.jpg")}
+            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_mindmap_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -351,13 +345,14 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
               <li>Sentry</li>
               <li>React-Native</li>
               <li>Apollo</li>
-              <li>Firebase</li>
               <li>TypeScript</li>
               <li>Styled-Components</li>
-              <li>GoogleMapAPI</li>
               <li>Heroku</li>
             </ul>
           </Text>
+        </TextBox>
+        <TextBox>
+          <GreyLine />
         </TextBox>
         <TextBox>
           <ProgressiveImage
@@ -372,26 +367,11 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           </ProgressiveImage>
         </TextBox>
         <TextBox>
-          <GreyLine />
-        </TextBox>
-        <TextBox>
           <Text>
-            <Bold>Alts</Bold>I compared with few different designs to find best
-            UI and balance. I considered performance to reduce the time to
-            complete a task and increase user satisfaction.
+            <Bold>What They Needed</Bold>I compared with few different designs
+            to find best UI and balance. I considered performance to reduce the
+            time to complete a task and increase user satisfaction.
           </Text>
-        </TextBox>
-        <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/App/Jahanuri_app/Pinner_app_alts.jpg")}
-            placeholder={require("../../Images/App/Jahanuri_app/Pinner_app_alts_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
         </TextBox>
         <TextBox>
           <GreyLine />
@@ -426,8 +406,8 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={require("../../Images/App/Jahanuri_app/Pinner_app_screenshot_s1.jpg")}
-            placeholder={require("../../Images/App/Jahanuri_app/Pinner_app_screenshot_s1_tiny.jpg")}
+            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_screenshot_s1.jpg")}
+            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_screenshot_s1_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -436,8 +416,8 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={require("../../Images/App/Jahanuri_app/Pinner_app_screenshot_s2.jpg")}
-            placeholder={require("../../Images/App/Jahanuri_app/Pinner_app_screenshot_s2_tiny.jpg")}
+            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_screenshot_s2.jpg")}
+            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_screenshot_s2_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -446,8 +426,8 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
           <ProgressiveImage
-            src={require("../../Images/App/Jahanuri_app/Pinner_app_screenshot_s3.jpg")}
-            placeholder={require("../../Images/App/Jahanuri_app/Pinner_app_screenshot_s3_tiny.jpg")}
+            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_screenshot_s3.jpg")}
+            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_screenshot_s3_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>

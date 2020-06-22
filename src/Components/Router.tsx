@@ -16,6 +16,7 @@ import Header from "./Header";
 import Projects from "../Routes/Projects";
 import styled from "../Styles/typed-components";
 import JahanuriApp from "../Routes/App/JahanuriApp";
+import AirbnpApp from "../Routes/App/AirbnpApp";
 
 const Wrapper = styled.div`
   padding-top: 45px;
@@ -68,6 +69,11 @@ export default () => {
           onEnter={onUpdate}
           path="/projects/app/jahanuri-app"
           component={JahanuriApp}
+        />
+        <Route
+          onEnter={onUpdate}
+          path="/projects/app/airbnp-app"
+          component={AirbnpApp}
         />
         <Route
           onEnter={onUpdate}
