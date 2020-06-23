@@ -60,7 +60,7 @@ const LinkContainer = styled.div`
   display: flex;
   width: 150px;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 70px;
 `;
 
 const LinkBox = styled.div`

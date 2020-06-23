@@ -54,7 +54,7 @@ const LinkContainer = styled.div`
   display: flex;
   width: 250px;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 70px;
 `;
 
 const LinkBox = styled.div`
@@ -344,12 +344,12 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             <ul>
               <li>Django</li>
               <li>Graphene</li>
-              <li>Sentry</li>
               <li>React-Native</li>
               <li>Apollo</li>
               <li>Firebase</li>
               <li>TypeScript</li>
               <li>Styled-Components</li>
+              <li>Sentry</li>
               <li>GoogleMapAPI</li>
               <li>Heroku</li>
             </ul>

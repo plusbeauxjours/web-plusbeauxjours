@@ -54,7 +54,7 @@ const LinkContainer = styled.div`
   display: flex;
   width: 250px;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 70px;
 `;
 
 const LinkBox = styled.div`
@@ -311,7 +311,7 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
             <Bold>About this Project</Bold>
             <Inline>
               This projects is extended from&nbsp;
-              <Link to={"/projects/web/pinner-web"}>Pinner-Web</Link>, because I
+              <Link to={"/projects/web/airbnp-web"}>Airbnp-Web</Link>, because I
               think only few travelers want to visit Pinner by laptop to find
               someone and mobile application has better performance. I used
               React-Native for rendering either Android or iOS components,
@@ -344,48 +344,18 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
             <ul>
               <li>Django</li>
               <li>REST-Api</li>
-              <li>Sentry</li>
               <li>React-Native</li>
               <li>Redux</li>
               <li>TypeScript</li>
               <li>Styled-Components</li>
               <li>GoogleMapAPI</li>
+              <li>Sentry</li>
               <li>Heroku</li>
             </ul>
           </Text>
         </TextBox>
         <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/App/Pinner_app/Pinner_app_diagram.jpg")}
-            placeholder={require("../../Images/App/Pinner_app/Pinner_app_diagram_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
-        </TextBox>
-        <TextBox>
           <GreyLine />
-        </TextBox>
-        <TextBox>
-          <Text>
-            <Bold>Alts</Bold>I compared with few different designs to find best
-            UI and balance. I considered performance to reduce the time to
-            complete a task and increase user satisfaction.
-          </Text>
-        </TextBox>
-        <TextBox>
-          <GreyLine />
-        </TextBox>
-        <TextBox>
-          <Text>
-            <Bold>About Colors</Bold>
-            User can choose a theme between darkmode and lightmode easily on
-            setting screen and the theme of both has 2 tones. A color blue is
-            used as a point in both themes.
-          </Text>
         </TextBox>
         <ColorContainer>
           {AirbnpAppColors.map((color, index) => (

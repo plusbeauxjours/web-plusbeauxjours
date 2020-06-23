@@ -54,7 +54,7 @@ const LinkContainer = styled.div`
   display: flex;
   width: 250px;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 70px;
 `;
 
 const LinkBox = styled.div`
@@ -342,11 +342,11 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
             <ul>
               <li>Django</li>
               <li>Graphene</li>
-              <li>Sentry</li>
               <li>React-Native</li>
               <li>Apollo</li>
               <li>TypeScript</li>
               <li>Styled-Components</li>
+              <li>Sentry</li>
               <li>Heroku</li>
             </ul>
           </Text>
@@ -356,8 +356,8 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={require("../../Images/App/Jahanuri_app/Pinner_app_diagram.jpg")}
-            placeholder={require("../../Images/App/Jahanuri_app/Pinner_app_diagram_tiny.jpg")}
+            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_diagram.jpg")}
+            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_diagram_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
