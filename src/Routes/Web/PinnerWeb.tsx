@@ -233,11 +233,16 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
             <Bold>About this Project</Bold>
             <Inline>
               After finish&nbsp;
-              <Link to={"/projects/web/puber-web"}>Puber</Link>, I decided to
-              make my own application based on location. When I was a solo
-              travler in Europe for few months. I wanted to meet someone to
-              talk, to share trip tips or information. There was not too many
-              options I can choose. Only dating application or Korean
+              <Link
+                style={{ textDecoration: "underline" }}
+                to={"/projects/web/puber-web"}
+              >
+                Puber
+              </Link>
+              , I decided to make my own application based on location. When I
+              was a solo travler in Europe for few months. I wanted to meet
+              someone to talk, to share trip tips or information. There was not
+              too many options I can choose. Only dating application or Korean
               communities. So while traveling, I've learned programming to make
               my own location based meet-up application. This is my first Django
               with GraphQL (Graphene) and React project.

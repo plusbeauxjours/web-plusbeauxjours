@@ -100,7 +100,7 @@ const Projects: React.FunctionComponent<any> = () => {
       <Container>
         <Wrapper>
           <GridContainer>
-            {/* <Link to={"/projects/app/airbnp-app"}>
+            <Link to={"/projects/app/airbnp-app"}>
               <Square>
                 <InnerBox>
                   <Img
@@ -118,7 +118,7 @@ const Projects: React.FunctionComponent<any> = () => {
                 </InnerBox>
               </Square>
             </Link>
-            <Link to={"/projects/app/jahanuri-app"}>
+            {/* <Link to={"/projects/app/jahanuri-app"}>
               <Square>
                 <InnerBox>
                   <Img

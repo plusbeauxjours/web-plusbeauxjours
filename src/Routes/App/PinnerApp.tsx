@@ -310,13 +310,18 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             <Bold>About this Project</Bold>
             <Inline>
               This projects is extended from&nbsp;
-              <Link to={"/projects/web/pinner-web"}>Pinner-Web</Link>, because I
-              think only few travelers want to visit Pinner by laptop to find
-              someone and mobile application has better performance. I used
-              React-Native for rendering either Android or iOS components,
-              Django (obviously), Graphene and Firebase for live chat.
-              Pinner-App records user's location and recommand user who has been
-              same city before.
+              <Link
+                style={{ textDecoration: "underline" }}
+                to={"/projects/web/pinner-web"}
+              >
+                Pinner-Web
+              </Link>
+              , because I think only few travelers want to visit Pinner by
+              laptop to find someone and mobile application has better
+              performance. I used React-Native for rendering either Android or
+              iOS components, Django (obviously), Graphene and Firebase for live
+              chat. Pinner-App records user's location and recommand user who
+              has been same city before.
             </Inline>
           </Text>
         </TextBox>

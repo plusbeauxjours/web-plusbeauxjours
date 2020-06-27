@@ -295,9 +295,14 @@ const MovieApp: React.FunctionComponent<any> = () => {
             <Bold>About this Project</Bold>
             <Inline>
               This React-Native project is a mobile application of&nbsp;
-              <Link to={"/projects/web/movie-web"}>movieWeb</Link>. Managing the
-              presentation of, and transition between, multiple screens is
-              typically handled by what is known as a navigator from
+              <Link
+                style={{ textDecoration: "underline" }}
+                to={"/projects/web/movie-web"}
+              >
+                movieWeb
+              </Link>
+              . Managing the presentation of, and transition between, multiple
+              screens is typically handled by what is known as a navigator from
               React-Navigation. I tried to write a code in a functional style
               with React-Hooks ( Hooks is awesome!! ). One of the main benefits,
               at least to me, is that code written in a functional style is much

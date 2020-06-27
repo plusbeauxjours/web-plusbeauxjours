@@ -205,7 +205,7 @@ const MovieWeb: React.FunctionComponent<any> = () => {
           <Text>
             <Bold>About this Project</Bold>To practice container and
             presentational design pattern, I coded up with React and TMDb API
-            for 2weeks. It took too long time because I've tried to write clean
+            for 2 weeks. It took too long time because I've tried to write clean
             code. Thanks to that I can save a time to consider what is the best
             way to write a code with class component. ( Hooks let me do the
             sameks thing without an arbitrary division. ) I enjoyed to use TMDb

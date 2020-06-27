@@ -135,10 +135,10 @@ const ColorText = styled.div<IProps>`
   text-align: center;
   font-weight: 400;
   color: ${(props) => {
-    if (props.color === "#35b8b3") {
+    if (props.color === "#35B8B3") {
       return "#EDEDED";
     } else {
-      return "#35b8b3";
+      return "#35B8B3";
     }
   }};
   @media screen and (max-width: 400px) {
@@ -228,7 +228,7 @@ interface IProps {
   color?: string;
 }
 
-const AirbnpAppColors = ["#EDEDED", "#35b8b3"];
+const AirbnpAppColors = ["#EDEDED", "#35B8B3"];
 
 const AirbnpApp: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
@@ -310,9 +310,18 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
             <Bold>About this Project</Bold>
             <Inline>
               This projects is extended from&nbsp;
-              <Link to={"/projects/web/airbnp-web"}>Airbnp-Web</Link>,
-              KKKKKKKKKKKK I used React-Native for rendering either Android or
-              iOS components,Django (obviously) and RESTframwork-API.
+              <Link
+                style={{ textDecoration: "underline" }}
+                to={"/projects/web/airbnp-web"}
+              >
+                Airbnp-Web
+              </Link>
+              , but code should be refactored to REST Framework-API for fetching
+              data. I used React-Native for rendering either Android or iOS
+              components, Django (obviously) and DRF. The reason why I tried to
+              use DRF is I want to compare between GraphQL and DRF. Room's
+              locations should be shown with GoogleMapAPI. I choose Redux
+              Toolkit to save time, and It works.
             </Inline>
           </Text>
         </TextBox>
@@ -406,13 +415,14 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            <Bold>Long Term Gains</Bold>This is my first project with REST-API
-            and I think it is I tried to write a code in a functional style with
-            React-Hooks. Most of queries were same as Pinner-Web, so it was not
-            difficult. I compared between functional style and class style ( You
-            can't use Hooks inside a class component ). I need to practice more
-            about Push-Notification in React-Native. I've finised this project
-            in 3months.
+            <Bold>Long Term Gains</Bold>What I wanted to get from this project
+            was good understanding about Redux and finally, I've learned how
+            Redux works. Thanks to Redux Toolkit, it took only 4 weeks for
+            server and mobile application. First time when I tried to use Redux(
+            2 years ago, my first project ), I couldn't finished that project
+            because Redux was too complicated to beginner but now today I did
+            it. My next goal about state management is practice with Mobx and
+            GoogleMapAPI.
           </Text>
         </TextBox>
       </Wrapper>
