@@ -396,8 +396,8 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={require("../../Images/App/Jahanuri_app/Pinner_app_video.gif")}
-            placeholder={require("../../Images/App/Jahanuri_app/Pinner_app_video_tiny.jpg")}
+            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_video.gif")}
+            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_video_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>

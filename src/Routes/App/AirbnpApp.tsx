@@ -246,7 +246,7 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
           <Modal>
             <Img
               style={{ maxWidth: "300px" }}
-              src={require("../../Images/App/Pinner_app/PinnerApp_Android.jpg")}
+              src={require("../../Images/App/Airbnp_app/Airbnp_app_Android.jpg")}
             />
           </Modal>
         </ModalContainer>
@@ -257,7 +257,7 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
           <Modal>
             <Img
               style={{ maxWidth: "300px" }}
-              src={require("../../Images/App/Pinner_app/PinnerApp_IOS.jpg")}
+              src={require("../../Images/App/Airbnp_app/Airbnp_app_IOS.jpg")}
             />
           </Modal>
         </ModalContainer>
@@ -323,8 +323,8 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <ProgressiveImage
-            src={require("../../Images/App/Pinner_app/Pinner_app_sketch.jpg")}
-            placeholder={require("../../Images/App/Pinner_app/Pinner_app_sketch_tiny.jpg")}
+            src={require("../../Images/App/Airbnp_app/Airbnp_app_sketch.jpg")}
+            placeholder={require("../../Images/App/Airbnp_app/Airbnp_app_sketch_tiny.jpg")}
           >
             {(src, loading) => (
               <DiagramContainer>
@@ -369,8 +369,8 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
-            src={require("../../Images/App/Pinner_app/Pinner_app_video.gif")}
-            placeholder={require("../../Images/App/Pinner_app/Pinner_app_video_tiny.jpg")}
+            src={require("../../Images/App/Airbnp_app/Airbnp_app_video.gif")}
+            placeholder={require("../../Images/App/Airbnp_app/Airbnp_app_video_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>

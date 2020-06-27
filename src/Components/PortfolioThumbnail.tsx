@@ -5,7 +5,7 @@ import { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
-  background-color: ${props => props.theme.whiteColor};
+  background-color: ${(props) => props.theme.whiteColor};
   width: 80%;
   max-width: 1200px;
   border-radius: 20px;
@@ -32,7 +32,7 @@ const GridContainer = styled.div`
 
 const Square = styled.div`
   border-radius: 20px;
-  border: 1px solid ${props => props.theme.borderColor};
+  border: 1px solid ${(props) => props.theme.borderColor};
   width: 100%;
   height: 0;
   padding-bottom: 100%;
@@ -46,7 +46,7 @@ const Img = styled.img`
   &:hover {
     animation: ${ImageAnimation} 2s linear;
   }
-  filter: ${props =>
+  filter: ${(props) =>
     props.loading ? "blur(6px) opacity(90%)" : "opacity(90%)"};
   width: 100%;
   max-width: 800px;
@@ -86,8 +86,8 @@ const Btn = styled.button`
   width: 300px;
   height: 45px;
   margin-top: 30px;
-  background-color: ${props => props.theme.bgColor};
-  border: 2px solid ${props => props.theme.borderColor};
+  background-color: ${(props) => props.theme.bgColor};
+  border: 2px solid ${(props) => props.theme.borderColor};
   border-radius: 15px;
   font-size: 20px;
   font-weight: 100;
@@ -101,6 +101,42 @@ const SkillBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
       <GridContainer>
+        <Link to={"/projects/app/airbnp-app"}>
+          <Square>
+            <InnerBox>
+              <Img
+                src={require("../Images/Thumbnails/Airbnp_app_thumbnail.jpg")}
+                style={{ maxWidth: "800px", width: "100%" }}
+                alt="an image"
+              />
+              <TextBox>
+                <Bold>Airbnp-App</Bold>
+                <Text>
+                  Airbnb clone with Django, React-Native, REST-Api, Redux,
+                  Typescript
+                </Text>
+              </TextBox>
+            </InnerBox>
+          </Square>
+        </Link>
+        <Link to={"/projects/app/jahanuri-app"}>
+          <Square>
+            <InnerBox>
+              <Img
+                src={require("../Images/Thumbnails/Jahanuri_app_thumbnail.jpg")}
+                style={{ maxWidth: "800px", width: "100%" }}
+                alt="an image"
+              />
+              <TextBox>
+                <Bold>Jahanuri-App</Bold>
+                <Text>
+                  Korean alternative medicine center's app with Django,
+                  React-Native, Graphene, Typescript
+                </Text>
+              </TextBox>
+            </InnerBox>
+          </Square>
+        </Link>
         <Link to={"/projects/app/pinner-app"}>
           <Square>
             <InnerBox>
@@ -163,36 +199,6 @@ const SkillBox: React.FunctionComponent<any> = () => (
               <TextBox>
                 <Bold>Airbnp-Web</Bold>
                 <Text>Air-bnb clone with Django, Tailwind</Text>
-              </TextBox>
-            </InnerBox>
-          </Square>
-        </Link>
-        <Link to={"/projects/app/kitty-todo-app"}>
-          <Square>
-            <InnerBox>
-              <Img
-                src={require("../Images/Thumbnails/Kitty_app_thumbnail.jpg")}
-                style={{ maxWidth: "800px", width: "100%" }}
-                alt="an image"
-              />
-              <TextBox>
-                <Bold>Kitty To Do-App</Bold>
-                <Text>To do app with React-Native</Text>
-              </TextBox>
-            </InnerBox>
-          </Square>
-        </Link>
-        <Link to={"/projects/app/awesome-weather-app"}>
-          <Square>
-            <InnerBox>
-              <Img
-                src={require("../Images/Thumbnails/Awesome_app_thumbnail.jpg")}
-                style={{ maxWidth: "800px", width: "100%" }}
-                alt="an image"
-              />
-              <TextBox>
-                <Bold>Awesome Weather-App</Bold>
-                <Text>Weather app with React-Native</Text>
               </TextBox>
             </InnerBox>
           </Square>

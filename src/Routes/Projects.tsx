@@ -135,7 +135,7 @@ const Projects: React.FunctionComponent<any> = () => {
                   <TextBox>
                     <Bold>Pinner-App</Bold>
                     <Text>
-                      solo travelere's meet-up app with Django, React-Native,
+                      Solo travelere's meet-up app with Django, React-Native,
                       Graphene, Typescript
                     </Text>
                   </TextBox>
@@ -153,7 +153,7 @@ const Projects: React.FunctionComponent<any> = () => {
                   <TextBox>
                     <Bold>Pinner-Web</Bold>
                     <Text>
-                      solo travelere's meet-up app with Django, React, Graphene,
+                      Solo travelere's meet-up app with Django, React, Graphene,
                       Typescript
                     </Text>
                   </TextBox>
