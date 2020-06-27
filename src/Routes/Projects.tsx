@@ -37,14 +37,6 @@ const GridContainer = styled.div`
   margin-bottom: 300px;
 `;
 
-const MiddleContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-`;
-
 const Square = styled.div`
   border-radius: 20px;
   border: 1px solid ${(props) => props.theme.borderColor};

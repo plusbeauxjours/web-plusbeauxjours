@@ -455,10 +455,10 @@ const PinnerApp: React.FunctionComponent<any> = () => {
           <Text>
             <Bold>Long Term Gains</Bold>I tried to write a code in a functional
             style with React-Hooks. Most of queries were same as Pinner-Web, so
-            it was not difficult. I compared between functional style and class
-            style ( You can't use Hooks inside a class component ). I need to
-            practice more about Push-Notification in React-Native. I should
-            finish a project in less than 3 months.
+            it was not difficult for data fetching. I compared between
+            functional style and class style ( You can't use Hooks inside a
+            class component ). I need to practice more about Push-Notification
+            in React-Native. I should finish a project in less than 3 months.
           </Text>
         </TextBox>
       </Wrapper>

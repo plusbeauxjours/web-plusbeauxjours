@@ -310,13 +310,9 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
             <Bold>About this Project</Bold>
             <Inline>
               This projects is extended from&nbsp;
-              <Link to={"/projects/web/airbnp-web"}>Airbnp-Web</Link>, because I
-              think only few travelers want to visit Pinner by laptop to find
-              someone and mobile application has better performance. I used
-              React-Native for rendering either Android or iOS components,
-              Django (obviously), Graphene and Firebase for live chat.
-              Pinner-App records user's location and recommand user who has been
-              same city before.
+              <Link to={"/projects/web/airbnp-web"}>Airbnp-Web</Link>,
+              KKKKKKKKKKKK I used React-Native for rendering either Android or
+              iOS components,Django (obviously) and RESTframwork-API.
             </Inline>
           </Text>
         </TextBox>
@@ -410,12 +406,13 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            <Bold>Long Term Gains</Bold>I tried to write a code in a functional
-            style with React-Hooks. Most of queries were same as Pinner-Web, so
-            it was not difficult. I compared between functional style and class
-            style ( You can't use Hooks inside a class component ). I need to
-            practice more about Push-Notification in React-Native. I should
-            finish a project in less than 3 months.
+            <Bold>Long Term Gains</Bold>This is my first project with REST-API
+            and I think it is I tried to write a code in a functional style with
+            React-Hooks. Most of queries were same as Pinner-Web, so it was not
+            difficult. I compared between functional style and class style ( You
+            can't use Hooks inside a class component ). I need to practice more
+            about Push-Notification in React-Native. I've finised this project
+            in 3months.
           </Text>
         </TextBox>
       </Wrapper>
