@@ -5,11 +5,22 @@ import Wrapper from "../Components/Wrapper";
 import { Link } from "react-router-dom";
 import { keyframes } from "styled-components";
 
+const Center = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 const Container = styled.div`
-  background-color: ${(props) => props.theme.bgColor};
-  margin-bottom: 300px;
-  height: 800px;
-  margin-top: 50px;
+  background-color: ${(props) => props.theme.whiteColor};
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  @media screen and (max-width: 1200px) {
+    height: 100%;
+  }
 `;
 
 const GridContainer = styled.div`
@@ -72,7 +83,16 @@ const Bold = styled.div`
   margin-bottom: 10px;
 `;
 const Text = styled.div`
+  font-size: 18px;
   line-height: 22px;
+  @media screen and (min-width: 701px) and (max-width: 800px) {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  @media screen and (min-width: 1101px) and (max-width: 1200px) {
+    font-size: 12px;
+    line-height: 12px;
+  }
 `;
 const TextBox = styled.div`
   position: absolute;
@@ -81,12 +101,12 @@ const TextBox = styled.div`
 const Projects: React.FunctionComponent<any> = () => {
   useEffect(() => window.scrollTo(0, 0));
   return (
-    <Container>
+    <Center>
       <Helmet>
         <title>Project | Plusbeauxjours</title>
       </Helmet>
-      <Wrapper>
-        <MiddleContainer>
+      <Container>
+        <Wrapper>
           <GridContainer>
             <Link to={"/projects/app/airbnp-app"}>
               <Square>
@@ -255,9 +275,9 @@ const Projects: React.FunctionComponent<any> = () => {
               </Square>
             </Link>
           </GridContainer>
-        </MiddleContainer>
-      </Wrapper>
-    </Container>
+        </Wrapper>
+      </Container>
+    </Center>
   );
 };
 

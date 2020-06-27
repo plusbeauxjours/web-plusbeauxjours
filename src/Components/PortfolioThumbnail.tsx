@@ -68,7 +68,16 @@ const Bold = styled.div`
   margin-bottom: 10px;
 `;
 const Text = styled.div`
+  font-size: 18px;
   line-height: 22px;
+  @media screen and (min-width: 701px) and (max-width: 800px) {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  @media screen and (min-width: 1101px) and (max-width: 1200px) {
+    font-size: 12px;
+    line-height: 12px;
+  }
 `;
 const TextBox = styled.div`
   position: absolute;
