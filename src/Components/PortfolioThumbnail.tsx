@@ -110,7 +110,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
       <GridContainer>
-        <Link to={"/projects/app/airbnp-app"}>
+        {/* <Link to={"/projects/app/airbnp-app"}>
           <Square>
             <InnerBox>
               <Img
@@ -145,7 +145,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
               </TextBox>
             </InnerBox>
           </Square>
-        </Link>
+        </Link> */}
         <Link to={"/projects/app/pinner-app"}>
           <Square>
             <InnerBox>
