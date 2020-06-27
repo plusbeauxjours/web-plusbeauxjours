@@ -8,13 +8,13 @@ import { keyframes } from "styled-components";
 import Contact from "./Contact";
 
 const Container = styled.header`
-  background-color: ${props => props.theme.bgColor};
+  background-color: ${(props) => props.theme.bgColor};
   height: 45px;
   width: 100%;
   border-top: none;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid ${props => props.theme.greyColor};
+  border-bottom: 1px solid ${(props) => props.theme.greyColor};
 `;
 
 const Wrapper = styled.div`
@@ -56,7 +56,7 @@ const ModalOverlay = styled.div`
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: ${props => props.theme.modalOverlayColor};
+  background-color: ${(props) => props.theme.modalOverlayColor};
 `;
 
 const Modal = styled.div`
@@ -64,7 +64,6 @@ const Modal = styled.div`
   position: absolute;
   width: 100%;
   max-width: 800px;
-  margin-top: 80px;
   animation: ${ModalAnimation} 0.1s linear;
   display: flex;
   flex-direction: column;

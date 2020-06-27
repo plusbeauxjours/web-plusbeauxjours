@@ -192,7 +192,6 @@ const Modal = styled.div`
   position: absolute;
   width: 100%;
   max-width: 800px;
-  margin-top: 80px;
   animation: ${ModalAnimation} 0.1s linear;
   display: flex;
   flex-direction: column;
