@@ -128,7 +128,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
             </InnerBox>
           </Square>
         </Link>
-        {/* <Link to={"/projects/app/jahanuri-app"}>
+        <Link to={"/projects/app/jahanuri-app"}>
           <Square>
             <InnerBox>
               <Img
@@ -145,7 +145,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
               </TextBox>
             </InnerBox>
           </Square>
-        </Link> */}
+        </Link>
         <Link to={"/projects/app/pinner-app"}>
           <Square>
             <InnerBox>

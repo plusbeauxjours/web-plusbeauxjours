@@ -318,7 +318,7 @@ const PinnerApp: React.FunctionComponent<any> = () => {
               </Link>
               , because I think only few travelers want to visit Pinner by
               laptop to find someone and mobile application has better
-              performance. I used React-Native for rendering either Android or
+              performance. I used React-Native for rendering both Android and
               iOS components, Django (obviously), Graphene and Firebase for live
               chat. Pinner-App records user's location and recommand user who
               has been same city before.

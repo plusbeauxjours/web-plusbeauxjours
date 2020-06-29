@@ -317,7 +317,7 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
                 Airbnp-Web
               </Link>
               , but code should be refactored to REST Framework-API for fetching
-              data. I used React-Native for rendering either Android or iOS
+              data. I used React-Native for rendering both Android and iOS
               components, Django (obviously) and DRF. The reason why I tried to
               use DRF is I want to compare between GraphQL and DRF. Room's
               locations should be shown with GoogleMapAPI. I choose Redux

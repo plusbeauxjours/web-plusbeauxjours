@@ -308,12 +308,11 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           <Text>
             <Bold>About this Project</Bold>
             <Inline>
-              This projects is extended from because I think only few travelers
-              want to visit Pinner by laptop to find someone and mobile
-              application has better performance. I used React-Native for
-              rendering either Android or iOS components, Django (obviously),
-              Graphene and Firebase for live chat. Pinner-App records user's
-              location and recommand user who has been same city before.
+              This mobile application is for managing Jahanuri's members.
+              Jahanuri is a Korean alternative medicine center located in Seoul,
+              South Korea. Jahanuri approached by Email to create a mobile
+              application for both Android and iOS. For this project I used
+              React-Native, Django (obviously) and Graphene.
             </Inline>
           </Text>
         </TextBox>
@@ -366,20 +365,38 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <Text>
-            <Bold>What They Needed</Bold>I compared with few different designs
-            to find best UI and balance. I considered performance to reduce the
-            time to complete a task and increase user satisfaction.
+            <Bold>What Jahanuri Needs</Bold>The targets of this application are
+            Jahanuris' customers and someone who is interested in Jahanuri
+            alternative medicine center. Usually, customers visit to the center
+            with reservation to get information but since the COVID-19
+            situation, Jahanuri decides to make an application to get data from
+            customers. So this application provides check-list form or survey
+            form, report form, contact address and member application form.
           </Text>
         </TextBox>
         <TextBox>
           <GreyLine />
         </TextBox>
+
         <TextBox>
           <Text>
             <Bold>About Colors</Bold>
-            User can choose a theme between darkmode and lightmode easily on
-            setting screen and the theme of both has 2 tones. A color blue is
-            used as a point in both themes.
+            <Inline>
+              Co-Founder of Jahanuri, Mrs.Kim Eun-Suk and Mr.Jang Jin-gi
+              published a couple of books. They wanted to choose applications'
+              main color from one of thier&nbsp;
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "underline" }}
+                href={
+                  "https://www.amazon.com/s?k=9791187512394&i=stripbooks&linkCode=qs"
+                }
+              >
+                books' cover
+              </a>
+              .
+            </Inline>
           </Text>
         </TextBox>
         <ColorContainer>
@@ -396,6 +413,16 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           <ProgressiveImage
             src={require("../../Images/App/Jahanuri_app/Jahanuri_app_video.gif")}
             placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_video_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <ScreenshotBox>
+                <Screenshot loading={loading} src={src} />
+              </ScreenshotBox>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_screenshot_s4.jpg")}
+            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_screenshot_s4_tiny.jpg")}
           >
             {(src, loading) => (
               <ScreenshotBox>
@@ -436,12 +463,12 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         </ScreenshotContainer>
         <TextBox>
           <Text>
-            <Bold>Long Term Gains</Bold>I tried to write a code in a functional
-            style with React-Hooks. Most of queries were same as Pinner-Web, so
-            it was not difficult. I compared between functional style and class
-            style ( You can't use Hooks inside a class component ). I need to
-            practice more about Push-Notification in React-Native. I should
-            finish a project in less than 3 months.
+            <Bold>Long Term Gains</Bold>What I gain from this project is about
+            froms. I think all types of forms are used in this project. Most of
+            components was connected with forms so that Jahanuri can get
+            customers' data. I'm learning data visualization to show Jahanuri
+            about customers' body condition and information with graph and
+            charts. Admin page for Jahanuri will be updated on September 2020.
           </Text>
         </TextBox>
       </Wrapper>
