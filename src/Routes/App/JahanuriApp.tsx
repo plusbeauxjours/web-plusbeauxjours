@@ -464,11 +464,12 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         <TextBox>
           <Text>
             <Bold>Long Term Gains</Bold>What I gain from this project is about
-            froms. I think all types of forms are used in this project. Most of
-            components was connected with forms so that Jahanuri can get
-            customers' data. I'm learning data visualization to show Jahanuri
-            about customers' body condition and information with graph and
-            charts. Admin page for Jahanuri will be updated on September 2020.
+            Django Admin and froms. I think all types of forms are used in this
+            project. Most of components was connected with forms so that
+            Jahanuri can get customers' data. I'm learning data visualization to
+            show Jahanuri about customers' body condition and information with
+            graph and charts. Admin page for Jahanuri will be updated on
+            September 2020.
           </Text>
         </TextBox>
       </Wrapper>
