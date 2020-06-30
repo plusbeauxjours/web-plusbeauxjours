@@ -366,7 +366,7 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         <TextBox>
           <Text>
             <Bold>What Jahanuri Needs</Bold>The targets of this application are
-            Jahanuris' customers and someone who is interested in Jahanuri
+            Jahanuri's customers and someone who is interested in Jahanuri
             alternative medicine center. Usually, customers visit to the center
             with reservation to get information but since the COVID-19
             situation, Jahanuri decides to make an application to get data from
@@ -383,7 +383,7 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
             <Bold>About Colors</Bold>
             <Inline>
               Co-Founder of Jahanuri, Mrs.Kim Eun-Suk and Mr.Jang Jin-gi
-              published a couple of books. They wanted to choose applications'
+              published a couple of books. They wanted to choose application's
               main color from one of thier&nbsp;
               <a
                 target="_blank"
