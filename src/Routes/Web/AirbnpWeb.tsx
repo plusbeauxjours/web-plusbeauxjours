@@ -184,7 +184,7 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
           <Text>
             <Bold>About this Project</Bold>
             <Inline>
-              I decided to clone one more two player market project with Django
+              I decided to clone one more two players market project with Django
               when I've finished&nbsp;
               <Link
                 style={{ textDecoration: "underline" }}
@@ -192,10 +192,10 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
               >
                 Puber
               </Link>{" "}
-              which is two player market project built with NodeJs. This project
-              took only 1 month because of Django Template. I used Django
-              Template instead of any front-end framework to save time. I didn't
-              need to think about class-name while I'm using Tailwind.
+              which is two players market project built with NodeJs. This
+              project took only 1 month because of Django Template. I used
+              Django Template instead of any front-end framework to save time. I
+              didn't need to think about class-name while I'm using Tailwind.
             </Inline>
           </Text>
         </TextBox>

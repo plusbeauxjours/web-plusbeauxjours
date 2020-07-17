@@ -227,11 +227,11 @@ const PuberWeb: React.FunctionComponent<any> = () => {
           <Text>
             <Bold>About this Project</Bold>
             Puber is my first clone project. The reason why I decide to clone
-            Uber is because I was interested in two player market project and
+            Uber is because I was interested in two players market project and
             location based project. To better understand about Django and
             Python, I wanted to compare with other languege like Express and
             NodeJS. I write and read more than 7 times to get a better
-            understanding of how two player market project works and what
+            understanding of how two players market project works and what
             GraphQL is.
           </Text>
         </TextBox>

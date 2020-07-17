@@ -91,7 +91,6 @@ const Img = styled.img`
 `;
 
 const FrontEndToolsList = [
-  "VSCode",
   "Photoshop",
   "Typescript",
   "React",
@@ -101,22 +100,21 @@ const FrontEndToolsList = [
   "Apollo",
   "Sketch",
   "Github",
-  "Terminal",
   "Pen & Paper",
 ];
 
 const BackEndToolsList = [
-  "VSCode",
   "Django",
   "Graphene",
   "Graphql",
+  "RESTful-API",
   "NodeJS",
   "Typescript",
   "Express",
   "TypeORM",
+  "PRISMA",
   "Github",
   "ContextAPI",
-  "Terminal",
 ];
 
 const ArchitectureToolsList = [
