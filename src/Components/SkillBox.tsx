@@ -91,37 +91,34 @@ const Img = styled.img`
 `;
 
 const FrontEndToolsList = [
-  "Photoshop",
   "Typescript",
   "React",
   "React-Native",
   "Styled-Components",
   "Tailwind",
   "Apollo",
+  "Redux",
+  "Photoshop",
   "Sketch",
-  "Github",
-  "Pen & Paper",
 ];
 
 const BackEndToolsList = [
   "Django",
-  "Graphene",
   "Graphql",
   "RESTful-API",
   "NodeJS",
   "Typescript",
   "Express",
   "TypeORM",
-  "PRISMA",
-  "Github",
-  "ContextAPI",
+  "Prisma",
 ];
 
 const ArchitectureToolsList = [
   "AutoCad",
   "Photoshop",
   "Rhino",
-  "React",
+  "Grasshopper",
+  "FinalCut Pro",
   "3dsMax",
   "V-Ray",
   "SketchUp",
@@ -144,7 +141,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
           </FirstBox>
           <SecondBox>
             <CText>Languages I speak:</CText>
-            <Text>HTML, CSS, Javascript, Image </Text>
+            <Text>HTML, CSS, Javascript</Text>
           </SecondBox>
           <ThirdBox>
             <CText>Dev Tools:</CText>
@@ -166,7 +163,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
           </FirstBox>
           <SecondBox>
             <CText>Languages I speak:</CText>
-            <Text>Python, Javascript, Graphql</Text>
+            <Text>Python, Javascript</Text>
           </SecondBox>
           <ThirdBox>
             <CText>Dev Tools:</CText>
@@ -188,7 +185,7 @@ const SkillBox: React.FunctionComponent<any> = () => (
           </FirstBox>
           <SecondBox>
             <CText>Languages I speak:</CText>
-            <Text>Korean, English, Number, Image</Text>
+            <Text>Korean, English, Number, Drawing, Image</Text>
           </SecondBox>
           <ThirdBox>
             <CText>Design Tools:</CText>
