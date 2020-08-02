@@ -90,19 +90,10 @@ const ColorBox = styled.div<IProps>`
   }
 `;
 
-const SketchContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-`;
-
-const ImageContainer = styled.div`
+const ScreenshotBox = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-`;
-
-const ScreenshotBox = styled(ImageContainer)`
   max-width: 300px;
   width: 100%;
   height: 100%;
@@ -290,36 +281,6 @@ const KittyTodoApp: React.FunctionComponent<any> = () => {
             edit and delete an already added task.
           </Text>
         </TextBox>
-        <SketchContainer>
-          <ProgressiveImage
-            src={require("../../Images/App/Kitty_app/Kitty_app_sketch_s1.jpg")}
-            placeholder={require("../../Images/App/Kitty_app/Kitty_app_sketch_s1_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <ImageContainer>
-                <Img
-                  style={{ maxWidth: "200px", marginRight: "30px" }}
-                  loading={loading}
-                  src={src}
-                />
-              </ImageContainer>
-            )}
-          </ProgressiveImage>
-          <ProgressiveImage
-            src={require("../../Images/App/Kitty_app/Kitty_app_sketch_s2.jpg")}
-            placeholder={require("../../Images/App/Kitty_app/Kitty_app_sketch_s2_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <ImageContainer>
-                <Img
-                  style={{ maxHeight: "400px" }}
-                  loading={loading}
-                  src={src}
-                />
-              </ImageContainer>
-            )}
-          </ProgressiveImage>
-        </SketchContainer>
         <TextBox>
           <GreyLine />
         </TextBox>

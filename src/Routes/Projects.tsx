@@ -100,6 +100,24 @@ const Projects: React.FunctionComponent<any> = () => {
       <Container>
         <Wrapper>
           <GridContainer>
+            <Link to={"/projects/app/sportup-app"}>
+              <Square>
+                <InnerBox>
+                  <Img
+                    src={require("../Images/Thumbnails/Sportup_app_thumbnail.jpg")}
+                    style={{ maxWidth: "800px", width: "100%" }}
+                    alt="an image"
+                  />
+                  <TextBox>
+                    <Bold>SportUp-App</Bold>
+                    <Text>
+                      Sport team app with Django, React-Native, Graphene,
+                      Typescript
+                    </Text>
+                  </TextBox>
+                </InnerBox>
+              </Square>
+            </Link>
             <Link to={"/projects/app/airbnp-app"}>
               <Square>
                 <InnerBox>

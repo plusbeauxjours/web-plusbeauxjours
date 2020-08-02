@@ -67,12 +67,6 @@ const LinkText = styled.div`
   height: 8px;
 `;
 
-const SketchContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-`;
-
 const ImageContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -96,6 +90,7 @@ const ScreenshotContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 200px;
 `;
 
 const Screenshot = styled.img<IProps>`
@@ -256,22 +251,6 @@ const AwesomeWeather: React.FunctionComponent<any> = () => {
             weather information.
           </Text>
         </TextBox>
-        <SketchContainer>
-          <ProgressiveImage
-            src={require("../../Images/App/Awesome_app/Awesome_app_sketch.jpg")}
-            placeholder={require("../../Images/App/Awesome_app/Awesome_app_sketch_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <ImageContainer>
-                <Img
-                  style={{ maxWidth: "600px" }}
-                  loading={loading}
-                  src={src}
-                />
-              </ImageContainer>
-            )}
-          </ProgressiveImage>
-        </SketchContainer>
         <TextBox>
           <GreyLine />
         </TextBox>

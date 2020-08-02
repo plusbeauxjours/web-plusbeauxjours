@@ -17,6 +17,7 @@ import Projects from "../Routes/Projects";
 import styled from "../Styles/typed-components";
 import JahanuriApp from "../Routes/App/JahanuriApp";
 import AirbnpApp from "../Routes/App/AirbnpApp";
+import SportUpApp from "../Routes/App/SportUpApp";
 
 const Wrapper = styled.div`
   padding-top: 45px;
@@ -65,6 +66,11 @@ export default () => {
           component={MovieWeb}
         />
         {/* app */}
+        <Route
+          onEnter={onUpdate}
+          path="/projects/app/sportup-app"
+          component={SportUpApp}
+        />
         <Route
           onEnter={onUpdate}
           path="/projects/app/jahanuri-app"
