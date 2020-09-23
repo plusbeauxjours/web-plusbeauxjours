@@ -198,7 +198,7 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={"https://pinner.fun"}
+                href={"https://www.pinner.shop/"}
               >
                 <LinkBox>
                   <WebIcon />
@@ -250,18 +250,6 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/Web/Pinner_web/Pinner_web_sketch.jpg")}
-            placeholder={require("../../Images/Web/Pinner_web/Pinner_web_sketch_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
-        </TextBox>
-        <TextBox>
           <GreyLine />
         </TextBox>
         <TextBox>
@@ -281,18 +269,6 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
               <li>Heroku</li>
             </ul>
           </Text>
-        </TextBox>
-        <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/Web/Pinner_web/Pinner_web_diagram.jpg")}
-            placeholder={require("../../Images/Web/Pinner_web/Pinner_web_diagram_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
         </TextBox>
         <TextBox>
           <GreyLine />

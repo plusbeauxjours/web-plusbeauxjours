@@ -212,22 +212,6 @@ const MovieWeb: React.FunctionComponent<any> = () => {
             API, there was huge information on response.
           </Text>
         </TextBox>
-        <SketchContainer>
-          <ProgressiveImage
-            src={require("../../Images/Web/Movie_web/Movie_web_sketch.jpg")}
-            placeholder={require("../../Images/Web/Movie_web/Movie_web_sketch_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <ImageContainer>
-                <Img
-                  style={{ maxWidth: "800px" }}
-                  loading={loading}
-                  src={src}
-                />
-              </ImageContainer>
-            )}
-          </ProgressiveImage>
-        </SketchContainer>
         <TextBox>
           <GreyLine />
         </TextBox>

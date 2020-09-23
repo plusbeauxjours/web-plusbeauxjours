@@ -200,18 +200,6 @@ const AirbnpWeb: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/Web/Airbnp_web/Airbnp_web_sketch.jpg")}
-            placeholder={require("../../Images/Web/Airbnp_web/Airbnp_web_sketch_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
-        </TextBox>
-        <TextBox>
           <GreyLine />
         </TextBox>
         <TextBox>

@@ -236,18 +236,6 @@ const PuberWeb: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/Web/Puber_web/Puber_web_sketch.jpg")}
-            placeholder={require("../../Images/Web/Puber_web/Puber_web_sketch_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <SketchContainer>
-                <Diagram loading={loading} src={src} />
-              </SketchContainer>
-            )}
-          </ProgressiveImage>
-        </TextBox>
-        <TextBox>
           <GreyLine />
         </TextBox>
         <TextBox>
@@ -268,18 +256,6 @@ const PuberWeb: React.FunctionComponent<any> = () => {
               <li>Heroku</li>
             </ul>
           </Text>
-        </TextBox>
-        <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/Web/Puber_web/Puber_web_diagram.jpg")}
-            placeholder={require("../../Images/Web/Puber_web/Puber_web_diagram_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
         </TextBox>
         <TextBox>
           <GreyLine />

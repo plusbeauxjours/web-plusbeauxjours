@@ -310,22 +310,6 @@ const MovieApp: React.FunctionComponent<any> = () => {
             </Inline>
           </Text>
         </TextBox>
-        <SketchContainer>
-          <ProgressiveImage
-            src={require("../../Images/App/Movie_app/Movie_app_sketch.jpg")}
-            placeholder={require("../../Images/App/Movie_app/Movie_app_sketch_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <ImageContainer>
-                <Img
-                  style={{ maxWidth: "800px" }}
-                  loading={loading}
-                  src={src}
-                />
-              </ImageContainer>
-            )}
-          </ProgressiveImage>
-        </SketchContainer>
         <TextBox>
           <GreyLine />
         </TextBox>

@@ -244,7 +244,7 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           <Modal>
             <Img
               style={{ maxWidth: "300px" }}
-              src={require("../../Images/App/Jahanuri_app/Jahanuri_app_Android.jpg")}
+              src={require("../../Images/App/SportUp_app/SportUp_app_Android.jpg")}
             />
           </Modal>
         </ModalContainer>
@@ -255,7 +255,7 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           <Modal>
             <Img
               style={{ maxWidth: "300px" }}
-              src={require("../../Images/App/Jahanuri_app/Jahanuri_app_IOS.jpg")}
+              src={require("../../Images/App/SportUp_app/SportUp_app_IOS.jpg")}
             />
           </Modal>
         </ModalContainer>
@@ -317,18 +317,6 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_mindmap.jpg")}
-            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_mindmap_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
-        </TextBox>
-        <TextBox>
           <GreyLine />
         </TextBox>
         <TextBox>
@@ -351,18 +339,6 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox>
           <GreyLine />
-        </TextBox>
-        <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_diagram.jpg")}
-            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_diagram_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
         </TextBox>
         <TextBox>
           <Text>

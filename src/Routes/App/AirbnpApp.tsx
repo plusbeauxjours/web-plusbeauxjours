@@ -223,6 +223,33 @@ const Inline = styled.div`
   flex-direction: row;
 `;
 
+const CodeBox = styled.div`
+  display: flex;
+  margin: 100px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const CodeImg = styled.img`
+  margin-top: 100px;
+  margin-bottom: 10px;
+  max-width: 800px;
+`;
+
+const Row = styled.div`
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const GitLinkBox = styled(LinkBox)`
+  svg {
+    fill: #bbb;
+  }
+`;
+
 interface IProps {
   loading?: boolean;
   color?: string;
@@ -326,18 +353,6 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/App/Airbnp_app/Airbnp_app_sketch.jpg")}
-            placeholder={require("../../Images/App/Airbnp_app/Airbnp_app_sketch_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
-        </TextBox>
-        <TextBox>
           <GreyLine />
         </TextBox>
         <TextBox>
@@ -358,6 +373,79 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
             </ul>
           </Text>
         </TextBox>
+        <TextBox>
+          <GreyLine />
+        </TextBox>
+        <CodeBox>
+          <ProgressiveImage
+            src={require("../../Images/App/Airbnp_app/Airbnp_app_Map2Data.gif")}
+            placeholder={require("../../Images/App/Airbnp_app/Airbnp_app_Map2Data_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
+          <CodeImg
+            src={require("../../Images/App/Airbnp_app/Airbnp_app_Map2Data_Code.jpg")}
+            alt="an image"
+          />
+          <Row>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={
+                "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/screens/Main/Map/MapPresenter.tsx#L138"
+              }
+            >
+              <GitLinkBox>
+                <GithubIcon />
+              </GitLinkBox>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={
+                "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/screens/Main/Map/MapContainer.tsx#L41"
+              }
+            >
+              <GitLinkBox>
+                <GithubIcon />
+              </GitLinkBox>
+            </a>
+          </Row>
+        </CodeBox>
+        <TextBox>
+          <GreyLine />
+        </TextBox>
+        <CodeBox>
+          <ProgressiveImage
+            src={require("../../Images/App/Airbnp_app/Airbnp_app_Data2Map.gif")}
+            placeholder={require("../../Images/App/Airbnp_app/Airbnp_app_Data2Map_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
+          <CodeImg
+            src={require("../../Images/App/Airbnp_app/Airbnp_app_Data2Map_Code.jpg")}
+            alt="an image"
+          />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/components/UserRooms.tsx#L168"
+            }
+          >
+            <GitLinkBox>
+              <GithubIcon />
+            </GitLinkBox>
+          </a>
+        </CodeBox>
         <TextBox>
           <GreyLine />
         </TextBox>

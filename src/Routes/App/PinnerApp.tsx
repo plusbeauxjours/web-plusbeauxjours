@@ -326,18 +326,6 @@ const PinnerApp: React.FunctionComponent<any> = () => {
           </Text>
         </TextBox>
         <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/App/Pinner_app/Pinner_app_sketch.jpg")}
-            placeholder={require("../../Images/App/Pinner_app/Pinner_app_sketch_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
-        </TextBox>
-        <TextBox>
           <GreyLine />
         </TextBox>
         <TextBox>
@@ -358,18 +346,6 @@ const PinnerApp: React.FunctionComponent<any> = () => {
               <li>Heroku</li>
             </ul>
           </Text>
-        </TextBox>
-        <TextBox>
-          <ProgressiveImage
-            src={require("../../Images/App/Pinner_app/Pinner_app_diagram.jpg")}
-            placeholder={require("../../Images/App/Pinner_app/Pinner_app_diagram_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <DiagramContainer>
-                <Diagram loading={loading} src={src} />
-              </DiagramContainer>
-            )}
-          </ProgressiveImage>
         </TextBox>
         <TextBox>
           <GreyLine />
