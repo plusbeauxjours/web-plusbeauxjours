@@ -172,6 +172,33 @@ const Inline = styled.div`
   flex-direction: row;
 `;
 
+const CodeBox = styled.div`
+  display: flex;
+  margin: 100px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
+
+const GitLinkBox = styled(LinkBox)`
+  margin: 0 10px;
+  svg {
+    fill: #bbb;
+  }
+`;
+
+const CodeImg = styled.img`
+  margin-top: 100px;
+  margin-bottom: 10px;
+  max-width: 800px;
+`;
+
 interface IProps {
   loading?: boolean;
   color?: string;
@@ -292,6 +319,44 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
         </TextBox>
+        <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox style={{ marginBottom: 20 }}>
+          <Text>
+            <Bold>Calculate Distance Between Near Cities</Bold>
+            The application show a distance from near cities. Each cities have a
+            near city list and the list will be made again when any city model
+            is created.
+          </Text>
+        </TextBox>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={
+            "https://github.com/plusbeauxjours/pinner-backend/blob/a0e95ddef6cb8be6ea107e40330b1f8d2f5c76ac/pinner/locations/mutations.py#L28"
+          }
+        >
+          <GitLinkBox>
+            <GithubIcon />
+          </GitLinkBox>
+        </a>
+        <CodeBox>
+          <ProgressiveImage
+            src={require("../../Images/Web/Pinner_web/Pinner_web_Calculate_Distance.gif")}
+            placeholder={require("../../Images/Web/Pinner_web/Pinner_web_Calculate_Distance_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
+          <CodeImg
+            src={require("../../Images/Web/Pinner_web/Pinner_web_Calculate_Distance_Code.jpg")}
+            alt="an image"
+          />
+        </CodeBox>
         <TextBox>
           <GreyLine />
         </TextBox>

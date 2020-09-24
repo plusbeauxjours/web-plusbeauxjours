@@ -130,6 +130,11 @@ const Diagram = styled.img<IProps>`
   max-width: 800px;
   filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
+
+const Demo = styled(Diagram)`
+  max-width: 300px;
+`;
+
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
@@ -221,6 +226,33 @@ const GreyLine = styled.div`
 
 const Inline = styled.div`
   flex-direction: row;
+`;
+
+const GitLinkBox = styled(LinkBox)`
+  margin: 0 10px;
+  svg {
+    fill: #bbb;
+  }
+`;
+
+const CodeImg = styled.img`
+  margin-top: 100px;
+  margin-bottom: 10px;
+  max-width: 800px;
+`;
+
+const CodeBox = styled.div`
+  display: flex;
+  margin: 100px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 `;
 
 interface IProps {
@@ -369,6 +401,127 @@ const PinnerApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
         </TextBox>
+        <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox style={{ marginBottom: 20 }}>
+          <Text>
+            <Bold>Autocomplete City Name</Bold>It’s not only nearly impossible
+            to collect all data for city models from around the globe, but also
+            nothing existing as a library for auto-completion of city names
+            except Google Place API.
+          </Text>
+        </TextBox>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={
+            "https://github.com/plusbeauxjours/pinner-app/blob/6184cfcea1a390cfb1c1f6ba28415017daf8fc59/src/hooks/useGoogleAutocomplete.tsx#L1"
+          }
+        >
+          <GitLinkBox>
+            <GithubIcon />
+          </GitLinkBox>
+        </a>
+        <CodeBox>
+          <ProgressiveImage
+            src={require("../../Images/App/Pinner_app/Pinner_app_searchAutocomplete.gif")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_searchAutocomplete_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={require("../../Images/App/Pinner_app/Pinner_app_searchAutocomplete_Code.jpg")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_searchAutocomplete_Code_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram
+                  loading={loading}
+                  src={src}
+                  style={{ marginTop: 100, marginBottom: 10, maxWidth: 800 }}
+                />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
+        </CodeBox>
+        <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox style={{ marginBottom: 20 }}>
+          <Text>
+            <Bold>Create City Model</Bold>
+            When user press a city row, server creates a new city model if there
+            is not city model in database. I took Unsplash API for city images,
+            RawSQL for find near cities, Slack API for notifications, Google
+            Place API for city's unique ID.
+          </Text>
+        </TextBox>
+        <Row>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://github.com/plusbeauxjours/pinner-backend/blob/a0e95ddef6cb8be6ea107e40330b1f8d2f5c76ac/pinner/locations/mutations.py#L16"
+            }
+          >
+            <GitLinkBox>
+              <GithubIcon />
+            </GitLinkBox>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://github.com/plusbeauxjours/pinner-backend/blob/a0e95ddef6cb8be6ea107e40330b1f8d2f5c76ac/pinner/locations/locationThumbnail.py#L7"
+            }
+          >
+            <GitLinkBox>
+              <GithubIcon />
+            </GitLinkBox>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://github.com/plusbeauxjours/pinner-backend/blob/a0e95ddef6cb8be6ea107e40330b1f8d2f5c76ac/pinner/locations/reversePlace.py#L6"
+            }
+          >
+            <GitLinkBox>
+              <GithubIcon />
+            </GitLinkBox>
+          </a>
+        </Row>
+        <CodeBox>
+          <ProgressiveImage
+            src={require("../../Images/App/Pinner_app/Pinner_app_createCity.gif")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_createCity_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
+            src={require("../../Images/App/Pinner_app/Pinner_app_createCity_Code.jpg")}
+            placeholder={require("../../Images/App/Pinner_app/Pinner_app_createCity_Code_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram
+                  loading={loading}
+                  src={src}
+                  style={{ marginTop: 100, marginBottom: 10, maxWidth: 800 }}
+                />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
+        </CodeBox>
         <TextBox>
           <GreyLine />
         </TextBox>

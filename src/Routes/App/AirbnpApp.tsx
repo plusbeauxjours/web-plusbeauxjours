@@ -238,13 +238,13 @@ const CodeImg = styled.img`
 `;
 
 const Row = styled.div`
-  width: 70px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 const GitLinkBox = styled(LinkBox)`
+  margin: 0 10px;
   svg {
     fill: #bbb;
   }
@@ -376,6 +376,38 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
         <TextBox>
           <GreyLine />
         </TextBox>
+        <TextBox style={{ marginBottom: 20 }}>
+          <Text>
+            <Bold>Data From Map</Bold>
+            User can choose a theme between darkmode and lightmode easily on
+            setting screen and the theme of both has 2 tones. A color blue is
+            used as a point in both themes.
+          </Text>
+        </TextBox>
+        <Row>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/screens/Main/Map/MapPresenter.tsx#L138"
+            }
+          >
+            <GitLinkBox>
+              <GithubIcon />
+            </GitLinkBox>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/screens/Main/Map/MapContainer.tsx#L41"
+            }
+          >
+            <GitLinkBox>
+              <GithubIcon />
+            </GitLinkBox>
+          </a>
+        </Row>
         <CodeBox>
           <ProgressiveImage
             src={require("../../Images/App/Airbnp_app/Airbnp_app_Map2Data.gif")}
@@ -391,34 +423,29 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
             src={require("../../Images/App/Airbnp_app/Airbnp_app_Map2Data_Code.jpg")}
             alt="an image"
           />
-          <Row>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={
-                "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/screens/Main/Map/MapPresenter.tsx#L138"
-              }
-            >
-              <GitLinkBox>
-                <GithubIcon />
-              </GitLinkBox>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={
-                "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/screens/Main/Map/MapContainer.tsx#L41"
-              }
-            >
-              <GitLinkBox>
-                <GithubIcon />
-              </GitLinkBox>
-            </a>
-          </Row>
         </CodeBox>
         <TextBox>
           <GreyLine />
         </TextBox>
+        <TextBox style={{ marginBottom: 20 }}>
+          <Text>
+            <Bold>Location From Data</Bold>
+            User can choose a theme between darkmode and lightmode easily on
+            setting screen and the theme of both has 2 tones. A color blue is
+            used as a point in both themes.
+          </Text>
+        </TextBox>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={
+            "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/components/UserRooms.tsx#L168"
+          }
+        >
+          <GitLinkBox>
+            <GithubIcon />
+          </GitLinkBox>
+        </a>
         <CodeBox>
           <ProgressiveImage
             src={require("../../Images/App/Airbnp_app/Airbnp_app_Data2Map.gif")}
@@ -430,21 +457,11 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
               </DiagramContainer>
             )}
           </ProgressiveImage>
+
           <CodeImg
             src={require("../../Images/App/Airbnp_app/Airbnp_app_Data2Map_Code.jpg")}
             alt="an image"
           />
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={
-              "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/components/UserRooms.tsx#L168"
-            }
-          >
-            <GitLinkBox>
-              <GithubIcon />
-            </GitLinkBox>
-          </a>
         </CodeBox>
         <TextBox>
           <GreyLine />
