@@ -301,11 +301,12 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           <Text>
             <Bold>About this Project</Bold>
             <Inline>
-              This mobile application is for managing Jahanuri's members.
-              Jahanuri is a Korean alternative medicine center located in Seoul,
-              South Korea. Jahanuri approached by Email to create a mobile
-              application for both Android and iOS. For this project I used
-              React-Native, Django (obviously) and Graphene.
+              I decided to build a private sports meet-up application. People
+              don't want to go out side to find people to play sports anymore
+              since COVID-19 situation. This application will help to find
+              someone who wants to play sports same as you. Users can post
+              Sports Event with the date, create a team to join a Sports Event
+              and find an interesting team to play in.
             </Inline>
           </Text>
         </TextBox>
@@ -344,16 +345,6 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           <GreyLine />
         </TextBox>
         <ScreenshotContainer>
-          <ProgressiveImage
-            src={require("../../Images/App/SportUp_app/SportUp_app_screenshot.gif")}
-            placeholder={require("../../Images/App/SportUp_app/SportUp_app_screenshot_s2_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <ScreenshotBox>
-                <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
-            )}
-          </ProgressiveImage>
           <ProgressiveImage
             src={require("../../Images/App/SportUp_app/SportUp_app_screenshot_s2.jpg")}
             placeholder={require("../../Images/App/SportUp_app/SportUp_app_screenshot_s2_tiny.jpg")}
@@ -405,7 +396,7 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
             )}
           </ProgressiveImage>
         </ScreenshotContainer>
-        <TextBox>
+        {/* <TextBox>
           <Text>
             <Bold>Long Term Gains</Bold>What I gain from this project is about
             Django Admin and froms. I think all types of forms are used in this
@@ -415,7 +406,7 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
             graph and charts. Admin page for Jahanuri will be updated on
             September 2020.
           </Text>
-        </TextBox>
+        </TextBox> */}
       </Wrapper>
     </Container>
   );
