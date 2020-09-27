@@ -222,6 +222,33 @@ const Inline = styled.div`
   flex-direction: row;
 `;
 
+const CodeBox = styled.div`
+  display: flex;
+  margin: 100px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const CodeImg = styled.img`
+  margin-top: 100px;
+  margin-bottom: 10px;
+  max-width: 800px;
+`;
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
+
+const GitLinkBox = styled(LinkBox)`
+  margin: 0 10px;
+  svg {
+    fill: #bbb;
+  }
+`;
+
 interface IProps {
   loading?: boolean;
   color?: string;
@@ -377,7 +404,52 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         <TextBox>
           <GreyLine />
         </TextBox>
-
+        <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox style={{ marginBottom: 20 }}>
+          <Text>
+            <Bold>Data From Map</Bold>
+            In few models, I used MultiSelectField from django-multiselectfield
+            to select multiple choices. MultiSelectField is basically a
+            CharField that stores the multiple choices values as a comma
+            separated string.
+          </Text>
+        </TextBox>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={
+            "https://github.com/plusbeauxjours/Jahanuri-server/blob/854962257b3d993b376fe5fa6c17de22e2220dda/checklists/models.py#L290"
+          }
+        >
+          <GitLinkBox>
+            <GithubIcon />
+          </GitLinkBox>
+        </a>
+        <CodeBox>
+          <ProgressiveImage
+            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_MultiSelectField.gif")}
+            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_MultiSelectField_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
+          <CodeImg
+            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_MultiSelectField_Admin.jpg")}
+            alt="an image"
+          />
+          <CodeImg
+            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_MultiSelectField_Code.jpg")}
+            alt="an image"
+          />
+        </CodeBox>
+        <TextBox>
+          <GreyLine />
+        </TextBox>
         <TextBox>
           <Text>
             <Bold>About Colors</Bold>
