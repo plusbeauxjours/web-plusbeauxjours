@@ -340,29 +340,6 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         <TextBox>
           <GreyLine />
         </TextBox>
-        <TextBox>
-          <Text>
-            <Bold>What Jahanuri Needs</Bold>The targets of this application are
-            Jahanuri's customers and someone who is interested in Jahanuri
-            alternative medicine center. Usually, customers visit to the center
-            with reservation to get information but since the COVID-19
-            situation, Jahanuri decides to make an application to get data from
-            customers. So this application provides check-list form or survey
-            form, report form, contact address and member application form.
-          </Text>
-        </TextBox>
-        <TextBox>
-          <GreyLine />
-        </TextBox>
-
-        <TextBox>
-          <Text>
-            <Bold>About Colors</Bold>
-            User can choose a theme between darkmode and lightmode easily on
-            setting screen and the theme of both has 2 tones. A color blue is
-            used as a point in both themes.
-          </Text>
-        </TextBox>
         <ColorContainer>
           {SportUpAppColors.map((color, index) => (
             <ColorBox color={color} key={index}>
@@ -374,16 +351,6 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
           <GreyLine />
         </TextBox>
         <ScreenshotContainer>
-          <ProgressiveImage
-            src={require("../../Images/App/Jahanuri_app/Jahanuri_app_video.gif")}
-            placeholder={require("../../Images/App/Jahanuri_app/Jahanuri_app_video_tiny.jpg")}
-          >
-            {(src, loading) => (
-              <ScreenshotBox>
-                <Screenshot loading={loading} src={src} />
-              </ScreenshotBox>
-            )}
-          </ProgressiveImage>
           <ProgressiveImage
             src={require("../../Images/App/SportUp_app/SportUp_app_screenshot_s2.jpg")}
             placeholder={require("../../Images/App/SportUp_app/SportUp_app_screenshot_s2_tiny.jpg")}

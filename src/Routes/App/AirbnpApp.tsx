@@ -379,9 +379,11 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
         <TextBox style={{ marginBottom: 20 }}>
           <Text>
             <Bold>Data From Map</Bold>
-            User can choose a theme between darkmode and lightmode easily on
-            setting screen and the theme of both has 2 tones. A color blue is
-            used as a point in both themes.
+            Current latitude and longitude can be captured by using
+            onRegionChangeComplete and onRegionChangeComplete updates the map
+            position as the user is scrolling and zooming. Here is how I used
+            google map API to get the real time location by moving around the
+            map view.
           </Text>
         </TextBox>
         <Row>
@@ -429,17 +431,17 @@ const AirbnpApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <TextBox style={{ marginBottom: 20 }}>
           <Text>
-            <Bold>Location From Data</Bold>
-            User can choose a theme between darkmode and lightmode easily on
-            setting screen and the theme of both has 2 tones. A color blue is
-            used as a point in both themes.
+            <Bold>Location From Data</Bold> I built a scroll view that when
+            scrolled horizontally it will animate the marker that it is
+            associated with. Once an item is scrolled to the map will
+            automatically animate and center the map at the markers coordinates.
           </Text>
         </TextBox>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href={
-            "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/components/UserRooms.tsx#L168"
+            "https://github.com/plusbeauxjours/airbnp-app/blob/29fdb111f54ae269ba58c84e0230ee50c071be8b/components/UserRooms.tsx#L111"
           }
         >
           <GitLinkBox>

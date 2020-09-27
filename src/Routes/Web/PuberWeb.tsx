@@ -167,6 +167,33 @@ const GreyLine = styled.div`
   margin: 20px 0;
 `;
 
+const CodeBox = styled.div`
+  display: flex;
+  margin: 100px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+const CodeImg = styled.img`
+  margin-top: 100px;
+  margin-bottom: 10px;
+  max-width: 800px;
+`;
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`;
+
+const GitLinkBox = styled(LinkBox)`
+  margin: 0 10px;
+  svg {
+    fill: #bbb;
+  }
+`;
+
 interface IProps {
   loading?: boolean;
   color?: string;
@@ -257,6 +284,58 @@ const PuberWeb: React.FunctionComponent<any> = () => {
             </ul>
           </Text>
         </TextBox>
+        <TextBox>
+          <GreyLine />
+        </TextBox>
+        <TextBox style={{ marginBottom: 20 }}>
+          <Text>
+            <Bold>Live Chat With GraphQL Subscriptions</Bold>
+            One of the exciting things about GraphQL is the ability to build
+            realtime applications with it, through the use of GraphQL
+            subscriptions. Here is how I used subscriptions in GraphQL to build
+            a real-time chat app on Postgres with React and Apollo.
+          </Text>
+        </TextBox>
+        <Row>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://github.com/plusbeauxjours/puber-server/blob/752a721d037005cc962a08504ec31ed532a61234/src/api/Chat/SendChatMessage/SendChatMessage.resolvers.ts#L12"
+            }
+          >
+            <GitLinkBox>
+              <GithubIcon />
+            </GitLinkBox>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={
+              "https://github.com/plusbeauxjours/puber-server/blob/752a721d037005cc962a08504ec31ed532a61234/src/api/Chat/MessageSubscription/MessageSubscription.resolvers.ts#L6"
+            }
+          >
+            <GitLinkBox>
+              <GithubIcon />
+            </GitLinkBox>
+          </a>
+        </Row>
+        <CodeBox>
+          <ProgressiveImage
+            src={require("../../Images/Web/Puber_web/Puber_web_Subscription.gif")}
+            placeholder={require("../../Images/Web/Puber_web/Puber_web_Subscription_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <DiagramContainer>
+                <Diagram loading={loading} src={src} />
+              </DiagramContainer>
+            )}
+          </ProgressiveImage>
+          <CodeImg
+            src={require("../../Images/Web/Puber_web/Puber_web_Subscription_Code.jpg")}
+            alt="an image"
+          />
+        </CodeBox>
         <TextBox>
           <GreyLine />
         </TextBox>
