@@ -180,12 +180,6 @@ const CodeBox = styled.div`
   align-items: center;
 `;
 
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-
 const GitLinkBox = styled(LinkBox)`
   margin: 0 10px;
   svg {

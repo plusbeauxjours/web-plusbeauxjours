@@ -236,12 +236,6 @@ const CodeImg = styled.img`
   max-width: 800px;
 `;
 
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-
 const GitLinkBox = styled(LinkBox)`
   margin: 0 10px;
   svg {

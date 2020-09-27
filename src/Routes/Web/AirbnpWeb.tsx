@@ -94,18 +94,6 @@ const Screenshot = styled.img<IProps>`
   filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
-const DiagramContainer = styled.div`
-  width: 100%;
-  max-width: 600px;
-  padding: 20px;
-`;
-
-const Diagram = styled.img<IProps>`
-  width: 100%;
-  max-width: 800px;
-  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
-`;
-
 const TextBox = styled.div`
   margin: 100px 0;
   display: flex;

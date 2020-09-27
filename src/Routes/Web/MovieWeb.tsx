@@ -95,21 +95,10 @@ const ColorBox = styled.div<IProps>`
   }
 `;
 
-const SketchContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-`;
-
 const ImageContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-`;
-
-const Img = styled.img<IProps>`
-  width: 100%;
-  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
 const ScreenshotContainer = styled.div`

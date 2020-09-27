@@ -122,13 +122,6 @@ const Screenshot = styled.img<IProps>`
   filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
-const DiagramContainer = styled.div``;
-
-const Diagram = styled.img<IProps>`
-  width: 100%;
-  max-width: 800px;
-  filter: ${(props) => (props.loading ? "blur(6px)" : "")};
-`;
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;

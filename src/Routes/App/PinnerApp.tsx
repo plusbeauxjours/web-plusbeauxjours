@@ -131,10 +131,6 @@ const Diagram = styled.img<IProps>`
   filter: ${(props) => (props.loading ? "blur(6px)" : "")};
 `;
 
-const Demo = styled(Diagram)`
-  max-width: 300px;
-`;
-
 const ColorText = styled.div<IProps>`
   position: absolute;
   text-align: center;
@@ -233,12 +229,6 @@ const GitLinkBox = styled(LinkBox)`
   svg {
     fill: #bbb;
   }
-`;
-
-const CodeImg = styled.img`
-  margin-top: 100px;
-  margin-bottom: 10px;
-  max-width: 800px;
 `;
 
 const CodeBox = styled.div`

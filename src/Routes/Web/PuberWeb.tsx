@@ -101,8 +101,6 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
-const SketchContainer = styled.div``;
-
 const ScreenshotContainer = styled.div`
   display: flex;
   flex-direction: column;
