@@ -352,6 +352,16 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         </TextBox>
         <ScreenshotContainer>
           <ProgressiveImage
+            src={require("../../Images/App/SportUp_app/SportUp_app_screenshot.gif")}
+            placeholder={require("../../Images/App/SportUp_app/SportUp_app_screenshot_s2_tiny.jpg")}
+          >
+            {(src, loading) => (
+              <ScreenshotBox>
+                <Screenshot loading={loading} src={src} />
+              </ScreenshotBox>
+            )}
+          </ProgressiveImage>
+          <ProgressiveImage
             src={require("../../Images/App/SportUp_app/SportUp_app_screenshot_s2.jpg")}
             placeholder={require("../../Images/App/SportUp_app/SportUp_app_screenshot_s2_tiny.jpg")}
           >

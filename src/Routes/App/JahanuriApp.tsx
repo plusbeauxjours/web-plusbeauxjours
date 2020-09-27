@@ -404,12 +404,9 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
         <TextBox>
           <GreyLine />
         </TextBox>
-        <TextBox>
-          <GreyLine />
-        </TextBox>
         <TextBox style={{ marginBottom: 20 }}>
           <Text>
-            <Bold>Data From Map</Bold>
+            <Bold>Multi Select</Bold>
             In few models, I used MultiSelectField from django-multiselectfield
             to select multiple choices. MultiSelectField is basically a
             CharField that stores the multiple choices values as a comma
