@@ -219,7 +219,7 @@ const PinnerWeb: React.FunctionComponent<any> = () => {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href={"https://www.pinner.shop/"}
+                href={"https://www.pinnerpinner.shop/"}
               >
                 <LinkBox>
                   <WebIcon />
