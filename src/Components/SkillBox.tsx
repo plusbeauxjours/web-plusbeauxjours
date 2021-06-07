@@ -103,11 +103,11 @@ const FrontEndToolsList = [
 ];
 
 const BackEndToolsList = [
+  "NestJS",
   "Django",
   "Graphql",
   "RESTful-API",
   "NodeJS",
-  "Typescript",
   "Express",
   "TypeORM",
   "Prisma",

@@ -110,6 +110,24 @@ const SkillBox: React.FunctionComponent<any> = () => (
   <Container>
     <Wrapper>
       <GridContainer>
+        <Link to={"/projects/app/shopsol-app"}>
+          <Square>
+            <InnerBox>
+              <Img
+                src={require("../Images/Thumbnails/Shopsol_app_thumbnail.jpg")}
+                style={{ maxWidth: "800px", width: "100%" }}
+                alt="an image"
+              />
+              <TextBox>
+                <Bold>Shopsol-App</Bold>
+                <Text>
+                  Employee Attendance Tracking App with React-Native, RESTful
+                  API, Typescript, Fastlane
+                </Text>
+              </TextBox>
+            </InnerBox>
+          </Square>
+        </Link>
         <Link to={"/projects/app/sportup-app"}>
           <Square>
             <InnerBox>
@@ -122,24 +140,6 @@ const SkillBox: React.FunctionComponent<any> = () => (
                 <Bold>SportUp-App</Bold>
                 <Text>
                   Sport team app with Django, React-Native, Graphene, Typescript
-                </Text>
-              </TextBox>
-            </InnerBox>
-          </Square>
-        </Link>
-        <Link to={"/projects/app/airbnp-app"}>
-          <Square>
-            <InnerBox>
-              <Img
-                src={require("../Images/Thumbnails/Airbnp_app_thumbnail.jpg")}
-                style={{ maxWidth: "800px", width: "100%" }}
-                alt="an image"
-              />
-              <TextBox>
-                <Bold>Airbnp-App</Bold>
-                <Text>
-                  Airbnb clone app with Django, React-Native, REST-Api, Redux,
-                  Typescript
                 </Text>
               </TextBox>
             </InnerBox>

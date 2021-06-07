@@ -222,7 +222,7 @@ interface IProps {
 
 const SportUpAppColors = ["#FFFFFF", "#FFA500"];
 
-const JahanuriApp: React.FunctionComponent<any> = () => {
+const SportUpApp: React.FunctionComponent<any> = () => {
   const [androidModalOpen, setAndroidModalOpen] = useState<boolean>(false);
   const [appleModalOpen, setAppleModalOpen] = useState<boolean>(false);
   useEffect(() => window.scrollTo(0, 0));
@@ -412,4 +412,4 @@ const JahanuriApp: React.FunctionComponent<any> = () => {
   );
 };
 
-export default JahanuriApp;
+export default SportUpApp;
